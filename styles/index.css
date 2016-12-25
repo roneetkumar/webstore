@@ -1,0 +1,215 @@
+@import url('fab.css');
+html {
+    background-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    max-width: 700px;
+    font-size: 26px;
+    color: #F7941D;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding: 15px 15px;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+}
+
+.centered-x {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.centered-y {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    width: 100%;
+    height: 500px;
+    background-color: #f26522;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    background: #fff;
+    height: 350px;
+    width: 8000px;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    margin-left: -4000px;
+    transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+}
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #f7941d;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.icons-container {
+    display: block;
+    height: 50px;
+    width: 186px;
+}
+
+.icon-1,
+.icon-2,
+.icon-3 {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0px 5px;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.35);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon-1:hover,
+.icon-2:hover,
+.icon-3:hover {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.35);
+}
+
+.icon-1,
+.icon-3 {
+    position: relative;
+    top: -2.5px;
+    width: 45px;
+    height: 45px;
+}
+
+h1.heading {
+    padding: 10px 10px 14px 10px;
+}
+
+.all {
+    margin-bottom: 80px;
+}
+
+h1.about {
+    font-size: 34px;
+    color: #f26522;
+}
+
+.circles {
+    height: 320px;
+    margin-bottom: 160px;
+}
+
+.cir-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #F26522;
+    ;
+    overflow: hidden;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.cir-1:hover {
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+p.reveal {
+    color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 260px;
+    font-size: 17px;
+    text-align: center;
+}
+
+@media screen and (max-width:350px) {
+    h1.about {
+        font-size: 30px;
+    }
+    p {
+        font-size: 22px;
+    }
+}
+
+.fab-bar {
+    position: fixed;
+    width: 700px;
+    height: 60px;
+    background-color: #f26522;
+    bottom: 0;
+    border-radius: 100% 100% 0% 0%;
+    box-shadow: 0 -6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    position: absolute;
+}
+
+.up-arrow,
+.down-arrow {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: -100px;
+    margin-top: 9px;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.down-arrow {
+    margin-left: 100px;
+}
+
+.up-arrow:active,
+.down-arrow:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.material-icons {
+    color: #fff;
+}
