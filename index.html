@@ -6,8 +6,8 @@
     <title>webstore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#303F9F" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet"> -->
+    <meta name="theme-color" content="#0288D1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.min.css">
 
     <link rel="manifest" href="functions/manifest.json">
@@ -25,18 +25,20 @@
 
 <body>
     <div class="wrapper">
+        <div class="overlay"></div>
         <header id="top">
             <section class="header">
                 <div class="search-bar"></div>
             </section>
         </header>
         <section id="chips-wrapper">
-            <div class="chips-btn-1">
-                <h1>Editor's Choice</h1></div>
-            <div class="chips-btn-2">
+            <div class="chips">
+                <h1>Editors' Choice</h1></div>
+            <div class="chips">
                 <h1>Offline</h1></div>
-
-            <div class="chips-btn-3">
+            <div class="chips">
+                <h1>New</h1></div>
+            <div class="chips">
                 <h1>Trendings</h1></div>
         </section>
         <section id="grid-wrapper">
@@ -46,7 +48,7 @@
                     <div class="cir cir-2 "></div>
                 </div>
                 <div class="title-bar"> <span> Flipkart </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
@@ -54,7 +56,7 @@
                     <div class="clocks"></div>
                 </div>
                 <div class="title-bar"> <span> Google-Plus </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
@@ -62,160 +64,201 @@
                     <div class="ripple"></div>
                 </div>
                 <div class="title-bar"> <span> Flipboard </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Offline-Wiki </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
             <div class="card ">
                 <div class="animation-wrapper"></div>
                 <div class="title-bar"> <span> Title </span>
-                    <img class="open-logo" src="assets/open.svg" alt="open-svg" />
+                    <img class="add-btn" src="assets/add.svg" alt="add-svg" />
                 </div>
             </div>
         </section>
+        <section class="fab">
+            <div class="fab-header-wrapper">
+                <div class="fab-header"> </div>
+                <div class="my-icon"></div>
+                <h1 class="fab-title">Submit Your App</h1>
+            </div>
+            <div class="btn-mail">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#fff" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+            </div>
+            <div class="form-wrapper">
+                <form action="#" id="form">
+                    <input class="text-input" placeholder="Name">
+                    <input class="text-input" placeholder="Email">
+                    <input class="text-input" placeholder="Link">
+                    <textarea class="text-input" placeholder="Description" style="height: 49px; overflow-y: hidden;"></textarea>
+                </form>
+                <div class="button-wrapper">
+                    <button class="button">
+                        <div class="svg-wrapper">
+                            <svg fill="rgba(0,0,0,0.3)" class="send" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+                                <path d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z" />
+                                <path d="M0 0h48v48H0z" fill="none" />
+                            </svg>
+                            <svg fill="rgba(0,0,0,0.3)" class="done" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+                                <path d="M0 0h48v48H0z" fill="none" />
+                                <path d="M18 32.34L9.66 24l-2.83 2.83L18 38l24-24-2.83-2.83z" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="icon-close">
+            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#fff" />
+                <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
+        </div>
     </div>
 </body>
 
