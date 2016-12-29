@@ -1,17 +1,90 @@
 // -------------imports--------------------
 @import 'shadows','center-mixins','colors','animations'
 
+$chips-scroll-width: 430px
+
 *
     margin: 0
     padding: 0
     font-family: 'Roboto',monospace,sans-serif
     cursor: default
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
 
 html,body
     background-color: #303030
 
 .wrapper,header#top,#chips-wrapper,#grid-wrapper
     overflow: hidden
+
+    .overlay
+        width: 100%
+        height: 100%
+        background: rgba(0,0,0,0.5)
+        position: fixed
+        z-index: 2
+
+    .nav-bar-wrapper
+        position: fixed
+        width: 256px
+        height: 100%
+        background: #212121
+        z-index: 2
+        left: -260px
+        box-shadow: 4px 0 10px rgba(0,0,0,0.4)
+        transition: left 255ms ease-in-out
+        .nav-header
+            width: 100%
+            height: 140px
+            background: $primary-color
+            .nav-pic
+                width: 60px
+                height: 60px
+                background: $accents
+                border-radius: 50%
+                display: inline-block
+                margin: 14px
+            .nav-heading
+                position: absolute
+                left: 14px
+                h1.title,h1.email
+                    font-size: 13px
+                    color: #fff
+                    font-weight: lighter
+                    margin: 2px 0
+                h1.email
+                    font-size: 12px
+
+        ul.nav-menu
+            li.menu-item
+                width: 100%
+                height: 48px
+                .list-item-pic
+                    @include centered-y
+                    left: 14px
+                    width: 24px
+                    height: 24px
+                    background: yellow
+                    display: block
+                    border-radius: 50%
+                h1.list-item-title
+                    @include centered
+                    left: 35%
+                    font-size: 16px
+                    font-weight: lighter
+                    // line-height: 48px
+                    color: #fff
+            hr
+                @include centered-x
+                width: 90%
+                border: 1px solid rgba(255, 255, 255, 0.05)
+                margin: 12px 0
+
+    .nav-khulgya
+        left: 0
+
     .header
         position: absolute
         width: 100%
@@ -30,6 +103,42 @@ html,body
             border-radius: 2px
             top: 8px
             box-shadow: $box-shadow-2dp
+            svg.nav-btn
+                @include centered-y
+                width: 24px
+                height: 24px
+                fill: rgba(0,0,0,0.52)
+                left: 6px
+                border-radius: 50%
+                padding: 6px
+                transition: all 225ms ease-in-out
+                &:hover
+                    background: rgba(0,0,0,0.1)
+                &:active
+                    background: rgba(0,0,0,0.2)
+
+            .search-text-field
+                @include centered
+                position: absolute
+                width: 250px
+                height: 40px
+                left: 172px
+                border: 0
+                border-radius: 0
+                outline: 0
+                box-sizing: border-box
+                font-size: 16px
+                font-weight: 400
+                color: $accents
+                &::-webkit-input-placeholder
+                    color: rgba(0,0,0,0.38)
+                    transition: color 300ms ease-in-out
+                &:hover
+                    &::-webkit-input-placeholder
+                        color: rgba(0,0,0,0.54)
+                &:focus
+                    &::-webkit-input-placeholder
+                        color: rgba(0,0,0,0.87)
 
     .header-fixed
         position: fixed
@@ -37,27 +146,32 @@ html,body
         box-shadow: $box-shadow-6dp
 
     #chips-wrapper
-        @include centered-x
         text-align: center
-        margin: 238px 0 -14px 0
-        .chips
-            margin: 15px 6px
-            background: $accents
-            display: inline-block
-            border-radius: 50px
-            box-shadow: $box-shadow-2dp
-            transition: box-shadow 225ms ease-in-out
-            h1
-                text-align: center
-                font-size: 14px
-                color: #fff
-                margin: 7.5px 12px
-                text-transform: uppercase
-        .chip-clicked
-            // box-shadow: $box-shadow-8dp
-            background: #fff
-            h1
-                color: $accents
+        margin: 238px 0 -10px 0
+        overflow-x: scroll
+        &::-webkit-scrollbar
+            display: none
+        .chips-list
+            width: $chips-scroll-width
+            margin: 0 auto
+            .chips
+                margin: 15px 6px
+                background: $accents
+                display: inline-block
+                border-radius: 50px
+                box-shadow: $box-shadow-2dp
+                transition: box-shadow 225ms ease-in-out
+                h1
+                    text-align: center
+                    font-size: 14px
+                    color: #fff
+                    margin: 7.5px 12px
+                    text-transform: uppercase
+            .chip-clicked
+                // box-shadow: $box-shadow-8dp
+                background: #fff
+                h1
+                    color: $accents
 
     #grid-wrapper
         width: 100%
@@ -74,7 +188,7 @@ html,body
         position: relative
         width: 250px
         height: 300px
-        background: #212121
+        background: #424242
         margin: 10px
         border-radius: 2px
         box-shadow: $box-shadow-4dp
@@ -95,9 +209,9 @@ html,body
             .add-btn
                 @include centered-y
                 position: absolute
-                right: 6px
-                width: 28px
-                height: 28px
+                right: 8px
+                width: 24px
+                height: 24px
                 padding: 4px
                 border-radius: 50%
                 transition: all 225ms ease-in-out
@@ -145,6 +259,7 @@ html,body
         position: absolute
         width: 28px
         height: 28px
+        fill: #fff
 
     .form-wrapper
         padding: 24px 24px 24px
@@ -196,14 +311,14 @@ html,body
                     border-radius: 50%
                     transition: background 0.2s ease-in-out
                     cursor: default
-                    svg.send, svg.done
+                    svg.send-btn, svg.done-btn
                         @include centered
                         width: 22px
                         height: 22px
                         margin-left: 2px
                         position: absolute
                         fill: #fff
-                    svg.done
+                    svg.done-btn
                         width: 30px
                         height: 30px
                         margin-left: 0
@@ -250,14 +365,14 @@ h1.fab-title
     cursor: default
     line-height: 56px
 
-.icon-close
+.close-btn
     position: fixed
     top: 8px
     right: 8px
     z-index: -1
-    float: right
-    width: 40px
-    height: 40px
+    padding: 8px
+    width: 24px
+    height: 24px
     border-radius: 50%
     transition: background 200ms ease-in-out
     @media only screen and(max-width: 425px)
@@ -270,10 +385,3 @@ h1.fab-title
         @include centered
         width: 24px
         height: 24px
-
-.overlay
-    width: 100%
-    height: 100%
-    background: rgba(0,0,0,0.4)
-    position: fixed
-    z-index: 2
