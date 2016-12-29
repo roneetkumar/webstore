@@ -4,7 +4,7 @@ $(function() {
 
     //fab open function
     function fabOpen() {
-        $('.btn-mail').fadeOut(350)
+        $('.upload-btn').fadeOut(350)
         $('.fab').addClass('fab-open');
         $('.overlay').fadeIn(700);
         $('.fab-header').addClass('fab-header-open');
@@ -17,7 +17,7 @@ $(function() {
 
     //fab close function
     function fabClose() {
-        $('.btn-mail').fadeIn(350);
+        $('.upload-btn').fadeIn(350);
         $('.fab').removeClass('fab-open');
         $('.overlay').fadeOut(400);
         $('.fab-header').removeClass('fab-header-open');

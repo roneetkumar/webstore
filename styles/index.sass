@@ -126,6 +126,7 @@ html,body
     box-shadow: $box-shadow-4dp
     transition: all 400ms ease-in-out
     cursor: default
+    overflow: hidden
     &:hover
         box-shadow: $box-shadow-12dp
     .fab-header
@@ -139,12 +140,11 @@ html,body
     .fab-header-badlo
         background: $haribati
 
-    .btn-mail
+    .upload-btn
         @include centered
         position: absolute
-        svg
-            width: 24px
-            height: 24px
+        width: 28px
+        height: 28px
 
     .form-wrapper
         padding: 24px 24px 24px
@@ -202,7 +202,7 @@ html,body
                         height: 22px
                         margin-left: 2px
                         position: absolute
-                        fill: white
+                        fill: #fff
                     svg.done
                         width: 30px
                         height: 30px
