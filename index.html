@@ -26,20 +26,64 @@
 <body>
     <div class="wrapper">
         <div class="overlay"></div>
+        <nav class="nav-bar-wrapper">
+            <div class="nav-header">
+                <div class="nav-pic"></div>
+                <div class="nav-heading">
+                    <h1 class="title">Web-Store</h1>
+                    <h1 class="email">lorem@gmail.com</h1>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="menu-item">
+                    <div class="list-item-pic"></div>
+                    <h1 class="list-item-title">lorem</h1></li>
+                <li class="menu-item">
+                    <div class="list-item-pic"></div>
+                    <h1 class="list-item-title">lorem</h1></li>
+                <li class="menu-item">
+                    <div class="list-item-pic"></div>
+                    <h1 class="list-item-title">lorem</h1></li>
+                <li class="menu-item">
+                    <div class="list-item-pic"></div>
+                    <h1 class="list-item-title">lorem</h1></li>
+                <hr>
+                <li class="menu-item">
+                    <div class="list-item-pic"></div>
+                    <h1 class="list-item-title">lorem</h1></li>
+                <li class="menu-item">
+                    <div class="list-item-pic"></div>
+                    <h1 class="list-item-title">lorem</h1></li>
+                <li class="menu-item">
+                    <div class="list-item-pic"></div>
+                    <h1 class="list-item-title">lorem</h1></li>
+                <li class="menu-item">
+                    <div class="list-item-pic"></div>
+                    <h1 class="list-item-title">lorem</h1></li>
+            </ul>
+        </nav>
         <header id="top">
             <section class="header">
-                <div class="search-bar"></div>
+                <div class="search-bar">
+                    <svg class="nav-btn" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                        <path d="M0 0h48v48H0z" fill="none"/>
+                        <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"/>
+                    </svg>
+                    <input autocomplete="off" class="search-text-field" type="text" name="search" value="" placeholder="Search">
+                </div>
             </section>
         </header>
         <section id="chips-wrapper">
-            <div class="chips">
-                <h1>Editors' Choice</h1></div>
-            <div class="chips">
-                <h1>Offline</h1></div>
-            <div class="chips">
-                <h1>New</h1></div>
-            <div class="chips">
-                <h1>Trendings</h1></div>
+            <ul class="chips-list">
+                <li class="chips">
+                    <h1>Editors' Choice</h1></li>
+                <li class="chips">
+                    <h1>Offline</h1></li>
+                <li class="chips">
+                    <h1>New</h1></li>
+                <li class="chips">
+                    <h1>Trendings</h1></li>
+            </ul>
         </section>
         <section id="grid-wrapper">
             <div class="card">
@@ -222,9 +266,14 @@
             <div class="fab-header-wrapper">
                 <div class="fab-header"> </div>
                 <div class="my-icon"></div>
-                <h1 class="fab-title">Submit Your App</h1>
+                <h1 class="fab-title">Submit</h1>
             </div>
-            <img class="upload-btn" src="assets/upload.svg" alt="upload-svg" />
+
+            <svg class="upload-btn" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <path d="M0 0h48v48H0z" fill="none"/>
+                <path d="M18 32h12V20h8L24 6 10 20h8zm-8 4h28v4H10z"/>
+            </svg>
+
             <div class="form-wrapper">
                 <form action="#" id="form">
                     <input class="text-input" placeholder="Name">
@@ -235,11 +284,11 @@
                 <div class="button-wrapper">
                     <button class="button">
                         <div class="svg-wrapper">
-                            <svg class="send" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+                            <svg class="send-btn" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
                                 <path d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z" />
                                 <path d="M0 0h48v48H0z" fill="none" />
                             </svg>
-                            <svg  class="done" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+                            <svg  class="done-btn" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
                                 <path d="M0 0h48v48H0z" fill="none" />
                                 <path d="M18 32.34L9.66 24l-2.83 2.83L18 38l24-24-2.83-2.83z" />
                             </svg>
@@ -248,7 +297,7 @@
                 </div>
             </div>
         </section>
-        <div class="icon-close">
+        <div class="close-btn">
             <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#fff" />
                 <path d="M0 0h24v24H0z" fill="none" />
@@ -256,5 +305,8 @@
         </div>
     </div>
 </body>
+
+</html>
+
 
 </html>
