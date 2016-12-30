@@ -82,9 +82,10 @@ $(function() {
         });
     });
 
-
-
-
+    $('li.menu-item').on('click',function () {
+        $(this).addClass('menu-item-selected');
+        $('li.menu-item').not(this).removeClass('menu-item-selected');
+    });
 
     //contact-button-ani----------------------------------
     $('.button').on('click', function() {
