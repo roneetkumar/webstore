@@ -1,6 +1,6 @@
 $(function() {
     //hide-elements-on-start-------------------------------------
-    $('.overlay, h1.fab-title, .close-btn, .form-wrapper, svg.done-btn').hide();
+    $('.overlay, .search-overlay, h1.fab-title, .close-btn, .form-wrapper, svg.done-btn, svg.back-btn').hide();
 
     //fab-open-function------------------------------------------
     function fabOpen() {
@@ -60,6 +60,29 @@ $(function() {
     $('.overlay').on('click',function () {
         $('.nav-bar-wrapper').removeClass('nav-khulgya');
     });
+
+    //search-bar-open----------------------------------------
+    $('.search-text-field').on('click',function () {
+        $('.search-bar').addClass('search-active');
+        $('svg.nav-btn').css('display', 'none');
+        $('svg.back-btn').css('display', 'inline-block');
+        $('.search-overlay').fadeIn(195);
+        $('body, html').css({
+            'overflow': 'hidden'
+        });
+    });
+    //search-bar-close----------------------------------------
+    $('.search-overlay, svg.back-btn').on('click',function () {
+        $('.search-bar').removeClass('search-active');
+        $('.search-overlay').fadeOut(195);
+        $('svg.nav-btn').css('display', 'inline-block');
+        $('svg.back-btn').css('display', 'none');
+        $('body, html').css({
+            'overflow': 'visible'
+        });
+    });
+
+
 
 
 
