@@ -32,19 +32,23 @@ html,body
     //nav-bar---------------------------------------------
     .nav-bar-wrapper
         position: fixed
-        width: 256px
+        width: 84.89%
+        max-width: 302px
         height: 100%
         background: #212121
         z-index: 2
-        left: -270px
+        left: -316px
         box-shadow: 4px 0 10px rgba(0,0,0,0.4)
         transition: left 255ms ease-in-out
+        overflow-y: visible
+        &::-webkit-scrollbar
+            display: none
         .nav-header
             position: relative
             width: 100%
-            height: 140px
+            height: 172px
             background: url('../assets/nav-header.png')
-                size: cover
+                size: 302px
                 color: $primary
             box-shadow: $box-shadow-4dp
             .nav-pic
@@ -58,13 +62,13 @@ html,body
 
                 border-radius: 50%
                 display: inline-block
-                margin: 14px
+                margin: 20px 18px
                 z-index: 1
                 border: 2px solid rgba(#fff,.75)
                 box-shadow: $box-shadow-4dp
             .nav-heading
                 position: absolute
-                left: 14px
+                left: 18px
                 h1.title,h1.email
                     font-size: 13px
                     color: #fff
@@ -86,7 +90,7 @@ html,body
                 svg
                     @include centered-y
                     position: absolute
-                    left: 14px
+                    left: 18px
                     width: 24px
                     height: 24px
                     border-radius: 50%
@@ -95,7 +99,7 @@ html,body
                 h1.list-item-title
                     position: relative
                     display: inline-block
-                    left: 60px
+                    left: 72px
                     color: rgba(#fff,.54)
                     font-size: 13px
                     font-weight: lighter
@@ -238,10 +242,14 @@ html,body
             height: 250px
             overflow: hidden
             top: 0
-            img.app-image
+            img.app-img
                 @include centered
                 position: absolute
-                border-radius: 50%
+                width: 60%
+                height: 60%
+                padding: 15px
+                border-radius: 4px
+                box-shadow: $box-shadow-4dp
 
         .title-bar
             width: 100%
