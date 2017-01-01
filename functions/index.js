@@ -86,6 +86,21 @@ $(function() {
         $(this).addClass('menu-item-selected');
         $('li.menu-item').not(this).removeClass('menu-item-selected');
     });
+    //chips------------------------------------------
+    $('.chips').on('click',function () {
+        $(this).toggleClass('chip-clicked');
+
+    });
+
+    $('.ec-chips').on('click',function () {
+        $('.card').not('.select-ec').toggleClass('card-hidden');
+    });
+    $('.new-chips').on('click',function () {
+        $('.card').not('.select-new').toggleClass('card-hidden');
+    });
+    $('.trend-chips').on('click',function () {
+        $('.card').not('.select-trend').toggleClass('card-hidden');
+    });
 
     //contact-button-ani----------------------------------
     $('.button').on('click', function() {
@@ -96,14 +111,6 @@ $(function() {
             $('svg.send-btn').css('display', 'none');
             $('svg.done-btn').css('display', 'block');
         }, 400);
-    });
-
-    $('.chips').on('click',function () {
-        $(this).toggleClass('chip-clicked');
-    });
-
-    $('.add-btn').on('click',function () {
-        $(this).toggleClass('add-btn-clicked');
     });
 
     //header-------------------------------------------------

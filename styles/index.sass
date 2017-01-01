@@ -2,7 +2,7 @@
 @import 'shadows','center-mixins','colors','animations'
 
 //variables--------------------------------
-$chips-scroll-width: 565px
+$chips-scroll-width: 348px
 
 *
     margin: 0
@@ -29,6 +29,7 @@ html,body
     .search-overlay
         top: 0
         z-index: 0
+
     //nav-bar---------------------------------------------
     .nav-bar-wrapper
         position: fixed
@@ -37,7 +38,7 @@ html,body
         height: 100%
         background: #212121
         z-index: 2
-        left: -316px
+        left: -313px
         box-shadow: 4px 0 10px rgba(0,0,0,0.4)
         transition: left 255ms ease-in-out
         overflow-y: visible
@@ -262,21 +263,21 @@ html,body
                 color: #fff
                 font-size: 18px
                 left: 18px
-            .add-btn
+            .open-btn
                 @include centered-y
                 position: absolute
-                right: 8px
+                right: 10px
                 width: 24px
                 height: 24px
-                padding: 4px
+                padding: 8px
                 border-radius: 50%
                 transition: all 225ms ease-in-out
                 &:hover
                     background: rgba(255,255,255,0.1)
                 &:active
                     background: rgba(255,255,255,0.2)
-            .add-btn-clicked
-                transform: translateY(-50%) rotate(135deg)
+    .card-hidden
+        display: none
 //fab-header-wrapper------------------------------------------------------------
 .fab-header-wrapper
     overflow: hidden
