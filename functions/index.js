@@ -1,6 +1,4 @@
 $(function() {
-    //hide-elements-on-start-------------------------------------
-    $('.overlay, h1.fab-title, .close-btn, .form-wrapper, svg.done-btn').hide();
 
     //fab-open-function------------------------------------------
     function fabOpen() {
@@ -10,9 +8,7 @@ $(function() {
         $('.fab-header').addClass('fab-header-open');
         $('h1.fab-title, .close-btn').delay(400).fadeIn();
         $('.form-wrapper').delay(350).fadeIn(0);
-        $('body, html').css({
-            'overflow': 'hidden'
-        });
+        $('body, html').css('overflow', 'hidden');
     }
 
     //fab-close-function------------------------------------------
@@ -24,15 +20,9 @@ $(function() {
         $('h1.fab-title, .close-btn, .form-wrapper').fadeOut(0);
         $('.button').removeClass('f-btn-off');
         $("#form")[0].reset();
-        $('body, html').css({
-            'overflow': 'visible'
-        });
-        $('svg.send-btn').css({
-            'display': 'block'
-        });
-        $('svg.done-btn').css({
-            'display': 'none'
-        });
+        $('body, html').css('overflow', 'visible');
+        $('svg.send-btn').css('display', 'block');
+        $('svg.done-btn').css('display', 'none');
         setTimeout(function() {
             $('.fab-header').removeClass('fab-header-badlo');
         }, 400);
@@ -52,16 +42,64 @@ $(function() {
     $('svg.nav-btn').on('click',function () {
         $('.nav-bar-wrapper').toggleClass('nav-khulgya');
         $('.overlay').fadeToggle(225);
-        $('body, html').css({
-            'overflow': 'hidden'
-        });
+        $('body, html').css('overflow', 'hidden');
     });
     //nav-close-------------------------------------------
-    $('.overlay').on('click',function () {
+    $('.overlay, li.menu-item').on('click',function () {
         $('.nav-bar-wrapper').removeClass('nav-khulgya');
+        $('.overlay').fadeOut(225);
+        $('body, html').css('overflow', 'visible');
     });
 
+    //search-bar-open----------------------------------------
+    $('.search-text-field').on('click',function () {
+        $('.search-bar').addClass('search-active');
+        $('svg.nav-btn').css('display', 'none');
+        $('svg.back-btn').css('display', 'inline-block');
+        $('.search-overlay').fadeIn(195);
+        $('body, html').css('overflow', 'hidden');
+    });
+    //search-bar-close----------------------------------------
+    $('.search-overlay, svg.back-btn').on('click',function () {
+        $('.search-bar').removeClass('search-active');
+        $('.search-overlay').fadeOut(195);
+        $('svg.nav-btn').css('display', 'inline-block');
+        $('svg.back-btn').css('display', 'none');
+        $('body, html').css('overflow', 'visible');
+    });
 
+    $('li.menu-item').on('click',function () {
+        $(this).addClass('menu-item-selected');
+        $('li.menu-item').not(this).removeClass('menu-item-selected');
+    });
+
+    //chips------------------------------------------
+    $('.chips').on('click',function () {
+        $(this).addClass('chip-clicked');
+        $('.chips').not(this).removeClass('chip-clicked');
+    });
+
+    //chip-filter---------------------------------------
+    $('.all-chips, .apps-item').on('click',function () {
+        $('.card').removeClass('card-hidden');
+        $('.card').not('.card').addClass('card-hidden');
+    });
+    $('.games-chips').on('click',function () {
+        $('.card').removeClass('card-hidden');
+        $('.card').not('.select-games').addClass('card-hidden');
+    });
+    $('.ec-chips').on('click',function () {
+        $('.card').removeClass('card-hidden');
+        $('.card').not('.select-ec').addClass('card-hidden');
+    });
+    $('.new-chips').on('click',function () {
+        $('.card').removeClass('card-hidden');
+        $('.card').not('.select-new').addClass('card-hidden');
+    });
+    $('.trend-chips').on('click',function () {
+        $('.card').removeClass('card-hidden');
+        $('.card').not('.select-trend').addClass('card-hidden');
+    });
 
     //contact-button-ani----------------------------------
     $('.button').on('click', function() {
@@ -72,14 +110,6 @@ $(function() {
             $('svg.send-btn').css('display', 'none');
             $('svg.done-btn').css('display', 'block');
         }, 400);
-    });
-
-    $('.chips').on('click',function () {
-        $(this).toggleClass('chip-clicked');
-    });
-
-    $('.add-btn').on('click',function () {
-        $(this).toggleClass('add-btn-clicked');
     });
 
     //header-------------------------------------------------
