@@ -2,7 +2,7 @@
 @import 'shadows','center-mixins','colors','animations'
 
 //variables--------------------------------
-$chips-scroll-width: 348px
+$chips-scroll-width: 500px
 
 *
     margin: 0
@@ -26,6 +26,7 @@ html,body
         background: rgba(0,0,0,0.5)
         position: fixed
         z-index: 2
+        display: none
     .search-overlay
         top: 0
         z-index: 0
@@ -84,10 +85,6 @@ html,body
                 position: relative
                 width: 100%
                 height: 48px
-                // &:hover
-                //     background: rgba(#fff,.1)
-                // &:active
-                //     background: rgba(#fff,.2)
                 svg
                     @include centered-y
                     position: absolute
@@ -154,6 +151,8 @@ html,body
                     background: rgba(0,0,0,0.1)
                 &:active
                     background: rgba(0,0,0,0.2)
+            svg.back-btn
+                display: none       
             //search-text-field---------------------------------------------------------
             .search-text-field
                 @include centered-x
@@ -318,6 +317,7 @@ html,body
         fill: #fff
     //fab-form------------------------------------------------------------------
     .form-wrapper
+        display: none
         padding: 24px 24px 24px
         min-height: 250px
         line-height: 1.25em
@@ -376,6 +376,7 @@ html,body
                         position: absolute
                         fill: #fff
                     svg.done-btn
+                        display: none
                         width: 30px
                         height: 30px
                         margin-left: 0
@@ -422,8 +423,10 @@ h1.fab-title
     font-weight: normal
     cursor: default
     line-height: 56px
+    display: none
 
 .close-btn
+    display: none
     position: fixed
     top: 8px
     right: 8px

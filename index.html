@@ -37,16 +37,12 @@
             </div>
             <!-- -------------------------nav-menu------------------------ -->
             <ul class="nav-menu">
-                <li class="menu-item menu-item-selected">
+                <li class="menu-item menu-item-selected apps-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                         <path d="M0 0h48v48H0z" fill="none"/>
                         <path d="M10 32c0 7.73 6.27 14 14 14s14-6.27 14-14v-8H10v8zM32.25 8.74l4.2-4.2-1.65-1.65-4.61 4.61C28.31 6.57 26.23 6 24 6c-2.23 0-4.31.57-6.19 1.5L13.2 2.89l-1.65 1.65 4.2 4.2C12.28 11.28 10 15.36 10 20v2h28v-2c0-4.64-2.28-8.72-5.75-11.26zM18 18c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2zm12 0c-1.11 0-2-.9-2-2s.89-2 2-2c1.11 0 2 .9 2 2s-.89 2-2 2z"/>
                     </svg>
-                    <h1 class="list-item-title">Web-apps</h1></li>
-                <li class="menu-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M30 15V4H18v11l6 6 6-6zm-15 3H4v12h11l6-6-6-6zm3 15v11h12V33l-6-6-6 6zm15-15l-6 6 6 6h11V18H33z"/>
-                    </svg>
-                    <h1 class="list-item-title">Games</h1></li>
+                    <h1 class="list-item-title">Apps & Games</h1></li>
                 <hr>
                 <li class="menu-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
@@ -94,6 +90,10 @@
         <!-- -------------------------chips-wrapper------------------------ -->
         <section id="chips-wrapper">
             <ul class="chips-list">
+                <li class="chips chip-clicked all-chips">
+                    <h1>All</h1></li>
+                <li class="chips games-chips">
+                    <h1>Games</h1></li>
                 <li class="chips ec-chips">
                     <h1>Editors' Choice</h1></li>
                 <li class="chips new-chips">
@@ -249,7 +249,7 @@
                 </div>
             </div>
             <!-- -------------------------Web-Flap------------------------ -->
-            <div class="card ">
+            <div class="card select-games">
                 <div class="app-img-wrapper">
                     <img style="background: #6cc851;image-rendering: pixelated;height: 114px;popening: 34px 15px;" class="app-img" src="https://pwa.rocks/apps/web-flap.png"></img>
                 </div>
