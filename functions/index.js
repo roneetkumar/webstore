@@ -97,7 +97,7 @@ $(function() {
         searchClose();
     });
 
-    //nav-list----------------------------------------------------
+    //nav-list-selection--------------------------------------------------
     $('li.apps-item, li.bug-list').on('click',function () {
         $('li.apps-item, li.bug-list').addClass('menu-item-selected');
         $('li.bug-list, li.apps-item').not(this).removeClass('menu-item-selected');
@@ -105,7 +105,7 @@ $(function() {
 
     //nav-bug-list-----------------------------------------------
     $('li.bug-list').on('click',function () {
-        $('li.bug-list-opt').fadeToggle(0);
+        $('li.bug-list-opt').toggle();
         // $('.bug-list-opt').not(this).removeClass('menu-item-selected');
     });
     //nav-bug-list-close----------------------------------------------
@@ -113,7 +113,7 @@ $(function() {
         bugListClose();
     });
 
-    //chips------------------------------------------
+    //chips-selection-----------------------------------------
     $('.chips').on('click',function () {
         $(this).addClass('chip-clicked');
         $('.chips').not(this).removeClass('chip-clicked');
@@ -130,17 +130,19 @@ $(function() {
         $('.card').removeClass('card-hidden');
     });
 
+    var card = $('.card');
+
     $('.games-chips').on('click',function () {
-        $('.card').not('.select-games').addClass('card-hidden');
+        card.not('.select-games').addClass('card-hidden');
     });
     $('.ec-chips').on('click',function () {
-        $('.card').not('.select-ec').addClass('card-hidden');
+        card.not('.select-ec').addClass('card-hidden');
     });
     $('.new-chips').on('click',function () {
-        $('.card').not('.select-new').addClass('card-hidden');
+        card.not('.select-new').addClass('card-hidden');
     });
     $('.trend-chips').on('click',function () {
-        $('.card').not('.select-trend').addClass('card-hidden');
+        card.not('.select-trend').addClass('card-hidden');
     });
 
     //contact-button-ani----------------------------------
