@@ -24,9 +24,9 @@ const PRECACHE_URLS = [
     '../index.html?homescreen=1',
     '../?homescreen=1',
     '../styles/index.min.css',
-    '/jquery.min.js',
-    '/index.js',
-    '/manifest.json'
+    'jquery.min.js',
+    'index.js',
+    'manifest.json'
 ];
 
 // The install handler takes care of precaching the resources we always need.
