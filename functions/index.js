@@ -85,6 +85,9 @@ $(function() {
     //nav-open----------------------------------------
     $('.overlay, li.menu-item').on('click',function () {
         navClose();
+        $('.overlay').fadeOut(225);
+        $('body, html').css('overflow', 'visible');
+
     });
 
     //search-bar-open----------------------------------------
@@ -144,6 +147,20 @@ $(function() {
     $('.trend-chips').on('click',function () {
         card.not('.select-trend').addClass('card-hidden');
     });
+
+    $('.about-wrapper-back-btn,.overlay').on('click',function () {
+        $('.about-wrapper').removeClass('about-show');
+        $('.overlay').fadeOut(325);
+        $('body, html').css('overflow', 'visible');
+    });
+
+    $('.about').on('click',function () {
+        $('.nav-bar-wrapper').removeClass('nav-khulgya');
+        bugListClose();
+        $('.about-wrapper').addClass('about-show');
+        $('body, html').css('overflow', 'hidden');
+    });
+
 
     //contact-button-ani----------------------------------
     $('.button').on('click', function() {

@@ -17,6 +17,9 @@ $chips-scroll-width: 500px
 html,body
     background-color: #303030
 
+a
+    text-decoration: none
+
 .wrapper,nav.nav-bar-wrapper,header#top,section#chips-wrapper,section#grid-wrapper,section.fab
     overflow: hidden
     //overlay---------------------------------------------
@@ -30,6 +33,115 @@ html,body
     .search-overlay
         top: 0
         z-index: 0
+
+    .about-wrapper
+        @include centered
+        transform: translate(-50%,-50%) scale(0)
+        position: fixed
+        width: 310px
+        height: 310px
+        background: #212121
+        z-index: 3
+        border-radius: 50%
+        box-shadow: $box-shadow-12dp
+        overflow: hidden
+        transition: transform 225ms ease-in-out, border-radius 325ms ease-in-out
+        @media only screen and (max-width: 350px)
+            width: 100%
+            height: 100%
+            border-radius: 0
+            box-shadow: none
+        .about-app-bar
+            position: relative
+            width: 100%
+            height: 56px
+            background: $primary
+            box-shadow: $box-shadow-4dp
+            svg
+                width: 24px
+                height: 24px
+                margin: 8px
+                padding: 8px
+                border-radius: 50%
+                fill: rgba(#000,.4)
+                &:hover
+                    background: rgba(#000,0.1)
+                &:active
+                    background: rgba(#000,0.2)
+            h1.about-app-bar-title
+                @include centered-y
+                position: absolute
+                font-size: 18px
+                color: rgba(#000,.4)
+                font-weight: 500
+
+        .about-product-wrapper
+            width: 310px
+            height: 310px
+            overflow: scroll
+            position: absolute
+            top: 0
+            z-index: -1
+            @media only screen and (max-width: 350px)
+                width: 100%
+                height: 100%
+            &::-webkit-scrollbar
+                display: none
+            .about-product
+                @include centered-x
+                width: 90%
+                background: #424242
+                margin: 18px 0 0
+                border-radius: 2px
+                box-shadow: $box-shadow-2dp
+                .about-header
+                    position: relative
+                    height: 65px
+                    img.product-icon
+                        @include centered-y
+                        // position: absolute
+                        width: 38px
+                        height: 38px
+                        margin: 0 12px
+                    h1
+                        @include centered-y
+                        position: absolute
+                        font-size: 16px
+                        color: rgba(#fff,.82)
+                        font-weight: 200
+                ul.about-content-list
+                    position: relative
+                    list-style: none
+                    li.about-item
+                        padding: 0 18px
+                        position: relative
+                        height: 56px
+                        &:hover
+                            background: rgba(#000,0.1)
+                        svg.item-icon
+                            @include centered-y
+                            position: absolute
+                            width: 20px
+                            height: 20px
+                            fill: rgba(#fff,.5)
+                        h1.item-title, h1.item-sub-title
+                            @include centered-y
+                            position: absolute
+                            font-size: 12px
+                            color: rgba(#fff,.92)
+                            font-weight: 200
+                            left: 60px
+                            top: 20px
+                        h1.item-sub-title
+                            top: 38px
+                            font-size: 11px
+                            color: rgba(#fff,.5)
+
+                        .without-sub-heading
+                            top: 50% !important
+    .about-show
+        transform: translate(-50%, -50%) scale(1)
+        border-radius: 2px
 
     //nav-bar---------------------------------------------
     .nav-bar-wrapper
@@ -78,15 +190,13 @@ html,body
                     color: #fff
                     font-weight: lighter
                     margin: 2px 0
-                a
-                    text-decoration: none
                     h1.email
                         font-size: 12px
 
         ul.nav-menu
             margin: 12px 0
             list-style: none
-            li.menu-item, li.bug-list, li.bug-list-opt
+            li.menu-item, li.bug-list, li.bug-list-opt, li.about
                 position: relative
                 width: 100%
                 height: 48px
@@ -109,8 +219,8 @@ html,body
                 &:active
                     background: rgba(#fff,.2)
                     svg, h1
-                        color: $accents
-                        fill: $accents
+                        color: $primary
+                        fill: $primary
 
             .bug-list-opt
                 display: none
@@ -121,8 +231,8 @@ html,body
             .menu-item-selected
                 background: rgba(#fff,.2)
                 svg, h1
-                    color: $accents !important
-                    fill: $accents !important
+                    color: $primary !important
+                    fill: $primary !important
             hr
                 @include centered-x
                 display: table
