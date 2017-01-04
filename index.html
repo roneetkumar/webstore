@@ -393,13 +393,13 @@
 <script src="functions/index.js ">
 </script>
 
-<script src="functions/service-worker.js ">
+<script src="service-worker.js ">
 </script>
 
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-            .register('functions/service-worker.js')
+            .register('service-worker.js')
             .then(function() {
                 console.log("Service Worker Registered");
             });
