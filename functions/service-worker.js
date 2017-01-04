@@ -24,6 +24,9 @@ const PRECACHE_URLS = [
     '../index.html?homescreen=1',
     '../?homescreen=1',
     '../styles/index.min.css',
+    '../assets/fav.ico',
+    '../assets/nav-header.png',
+    '../assets/open.svg',
     'jquery.min.js',
     'index.js',
     'manifest.json'
