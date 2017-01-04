@@ -20,16 +20,16 @@ const RUNTIME = 'runtime';
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
     '/',
-    '/index.html',
-    '/index.html?homescreen=1',
-    '/?homescreen=1',
-    '/styles/index.min.css',
-    '/functions/jquery.min.js',
-    '/functions/index.js',
-    '/functions/manifest.json',
+    'index.html',
+    'index.html?homescreen=1',
+    '?homescreen=1',
+    'styles/index.min.css',
+    'functions/jquery.min.js',
+    'functions/index.js',
+    'functions/manifest.json',
     'assets/nav-header.png',
-    '/assets/fav.ico',
-    '/assets/open.svg'
+    'assets/fav.ico',
+    'assets/open.svg'
 
 ];
 
@@ -50,7 +50,7 @@ self.addEventListener('activate', event => {
       return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
     }).then(cachesToDelete => {
       return Promise.all(cachesToDelete.map(cacheToDelete => {
-        return caches.delete(cacheToDelete);
+        return caches.dlete(cacheToDelete);
       }));
     }).then(() => self.clients.claim())
   );
