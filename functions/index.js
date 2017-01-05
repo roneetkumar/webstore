@@ -82,14 +82,34 @@ $(function() {
         navOpen();
     });
 
-    //nav-open----------------------------------------
-    $('.overlay, li.menu-item').on('click',function () {
+    //nav-close----------------------------------------
+    $('.overlay,li.menu-item').on('click',function () {
         navClose();
-        $('.overlay').fadeOut(225);
-        $('body, html').css('overflow', 'visible');
-
     });
 
+    //about-open---------------------------------------
+    $('.about').on('click',function () {
+        $('.nav-bar-wrapper').removeClass('nav-khulgya');
+        bugListClose();
+        $('.about-wrapper').addClass('about-show');
+    });
+
+    $('.support').on('click',function () {
+        $('.nav-bar-wrapper').removeClass('nav-khulgya');
+        bugListClose();
+        $('.support-wrapper').addClass('support-show');
+    });
+
+    //about-open---------------------------------------
+    $('.about-wrapper').on('click',function () {
+        $('.about-wrapper').removeClass('about-show');
+        navClose();
+    });
+
+    $('.support-wrapper').on('click',function () {
+        $('.support-wrapper').removeClass('support-show');
+        navClose();
+    });
     //search-bar-open----------------------------------------
     $('.search-text-field').on('click',function () {
         searchOpen();
@@ -109,11 +129,6 @@ $(function() {
     //nav-bug-list-----------------------------------------------
     $('li.bug-list').on('click',function () {
         $('li.bug-list-opt').toggle();
-        // $('.bug-list-opt').not(this).removeClass('menu-item-selected');
-    });
-    //nav-bug-list-close----------------------------------------------
-    $('li.bug-list-opt, li.menu-item').on('click',function () {
-        bugListClose();
     });
 
     //chips-selection-----------------------------------------
@@ -146,19 +161,6 @@ $(function() {
     });
     $('.trend-chips').on('click',function () {
         card.not('.select-trend').addClass('card-hidden');
-    });
-
-    $('.about-wrapper-back-btn,.overlay').on('click',function () {
-        $('.about-wrapper').removeClass('about-show');
-        $('.overlay').fadeOut(325);
-        $('body, html').css('overflow', 'visible');
-    });
-
-    $('.about').on('click',function () {
-        $('.nav-bar-wrapper').removeClass('nav-khulgya');
-        bugListClose();
-        $('.about-wrapper').addClass('about-show');
-        $('body, html').css('overflow', 'hidden');
     });
 
 
