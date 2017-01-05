@@ -543,11 +543,12 @@
             </svg>
             <!-- -------------------------fab-form------------------------ -->
             <div class="form-wrapper">
-                <form action="#" id="form">
-                    <input class="text-input" placeholder="Name">
-                    <input class="text-input" placeholder="Email">
-                    <input class="text-input" placeholder="Link">
-                    <textarea class="text-input" placeholder="Description" style="height: 49px; overflow-y: hidden;"></textarea>
+                <form action="mail.php" id="form" method="post">
+                    <input class="text-input" placeholder="Name" name="sender">
+                    <input class="text-input" placeholder="Email" name="senderEmail">
+                    <input class="text-input" placeholder="Link" name="link">
+                    <textarea class="text-input" placeholder="Description" name="message" style="height: 49px; overflow-y: hidden;"></textarea>
+                    <input type="submit" name="submit">
                 </form>
                 <!-- -------------------------fab-button------------------------ -->
                 <div class="button-wrapper">
