@@ -71,32 +71,39 @@ a
                     font-weight: 200
             //------------------------------faq-contents-start------------------------
             ul.faq-content-list
+                list-style: none
                 hr
                     @include centered-x
                     display: table
                     width: 95%
                     border: 1px solid rgba(255, 255, 255, 0.05)
                 li
-                    height: auto
-                    h1.item-title, h1.item-sub-title
-                        left: initial
-                        display: block
-                h1.item-sub-title
-                    position: static
-                    line-height: 14px
+                    padding: 10px 0
+                    &:hover
+                        background: rgba(#000,0.1)
+                        h1.item-title
+                            color: $primary !important
+                    h1.item-title
+                        font-size: 12px
+                        padding: 5px 18px 1px
+                        color: rgba(#fff,.92)
+                        font-weight: 200
+                    p.item-sub-title
+                        font-size: 11px
+                        padding: 1px 18px 5px
+                        color: rgba(#fff,.5)
+                        font-weight: 200
                     a
                         color: $accents
-                h1.item-title
-                    position: relative
-                    padding: 18px 0
             //------------------------------faq-contents-end------------------------
-            ul
+            ul.about-content-list,ul.support-content-list
                 position: relative
                 list-style: none
                 li
                     padding: 0 18px
                     position: relative
                     height: 56px
+
                     &:hover
                         background: rgba(#000,0.1)
                         svg
@@ -537,14 +544,11 @@ h1.fab-title
     position: fixed
     top: 8px
     right: 8px
-    z-index: -1
     padding: 8px
     width: 24px
     height: 24px
     border-radius: 50%
     transition: background 200ms ease-in-out
-    @media only screen and(max-width: 425px)
-        z-index: 2
     &:hover
         background: rgba(0,0,0,0.1)
     &:active

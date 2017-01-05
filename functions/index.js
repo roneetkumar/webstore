@@ -88,7 +88,6 @@ $(function() {
     });
 
     //about-open---------------------------------------
-
     $('.about,.support,.faq').on('click',function () {
         $('.nav-bar-wrapper').removeClass('nav-khulgya');
         bugListClose();
@@ -108,7 +107,6 @@ $(function() {
 
     //about-close---------------------------------------
     $('.info-wrapper').on('click',function () {
-        // $('.info-wrapper').removeClass('info-show');
         $('.info-wrapper').removeClass('info-show');
         navClose();
     });
@@ -180,6 +178,14 @@ $(function() {
         setTimeout(function() {
             fabClose();
         }, 1200);
+    });
+    //event.stopPropagation---------------------------------------------------
+    $(".info-wrapper").children().on('click',function(event){
+        event.stopPropagation();
+    });
+
+    $(".fab-header-wrapper").children().on('click',function(event){
+        event.stopPropagation();
     });
 
     //header-------------------------------------------------
