@@ -88,28 +88,31 @@ $(function() {
     });
 
     //about-open---------------------------------------
-    $('.about').on('click',function () {
+
+    $('.about,.support,.faq').on('click',function () {
         $('.nav-bar-wrapper').removeClass('nav-khulgya');
         bugListClose();
-        $('.about-wrapper').addClass('about-show');
+    });
+
+    $('.about').on('click',function () {
+        $('.about-wrapper').addClass('info-show');
     });
 
     $('.support').on('click',function () {
-        $('.nav-bar-wrapper').removeClass('nav-khulgya');
-        bugListClose();
-        $('.support-wrapper').addClass('support-show');
+        $('.support-wrapper').addClass('info-show');
     });
 
-    //about-open---------------------------------------
-    $('.about-wrapper').on('click',function () {
-        $('.about-wrapper').removeClass('about-show');
+    $('.faq').on('click',function () {
+        $('.faq-wrapper').addClass('info-show');
+    });
+
+    //about-close---------------------------------------
+    $('.info-wrapper').on('click',function () {
+        // $('.info-wrapper').removeClass('info-show');
+        $('.info-wrapper').removeClass('info-show');
         navClose();
     });
 
-    $('.support-wrapper').on('click',function () {
-        $('.support-wrapper').removeClass('support-show');
-        navClose();
-    });
     //search-bar-open----------------------------------------
     $('.search-text-field').on('click',function () {
         searchOpen();
@@ -138,17 +141,18 @@ $(function() {
     });
 
     //chip-filter---------------------------------------
+
+    var card = $('.card');
+
     $('.all-chips, .apps-item').on('click',function () {
-        $('.card').not('.card').addClass('card-hidden');
+        card.not('.card').addClass('card-hidden');
         $('.all-chips').addClass('chip-clicked');
         $('.chips').not('.all-chips').removeClass('chip-clicked');
     });
 
     $('.all-chips, .apps-item, .games-chips, .ec-chips, .new-chips, .trend-chips').on('click',function () {
-        $('.card').removeClass('card-hidden');
+        card.removeClass('card-hidden');
     });
-
-    var card = $('.card');
 
     $('.games-chips').on('click',function () {
         card.not('.select-games').addClass('card-hidden');
