@@ -177,6 +177,9 @@ $(function() {
             $('svg.send-btn').css('display', 'none');
             $('svg.done-btn').css('display', 'block');
         }, 400);
+        setTimeout(function() {
+            fabClose();
+        }, 1200);
     });
 
     //header-------------------------------------------------
