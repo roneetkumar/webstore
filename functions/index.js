@@ -35,8 +35,8 @@ $(function() {
         $('body, html').css('overflow', 'hidden');
 
         setTimeout(function() {
-            $('.head').addClass('play');
-            $('.body').addClass('playbody');
+            $('.pic-head').addClass('playhead');
+            $('.pic-body').addClass('playbody');
         }, 500);
     }
 
@@ -47,8 +47,8 @@ $(function() {
         $('body, html').css('overflow', 'visible');
         bugListClose();
         setTimeout(function() {
-            $('.head').removeClass('play');
-            $('.body').removeClass('playbody');
+            $('.pic-head').removeClass('playhead');
+            $('.pic-body').removeClass('playbody');
         }, 500);
     }
 
