@@ -33,7 +33,6 @@ $(function() {
         $('.nav-bar-wrapper').toggleClass('nav-khulgya');
         $('.overlay').fadeIn(225);
         $('body, html').css('overflow', 'hidden');
-
         setTimeout(function() {
             $('.pic-head').addClass('playhead');
             $('.pic-body').addClass('playbody');
