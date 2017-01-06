@@ -138,17 +138,15 @@ a
     //nav-bar---------------------------------------------
     @keyframes play
         0%
-            top: -30px
-
+            transform: translate(-50%,-30px)
         100%
-            top: 3px
+            transform: translate(-50%, 3px)
 
     @keyframes playbody
         0%
-            top: 50%
-
+            transform: translate(-50%, -50%)
         100%
-            top: 65%
+            transform: translate(-50%, -30%)
 
     .nav-bar-wrapper
         position: fixed
@@ -184,21 +182,22 @@ a
                 box-shadow: $box-shadow-4dp
                 overflow: hidden
                 background: #424242
-                .head,.body
+                .pic-head,.pic-body
                     position: absolute
                     left: 50%
-                    transform: translate(-50%)
-                .head
+                    will-change: transform
+                .pic-head
                     z-index: 1
-                    top: -30px
+                    transform: translate(-50%,-30px)
                     img
                         width: 30px
-                .body
+                .pic-body
+                    height: 37px
                     top: 50%
                     transform: translate(-50%, -50%)
                     img
                         width: 37px
-                .play
+                .playhead
                     animation: play 400ms ease-in-out 0ms forwards
                 .playbody
                     animation: playbody 150ms ease-in-out forwards
