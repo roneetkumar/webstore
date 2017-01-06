@@ -42,7 +42,7 @@ a
         height: 100%
         z-index: 3
         overflow: auto
-        transition: transform 325ms ease-in-out
+        transition: transform 225ms ease-in-out
         will-change: transform
         &::-webkit-scrollbar
             display: none
@@ -136,6 +136,20 @@ a
     .info-show
         transform: translate(-50%, 0)
     //nav-bar---------------------------------------------
+    @keyframes play
+        0%
+            top: -30px
+
+        100%
+            top: 3px
+
+    @keyframes playbody
+        0%
+            top: 50%
+
+        100%
+            top: 65%
+
     .nav-bar-wrapper
         position: fixed
         width: 84.89%
@@ -159,20 +173,37 @@ a
                 color: $primary
             box-shadow: $box-shadow-4dp
             .nav-pic
+                position: absolute
                 width: 60px
                 height: 60px
-                background: url('../assets/fav.ico')
-                    size: 84%
-                    position: center
-                    color: #424242
-                    repeat: no-repeat
-
                 border-radius: 50%
                 display: inline-block
                 margin: 20px 18px
                 z-index: 1
                 border: 2px solid rgba(#fff,.75)
                 box-shadow: $box-shadow-4dp
+                overflow: hidden
+                background: #424242
+                .head,.body
+                    position: absolute
+                    left: 50%
+                    transform: translate(-50%)
+                .head
+                    z-index: 1
+                    top: -30px
+                    img
+                        width: 30px
+                .body
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    img
+                        width: 37px
+                .play
+                    animation: play 400ms ease-in-out 0ms forwards
+                .playbody
+                    animation: playbody 150ms ease-in-out forwards
+                    animation-delay: 252ms
+
             .nav-heading
                 position: absolute
                 bottom: 18px
@@ -182,8 +213,9 @@ a
                     color: #fff
                     font-weight: lighter
                     margin: 2px 0
-                    h1.email
-                        font-size: 12px
+                h1.email
+                    font-size: 12px
+
 
         ul.nav-menu
             margin: 12px 0

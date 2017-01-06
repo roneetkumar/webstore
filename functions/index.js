@@ -33,6 +33,11 @@ $(function() {
         $('.nav-bar-wrapper').toggleClass('nav-khulgya');
         $('.overlay').fadeIn(225);
         $('body, html').css('overflow', 'hidden');
+
+        setTimeout(function() {
+            $('.head').addClass('play');
+            $('.body').addClass('playbody');
+        }, 500);
     }
 
     //nav-close-function------------------------------------------
@@ -41,6 +46,10 @@ $(function() {
         $('.overlay').fadeOut(225);
         $('body, html').css('overflow', 'visible');
         bugListClose();
+        setTimeout(function() {
+            $('.head').removeClass('play');
+            $('.body').removeClass('playbody');
+        }, 500);
     }
 
     //search-open-function------------------------------------------
@@ -164,7 +173,6 @@ $(function() {
     $('.trend-chips').on('click',function () {
         card.not('.select-trend').addClass('card-hidden');
     });
-
 
     //contact-button-ani----------------------------------
     $('.button').on('click', function() {
