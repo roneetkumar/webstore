@@ -33,10 +33,6 @@ $(function() {
         $('.nav-bar-wrapper').toggleClass('nav-khulgya');
         $('.overlay').fadeIn(225);
         $('body, html').css('overflow', 'hidden');
-        setTimeout(function() {
-            $('.pic-head').addClass('playhead');
-            $('.pic-body').addClass('playbody');
-        }, 500);
     }
 
     //nav-close-function------------------------------------------
@@ -45,10 +41,6 @@ $(function() {
         $('.overlay').fadeOut(225);
         $('body, html').css('overflow', 'visible');
         bugListClose();
-        setTimeout(function() {
-            $('.pic-head').removeClass('playhead');
-            $('.pic-body').removeClass('playbody');
-        }, 500);
     }
 
     //search-open-function------------------------------------------
@@ -156,7 +148,7 @@ $(function() {
         $('.chips').not('.all-chips').removeClass('chip-clicked');
     });
 
-    $('.all-chips, .apps-item, .games-chips, .ec-chips, .new-chips, .trend-chips').on('click',function () {
+    $('.all-chips, .apps-item, .games-chips, .ec-chips, .news-chips, .trend-chips, .tools-chips').on('click',function () {
         card.removeClass('card-hidden');
     });
 
@@ -166,11 +158,14 @@ $(function() {
     $('.ec-chips').on('click',function () {
         card.not('.select-ec').addClass('card-hidden');
     });
-    $('.new-chips').on('click',function () {
-        card.not('.select-new').addClass('card-hidden');
+    $('.news-chips').on('click',function () {
+        card.not('.select-news').addClass('card-hidden');
     });
     $('.trend-chips').on('click',function () {
         card.not('.select-trend').addClass('card-hidden');
+    });
+    $('.tools-chips').on('click',function () {
+        card.not('.select-tools').addClass('card-hidden');
     });
 
     //contact-button-ani----------------------------------

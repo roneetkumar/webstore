@@ -2,7 +2,7 @@
 @import 'shadows','center-mixins','colors','animations'
 
 //variables--------------------------------
-$chips-scroll-width: 500px
+$chips-scroll-width: 595px
 
 *
     margin: 0
@@ -79,13 +79,14 @@ a
                     border: 1px solid rgba(255, 255, 255, 0.05)
                 li
                     padding: 10px 0
+                    height: 70px
                     &:hover
                         background: rgba(#000,0.1)
                         h1.item-title
                             color: $primary !important
                     h1.item-title
                         font-size: 12px
-                        padding: 5px 18px 1px
+                        padding: 5px 18px
                         color: rgba(#fff,.92)
                         font-weight: 200
                     p.item-sub-title
@@ -135,18 +136,6 @@ a
     .info-show
         transform: translate(-50%, 0)
     //nav-bar---------------------------------------------
-    @keyframes play
-        0%
-            transform: translate(-50%,-30px)
-        100%
-            transform: translate(-50%, 3px)
-
-    @keyframes playbody
-        0%
-            transform: translate(-50%, -50%)
-        100%
-            transform: translate(-50%, -30%)
-
     .nav-bar-wrapper
         position: fixed
         width: 84.89%
@@ -179,28 +168,12 @@ a
                 z-index: 1
                 border: 2px solid rgba(#fff,.75)
                 box-shadow: $box-shadow-4dp
-                overflow: hidden
+                // overflow: hidden
                 background: #424242
-                .pic-head,.pic-body
-                    position: absolute
-                    left: 50%
-                    will-change: transform
-                .pic-head
-                    z-index: 1
-                    transform: translate(-50%,-30px)
-                    img
-                        width: 30px
-                .pic-body
-                    height: 37px
-                    top: 50%
-                    transform: translate(-50%, -50%)
-                    img
-                        width: 37px
-                .playhead
-                    animation: play 400ms ease-in-out 0ms forwards
-                .playbody
-                    animation: playbody 150ms ease-in-out forwards
-                    animation-delay: 252ms
+                svg#nav-logo-wrapper
+                    @include centered
+                    width: 50px
+                    height: 50px
 
             .nav-heading
                 position: absolute
@@ -213,7 +186,6 @@ a
                     margin: 2px 0
                 h1.email
                     font-size: 12px
-
 
         ul.nav-menu
             margin: 12px 0
