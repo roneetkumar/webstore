@@ -147,7 +147,7 @@ $(function() {
         $('.all-chips').addClass('chip-clicked');
         $('.chips').not('.all-chips').removeClass('chip-clicked');
     });
-
+    
     $('.all-chips, .apps-item, .games-chips, .ec-chips, .news-chips, .trend-chips, .tools-chips').on('click',function () {
         card.removeClass('card-hidden');
     });
