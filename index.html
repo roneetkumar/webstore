@@ -312,7 +312,7 @@
                             <path d="M0 0h48v48H0z" fill="none"/>
                             <path d="M40 22H15.66l11.17-11.17L24 8 8 24l16 16 2.83-2.83L15.66 26H40v-4z"/>
                         </svg>
-                    <input autocomplete="off" class="search-text-field" type="text" name="search" value="" placeholder="Search">
+                    <input autocomplete="off" id="myinput" onkeyup="searchFunction()" class="search-text-field" type="text" name="search" value="" placeholder="Search">
                 </div>
             </section>
         </header>
@@ -334,417 +334,421 @@
             </ul>
         </section>
         <!-- -------------------------card-grip-wrapper------------------------ -->
-        <section id="grid-wrapper">
+        <ul id="grid-wrapper">
             <!-- -------------------------Flipkart------------------------ -->
-            <div class="card select-ec select-trend">
+            <li class="card select-ec select-trend">
                 <div class="app-img-wrapper"><img style="background: #0d69b3;" class="app-img" src="https://pwa.rocks/apps/flipkart.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Flipkart </span>
+                <div class="title-bar">
+                    <a href="#" class="card-title">Flipkart</a>
                     <a href="https://www.flipkart.com" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Spaces------------------------ -->
-            <div class="card select-ec select-trend">
+            <li class="card select-ec select-trend">
                 <div class="app-img-wrapper"><img style="background: #e1e1e1;" class="app-img" src="https://pwa.rocks/apps/spaces.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Spaces </span>
+                <div class="title-bar">
+                    <a href="#" class="card-title">Spaces</a>
                     <a href="https://spaces.google.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Flipboard------------------------ -->
-            <div class="card select-ec select-trend select-news">
+            <li class="card select-ec select-trend select-news">
                 <div class="app-img-wrapper"><img style="background: #cd0000;" class="app-img" src="https://pwa.rocks/apps/flipboard.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Flipboard </span>
+                <div class="title-bar">
+                    <a href="#" class="card-title">Flipboard</a>
                     <a href="https://flipboard.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Offline Wiki------------------------ -->
-            <div class="card select-ec">
+            <li class="card select-ec">
                 <div class="app-img-wrapper"><img style="background: #e1e1e1;" class="app-img" src="https://pwa.rocks/apps/wiki-offline.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Offline Wiki </span>
+                <div class="title-bar">
+                    <a href="#" class="card-title">Offline Wiki</a>
                     <a href="https://wiki-offline.jakearchibald.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Jalantikus------------------------ -->
-            <div class="card select-news">
+            <li class="card select-news">
                 <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/jalantikus.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Jalantikus </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Jalantikus </a>
                     <a href="https://app.jalantikus.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Telegram------------------------ -->
-            <div class="card select-trend">
+            <li class="card select-trend">
                 <div class="app-img-wrapper"><img style="background: #c8daea;" class="app-img" src="https://pwa.rocks/apps/telegram.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Telegram </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Telegram </a>
                     <a href="https://web.telegram.org/#/login" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Reacthn------------------------ -->
-            <div class="card select-news">
+            <li class="card select-news">
                 <div class="app-img-wrapper"><img style="background: #00d8ff;" class="app-img" src="https://pwa.rocks/apps/reacthn.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Reacthn </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Reacthn </a>
                     <a href="https://react-hn.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------NASA------------------------ -->
-            <div class="card s">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" src="https://pwa.rocks/apps/nasa_logo.svg"></img>
                 </div>
-                <div class="title-bar"> <span> NASA </span>
+                <div class="title-bar"> <a href="#" class="card-title"> NASA </a>
                     <a href="https://code.nasa.gov/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Voice Memo------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #673AB7;" class="app-img" src="https://pwa.rocks/apps/voice-memos.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Voice Memo </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Voice Memo </a>
                     <a href="https://voice-memos.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Expense Manager------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #2196F3;" class="app-img" src="https://pwa.rocks/apps/expense-manager.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Expense Manager </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Expense Manager </a>
                     <a href="https://demo.vaadin.com/expense-manager/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Pokedex------------------------ -->
-            <div class="card select-ec">
+            <li class="card select-ec">
                 <div class="app-img-wrapper"><img style="background: #399494; image-rendering: pixelated;image-rendering:-moz-crisp-edges" class="app-img" src="https://pwa.rocks/apps/pokedex.png"></img>
                 </div>
-                <div class="title-bar"> <span> Pokedex </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Pokedex </a>
                     <a href="https://www.pokedex.org/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Selio------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #D32F2F;" class="app-img" src="https://pwa.rocks/apps/selio.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Selio </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Selio </a>
                     <a href="https://www.selioapp.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Snapdrop------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/snapdrop.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Snapdrop </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Snapdrop </a>
                     <a href="https://snapdrop.net/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Podle------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #009688;" class="app-img" src="https://pwa.rocks/apps/podle.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Podle </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Podle </a>
                     <a href="https://podle.audio/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Housing.com------------------------ -->
-            <div class="card select-ec">
+            <li class="card select-ec">
                 <div class="app-img-wrapper"><img style="background: #fbdd00;" class="app-img" src="https://pwa.rocks/apps/housing.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Housing.com </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Housing.com </a>
                     <a href="https://housing.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Piiko------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" src="https://pwa.rocks/apps/piiko.png"></img>
                 </div>
-                <div class="title-bar"> <span> Piiko </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Piiko </a>
                     <a href="https://www.piiko.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Progressive Beer------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #fbdd00;" class="app-img" src="https://pwa.rocks/apps/prog-beer.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Progressive Beer </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Progressive Beer </a>
                     <a href="https://deanhume.github.io/beer/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Google I/O------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #78909c;" class="app-img" src="https://pwa.rocks/apps/google-io.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Google I/O </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Google I/O </a>
                     <a href="https://events.google.com/io2016/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Web Flap------------------------ -->
-            <div class="card select-games">
+            <li class="card select-games">
                 <div class="app-img-wrapper">
                     <img style="background: #6cc851;image-rendering: pixelated;image-rendering: -moz-crisp-edges;height: 114px;padding: 34px 15px;" class="app-img" src="https://pwa.rocks/apps/web-flap.png"></img>
                 </div>
-                <div class="title-bar"> <span> Web Flap </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Web Flap </a>
                     <a href="https://www.progressivewebflap.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Dev Opera------------------------ -->
-            <div class="card s">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/dev-opera.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Dev Opera </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Dev Opera </a>
                     <a href="https://dev.opera.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Meatscope------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #2196F3;" class="app-img" src="https://pwa.rocks/apps/meatscope.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Meatscope </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Meatscope </a>
                     <a href="https://meatscope.camera/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Ali Express------------------------ -->
-            <div class="card select-ec select-trend">
+            <li class="card select-ec select-trend">
                 <div class="app-img-wrapper"><img style="background: #f73f16;" class="app-img" src="https://pwa.rocks/apps/aliexpress.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Ali Express </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Ali Express </a>
                     <a href="https://m.aliexpress.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Guitar Tuner------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #b0bec5;" class="app-img" src="https://pwa.rocks/apps/guitar-tuner.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Guitar Tuner </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Guitar Tuner </a>
                     <a href="https://guitar-tuner.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Sound Slice------------------------ -->
-            <div class="card ">
+            <li class="card ">
                 <div class="app-img-wrapper"><img style="background: #60506f;" class="app-img" src="https://pwa.rocks/apps/soundslice.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Sound Slice </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Sound Slice </a>
                     <a href="https://www.soundslice.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Web NFC Shoping Cart------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #b4b672;" class="app-img" src="https://pwa.rocks/apps/webnfc.svg"></img>
                 </div>
-                <div class="title-bar"> <span>NFC Shopping Cart </span>
+                <div class="title-bar"> <a href="#" class="card-title">NFC Shopping Cart </a>
                     <a href="https://webnfc-shoppingcart.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------SVG OMG------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #323faa;" class="app-img" src="https://pwa.rocks/apps/svgomg.svg"></img>
                 </div>
-                <div class="title-bar"> <span> SVG OMG </span>
+                <div class="title-bar"> <a href="#" class="card-title"> SVG OMG </a>
                     <a href="https://jakearchibald.github.io/svgomg/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Geo News------------------------ -->
-            <div class="card select-news">
+            <li class="card select-news">
                 <div class="app-img-wrapper"><img style="background: #607d8b;" class="app-img" src="https://pwa.rocks/apps/geo-news.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Geo News </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Geo News </a>
                     <a href="https://m.geo.tv/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Financial Times------------------------ -->
-            <div class="card select-trend select-news">
+            <li class="card select-trend select-news">
                 <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/financial-times.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Financial Times </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Financial Times </a>
                     <a href="https://app.ft.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------English Accents Map------------------------ -->
-            <div class="card select-trend">
+            <li class="card select-trend">
                 <div class="app-img-wrapper"><img style="background: #3F51B5;" class="app-img" src="https://pwa.rocks/apps/english-accents-map.svg"></img>
                 </div>
-                <div class="title-bar"> <span> English Accents Map </span>
+                <div class="title-bar"> <a href="#" class="card-title"> English Accents Map </a>
                     <a href="https://www.englishaccentsmap.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------The Session------------------------ -->
-            <div class="card select-trend">
+            <li class="card select-trend">
                 <div class="app-img-wrapper"><img style="background: #FFC107;" class="app-img" src="https://pwa.rocks/apps/session.svg"></img>
                 </div>
-                <div class="title-bar"> <span> The Session </span>
+                <div class="title-bar"> <a href="#" class="card-title"> The Session </a>
                     <a href="https://thesession.org/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Snapwat------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #987fff;" class="app-img" src="https://pwa.rocks/apps/snapwat.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Snapwat </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Snapwat </a>
                     <a href="https://snapw.at/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Inbox Attack------------------------ -->
-            <div class="card select-games">
+            <li class="card select-games">
                 <div class="app-img-wrapper"><img style="background: #F44336;" class="app-img" src="https://pwa.rocks/apps/inbox-attack.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Inbox Attack </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Inbox Attack </a>
                     <a href="https://andreasbovens.github.io/inbox-attack/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------bubble------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #987fff;" class="app-img" src="https://pwa.rocks/apps/bubble.svg"></img>
                 </div>
-                <div class="title-bar"> <span> bubble </span>
+                <div class="title-bar"> <a href="#" class="card-title"> bubble </a>
                     <a href="https://samsunginternet.github.io/bubble/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Smaller Pictures------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #f1c40e;" class="app-img" src="https://pwa.rocks/apps/smaller-pictures.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Smaller Pictures </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Smaller Pictures </a>
                     <a href="https://smaller-pictures.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------The Billings Gazette------------------------ -->
-            <div class="card select-news">
+            <li class="card select-news">
                 <div class="app-img-wrapper"><img style="background: #231f20;" class="app-img" src="https://pwa.rocks/apps/billings-gazette.svg"></img>
                 </div>
-                <div class="title-bar"> <span> The Billings Gazette </span>
+                <div class="title-bar"> <a href="#" class="card-title"> The Billings Gazette </a>
                     <a href="https://billingsgazette.leeaws.com/pwa/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Air Horner------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #1194f6;" class="app-img" src="https://pwa.rocks/apps/air-horner.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Air Horner </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Air Horner </a>
                     <a href="https://airhorner.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Digikala------------------------ -->
-            <div class="card select-trend">
+            <li class="card select-trend">
                 <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" src="https://pwa.rocks/apps/digikala.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Digikala </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Digikala </a>
                     <a href="https://www.digikala.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Paper Planes------------------------ -->
-            <div class="card select-games">
+            <li class="card select-games">
                 <div class="app-img-wrapper"><img style="background: #987fff;" class="app-img" src="https://pwa.rocks/apps/paper-planes.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Paper Planes </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Paper Planes </a>
                     <a href="https://paperplanes.world/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Firefox Platform Status----------------- -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #01579b;" class="app-img" src="https://pwa.rocks/apps/firefox.png"></img>
                 </div>
-                <div class="title-bar"> <span> Firefox Status </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Firefox Status </a>
                     <a href="https://platform-status.mozilla.org/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Get Kana!------------------------ -->
-            <div class="card select-games">
+            <li class="card select-games">
                 <div class="app-img-wrapper"><img style="background: #9e9e9e;" class="app-img" src="https://pwa.rocks/apps/get-kana.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Get Kana! </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Get Kana! </a>
                     <a href="https://getkana.com/app" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------BaBe------------------------ -->
-            <div class="card select-news">
+            <li class="card select-news">
                 <div class="app-img-wrapper"><img style="background: #ffc107;" class="app-img" src="https://pwa.rocks/apps/babe.svg"></img>
                 </div>
-                <div class="title-bar"> <span> BaBe </span>
+                <div class="title-bar"> <a href="#" class="card-title"> BaBe </a>
                     <a href="https://app.babe.co.id/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Resilient Web Design------------------------ -->
-            <div class="card select-trend">
+            <li class="card select-trend">
                 <div class="app-img-wrapper"><img style="background: #5f7995;" class="app-img" src="https://pwa.rocks/apps/resilient-web-design.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Resilient Web Design </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Resilient Web Design </a>
                     <a href="https://resilientwebdesign.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Oumy------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/oumy.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Oumy </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Oumy </a>
                     <a href="https://www.oumy.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Emojoy------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #F48FB1;" class="app-img" src="https://pwa.rocks/apps/emojoy.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Emojoy </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Emojoy </a>
                     <a href="https://jakearchibald-gcm.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------2048 Puzzle------------------------ -->
-            <div class="card select-games">
+            <li class="card select-games">
                 <div class="app-img-wrapper"><img style="background: #edc500;" class="app-img" src="https://pwa.rocks/apps/puzzle-2048.svg"></img>
                 </div>
-                <div class="title-bar"> <span> 2048 Puzzle </span>
+                <div class="title-bar"> <a href="#" class="card-title"> 2048 Puzzle </a>
                     <a href="https://app.ft.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Datememe------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #00BCD4;" class="app-img" src="https://pwa.rocks/apps/datememe.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Datememe </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Datememe </a>
                     <a href="https://2048-opera-pwa.surge.sh/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------QR Code Scanner------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #5f7d8c;" class="app-img" src="https://pwa.rocks/apps/qrcode.svg"></img>
                 </div>
-                <div class="title-bar"> <span> QR Code Scanner </span>
+                <div class="title-bar"> <a href="#" class="card-title"> QR Code Scanner </a>
                     <a href="https://qrcodescan.in/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------PolyMail------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #f44336;" class="app-img" src="https://pwa.rocks/apps/poly-mail.svg"></img>
                 </div>
-                <div class="title-bar"> <span> PolyMail </span>
+                <div class="title-bar"> <a href="#" class="card-title"> PolyMail </a>
                     <a href="https://poly-mail.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Wave-PD1------------------------ -->
-            <div class="card select-tools">
+            <li class="card select-tools">
                 <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" src="https://pwa.rocks/apps/wave-pd1.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Wave-PD1 </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Wave-PD1 </a>
                     <a href="https://alexgibson.github.io/wavepad/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------RioRun------------------------ -->
-            <div class="card">
+            <li class="card">
                 <div class="app-img-wrapper"><img style="background: #1c92c8;" class="app-img" src="https://pwa.rocks/apps/riorun.svg"></img>
                 </div>
-                <div class="title-bar"> <span> RioRun </span>
+                <div class="title-bar"> <a href="#" class="card-title"> RioRun </a>
                     <a href="https://riorun.theguardian.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
+            </li>
             <!-- -------------------------Konga EZ------------------------ -->
-            <div class="card select-trend">
+            <li class="card select-trend">
                 <div class="app-img-wrapper"><img style="background: #335c88;" class="app-img" src="https://pwa.rocks/apps/konga.svg"></img>
                 </div>
-                <div class="title-bar"> <span> Konga EZ </span>
+                <div class="title-bar"> <a href="#" class="card-title"> Konga EZ </a>
                     <a href="https://www.konga.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
                 </div>
-            </div>
-        </section>
+            </li>
+        </ul>
         <!-- -------------------------fab------------------------ -->
         <section class="fab">
             <div class="fab-header-wrapper">

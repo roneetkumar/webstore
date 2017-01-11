@@ -147,7 +147,7 @@ $(function() {
         $('.all-chips').addClass('chip-clicked');
         $('.chips').not('.all-chips').removeClass('chip-clicked');
     });
-    
+
     $('.all-chips, .apps-item, .games-chips, .ec-chips, .news-chips, .trend-chips, .tools-chips').on('click',function () {
         card.removeClass('card-hidden');
     });
@@ -213,3 +213,22 @@ $(function() {
         }
     });
 });
+
+//search--------------------------------------
+function searchFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myinput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("grid-wrapper");
+    li = ul.getElementsByTagName('li');
+
+    // jo catch ni karte
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
