@@ -313,6 +313,43 @@
                             <path d="M40 22H15.66l11.17-11.17L24 8 8 24l16 16 2.83-2.83L15.66 26H40v-4z"/>
                         </svg>
                     <input autocomplete="off" id="myinput" onkeyup="searchFunction()" class="search-text-field" type="text" name="search" value="" placeholder="Search">
+                    <svg class="search-btn" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                        <path d="M31 28h-1.59l-.55-.55C30.82 25.18 32 22.23 32 19c0-7.18-5.82-13-13-13S6 11.82 6 19s5.82 13 13 13c3.23 0 6.18-1.18 8.45-3.13l.55.55V31l10 9.98L40.98 38 31 28zm-12 0c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9z"/>
+                        <path d="M0 0h48v48H0z" fill="none"/>
+                    </svg>
+                    <svg class="search-close-btn" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                        <path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/>
+                        <path d="M0 0h48v48H0z" fill="none"/>
+                    </svg>
+
+                    <hr>
+                    <ul class="search-trending-list">
+                        <li class="search-trending-list-item">
+                            <svg class="trending-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                                <path d="M32 12l4.59 4.59-9.76 9.75-8-8L4 33.17 6.83 36l12-12 8 8 12.58-12.59L44 24V12z"/>
+                                <path d="M0 0h48v48H0z" fill="none"/>
+                            </svg>
+                            <h1>Flipkart</h1></li>
+                        <li class="search-trending-list-item">
+                            <svg class="trending-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                                <path d="M32 12l4.59 4.59-9.76 9.75-8-8L4 33.17 6.83 36l12-12 8 8 12.58-12.59L44 24V12z"/>
+                                <path d="M0 0h48v48H0z" fill="none"/>
+                            </svg>
+                            <h1>Telegram</h1></li>
+                        <li class="search-trending-list-item">
+                            <svg class="trending-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                                <path d="M32 12l4.59 4.59-9.76 9.75-8-8L4 33.17 6.83 36l12-12 8 8 12.58-12.59L44 24V12z"/>
+                                <path d="M0 0h48v48H0z" fill="none"/>
+                            </svg>
+                            <h1>Flipboard</h1></li>
+                        <li class="search-trending-list-item">
+                            <svg class="trending-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                                <path d="M32 12l4.59 4.59-9.76 9.75-8-8L4 33.17 6.83 36l12-12 8 8 12.58-12.59L44 24V12z"/>
+                                <path d="M0 0h48v48H0z" fill="none"/>
+                            </svg>
+                            <h1>Ali Express</h1></li>
+                    </ul>
+
                 </div>
             </section>
         </header>
@@ -770,10 +807,10 @@
             <!-- -------------------------fab-form------------------------ -->
             <div class="form-wrapper">
                 <form action="https://formspree.io/roneetparida@gmail.com" id="form" method="post">
-                    <input class="text-input" placeholder="Name" name="sender">
-                    <input class="text-input" placeholder="Email" name="senderEmail">
-                    <input class="text-input" placeholder="Link" name="link">
-                    <textarea class="text-input" placeholder="Description" name="description" style="height: 49px; overflow-y: hidden;"></textarea>
+                    <input type="text" class="text-input" placeholder="Name" name="senderName" required>
+                    <input type="email" class="text-input" placeholder="Email" name="_replyto" required>
+                    <input type="url" class="text-input" placeholder="Link" name="link" required>
+                    <textarea type="text" class="text-input" placeholder="Description" name="description" style="height: 49px; overflow-y: hidden;" required></textarea>
                 </form>
                 <!-- -------------------------fab-button------------------------ -->
                 <div class="button-wrapper">

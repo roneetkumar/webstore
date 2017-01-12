@@ -105,20 +105,37 @@ $(function() {
         $('.faq-wrapper').addClass('info-show');
     });
 
-    //about-close---------------------------------------
+    //about-close--------------------------------------------------------
     $('.info-wrapper').on('click',function () {
         $('.info-wrapper').removeClass('info-show');
         navClose();
     });
 
-    //search-bar-open----------------------------------------
-    $('.search-text-field').on('click',function () {
-        searchOpen();
+    //search-trending-list-input-fill-----------------------------------
+    $('.search-trending-list-item').on('click',function () {
+        var listInput = $(this).find('h1').html();
+        $('#myinput').val(listInput);
     });
 
-    //search-bar-close----------------------------------------
-    $('.search-overlay, svg.back-btn').on('click',function () {
-        searchClose();
+    //search-input-value-reset-------------------------------------------
+    $('svg.back-btn, svg.search-close-btn').on('click',function () {
+        $('.cards').css('display','initial');
+        $('input.search-text-field').val('');
+    });
+
+    //search-bar-open-and-close--------------------------------------
+    $('.search-text-field, svg.search-btn,.search-overlay, svg.back-btn').on('click',function () {
+        if($('.search-bar').hasClass('search-active')) {
+            searchClose();
+            searchFunction();
+            $('svg.search-btn').css('display', 'none');
+            $('svg.search-close-btn').css('display', 'inline-block');
+        }
+        else {
+            searchOpen();
+            $('svg.search-btn').css('display', 'inline-block');
+            $('svg.search-close-btn').css('display', 'none');
+        }
     });
 
     //nav-list-selection--------------------------------------------------
@@ -139,7 +156,6 @@ $(function() {
     });
 
     //chip-filter---------------------------------------
-
     var card = $('.card');
 
     $('.all-chips, .apps-item').on('click',function () {
@@ -170,17 +186,29 @@ $(function() {
 
     //contact-button-ani----------------------------------
     $('.button').on('click', function() {
-        $('.button').addClass('f-btn-off');
-        $('.fab-header').addClass('fab-header-badlo');
-        // $("#form")[0].reset();
-        setTimeout(function() {
-            $('svg.send-btn').css('display', 'none');
-            $('svg.done-btn').css('display', 'block');
-        }, 400);
-        setTimeout(function() {
-            fabClose();
-        }, 1200);
+        function validateForm() {
+        var isValid = true;
+        $('#form').each(function() {
+        if ( $(this).val() === '' )
+            isValid = false;
+        });
+        return isValid;
+        }
+
+        if(validateForm() === true)
+        {
+            $('.button').addClass('f-btn-off');
+            $('.fab-header').addClass('fab-header-badlo');
+            setTimeout(function() {
+                $('svg.send-btn').css('display', 'none');
+                $('svg.done-btn').css('display', 'block');
+            }, 400);
+            setTimeout(function() {
+                fabClose();
+            }, 1200);
+        }
     });
+
     //event.stopPropagation---------------------------------------------------
     $(".info-wrapper").children().on('click',function(event){
         event.stopPropagation();

@@ -259,7 +259,7 @@ a
             overflow: hidden
             transition: height 195ms ease-in-out
             z-index: 2
-            svg.nav-btn,svg.back-btn
+            svg.nav-btn, svg.back-btn, svg.search-btn, svg.search-close-btn
                 position: relative
                 width: 24px
                 height: 24px
@@ -273,8 +273,36 @@ a
                     background: rgba(0,0,0,0.1)
                 &:active
                     background: rgba(0,0,0,0.2)
-            svg.back-btn
+            svg.back-btn, svg.search-close-btn
                 display: none
+            svg.search-btn, svg.search-close-btn
+                position: absolute
+                right: 6px
+                left: initial
+            hr
+                @include centered-x
+                display: table
+                width: 100%
+                border: 1px solid rgba(0, 0, 0, 0.15)
+            ul.search-trending-list
+                li.search-trending-list-item
+                    position: relative
+                    svg.trending-icon
+                        @include centered-y
+                        position: absolute
+                        left: 12px
+                        width: 24px
+                        height: 24px
+                        fill: rgba(#000,.54)
+
+                    h1
+                        font-size: 12px
+                        font-weight: 500
+                        color: rgba(0, 0, 0, .82)
+                        padding: 12px 58px
+                        &:hover
+                            background: rgba(0, 0, 0, 0.15)
+
             //search-text-field---------------------------------------------------------
             .search-text-field
                 @include centered-x
@@ -298,9 +326,9 @@ a
                         color: rgba(0,0,0,0.54)
                 &:focus
                     &::-webkit-input-placeholder
-                        color: rgba(0,0,0,0.87)
+                        color: rgba(0,0,0,0.54)
         .search-active
-            height: 192px
+            height: 226px
 
     .header-fixed
         position: fixed
