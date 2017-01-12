@@ -119,8 +119,8 @@ $(function() {
 
     //search-input-value-reset-------------------------------------------
     $('svg.back-btn, svg.search-close-btn').on('click',function () {
-        $('.cards').css('display','initial');
         $('input.search-text-field').val('');
+        $('.cards').css('display','initial')
     });
 
     //search-bar-open-and-close--------------------------------------
@@ -138,6 +138,11 @@ $(function() {
         }
     });
 
+    $('svg.back-btn, svg.search-close-btn, .search-overlay').on('click',function () {
+        $('svg.search-close-btn').css('display', 'none');
+        $('svg.search-btn').css('display', 'inline-block');
+    });
+    
     //nav-list-selection--------------------------------------------------
     $('li.apps-item, li.bug-list').on('click',function () {
         $('li.apps-item, li.bug-list').addClass('menu-item-selected');
