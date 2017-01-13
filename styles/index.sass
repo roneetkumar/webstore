@@ -257,8 +257,10 @@ a
             top: 8px
             box-shadow: $box-shadow-2dp
             overflow: hidden
-            transition: height 195ms ease-in-out
+            transition: height 355ms ease-in-out, box-shadow 195ms ease-in-out
             z-index: 2
+            &:hover
+                box-shadow: $box-shadow-4dp
             svg.nav-btn, svg.back-btn, svg.search-btn, svg.search-close-btn
                 position: relative
                 width: 24px
