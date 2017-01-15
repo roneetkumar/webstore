@@ -266,3 +266,22 @@ function searchFunction() {
         }
     }
 }
+
+
+var primaryColorsValues = ['#3F51B5', '#03a9f4', '#673AB7', '#FFEB3B'];
+var primaryColors = primaryColorsValues[Math.floor(Math.random() * primaryColorsValues.length)];
+
+$('.wrapper').each(function() {
+    $('').css('background-color', primaryColors);
+    $('').css('fill', primaryColors);
+    $('').css('color', primaryColors);
+});
+
+var accentColorsValues = ['#FF9100', '#F44336', '#FF5722', '#e91e63'];
+var accentColors = accentColorsValues[Math.floor(Math.random() * accentColorsValues.length)];
+
+$('.wrapper').each(function() {
+    $('').css('background-color',accentColors);
+    $('').css('fill',accentColors);
+    $('').css('color', accentColors);
+});
