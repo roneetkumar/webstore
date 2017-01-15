@@ -1,5 +1,21 @@
 $(function() {
 
+    $(function() {
+        $.fn.sortList = function() {
+        var list = $(this);
+        var items = $("li", list).get();
+        items.sort(function(a, b) {
+            var listItem1 = $(a).text().toUpperCase();
+            var listItem2 = $(b).text().toUpperCase();
+            return (listItem1 < listItem2) ? -1 : 1;
+        });
+        $.each(items, function(i, itm) {
+            list.append(itm);
+        });
+       }
+        $("ul#grid-wrapper").sortList();
+    });
+
     //fab-open-function------------------------------------------
     function fabOpen() {
         $('.upload-btn').fadeOut(350)
@@ -268,20 +284,20 @@ function searchFunction() {
 }
 
 
-var primaryColorsValues = ['#3F51B5', '#03a9f4', '#673AB7', '#FFEB3B'];
-var primaryColors = primaryColorsValues[Math.floor(Math.random() * primaryColorsValues.length)];
-
-$('.wrapper').each(function() {
-    $('').css('background-color', primaryColors);
-    $('').css('fill', primaryColors);
-    $('').css('color', primaryColors);
-});
-
-var accentColorsValues = ['#FF9100', '#F44336', '#FF5722', '#e91e63'];
-var accentColors = accentColorsValues[Math.floor(Math.random() * accentColorsValues.length)];
-
-$('.wrapper').each(function() {
-    $('').css('background-color',accentColors);
-    $('').css('fill',accentColors);
-    $('').css('color', accentColors);
-});
+// var primaryColorsValues = ['#3F51B5', '#03a9f4', '#673AB7', '#FFEB3B'];
+// var primaryColors = primaryColorsValues[Math.floor(Math.random() * primaryColorsValues.length)];
+//
+// $('.wrapper').each(function() {
+//     $('').css('background-color', primaryColors);
+//     $('').css('fill', primaryColors);
+//     $('').css('color', primaryColors);
+// });
+//
+// var accentColorsValues = ['#FF9100', '#F44336', '#FF5722', '#e91e63'];
+// var accentColors = accentColorsValues[Math.floor(Math.random() * accentColorsValues.length)];
+//
+// $('.wrapper').each(function() {
+//     $('').css('background-color',accentColors);
+//     $('').css('fill',accentColors);
+//     $('').css('color', accentColors);
+// });
