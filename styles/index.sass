@@ -33,7 +33,7 @@ a
     .search-overlay
         top: 0
         z-index: 0
-
+    //-----------------------------info-show-wrapper------------------------
     .about-wrapper,.support-wrapper,.faq-wrapper
         @include centered-x
         transform: translate(-50%,100%)
@@ -150,7 +150,6 @@ a
         overflow-y: visible
         &::-webkit-scrollbar
             display: none
-
         .nav-header
             position: relative
             width: 100%
@@ -485,11 +484,14 @@ a
             vertical-align: top
             outline: 0
             box-sizing: border-box
+            color: $accents
             &:not(:focus)
                 border-bottom-color: rgba(0,0,0,.12)
+
         textarea
             resize: none
             word-wrap: break-word
+            ove
         //fab-button-------------------------------------------------------------
         .button-wrapper
             position: relative

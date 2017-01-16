@@ -1,5 +1,5 @@
 $(function() {
-
+    // Function-for-alphabatical-order-------------------------------
     $(function() {
         $.fn.sortList = function() {
         var list = $(this);
@@ -136,7 +136,7 @@ $(function() {
     //search-input-value-reset-------------------------------------------
     $('svg.search-close-btn').on('click',function () {
         $('input.search-text-field').val('');
-        card.css('display','inline-block');
+        card.removeAttr('style');
         $('svg.search-btn').css('display', 'inline-block');
         $('svg.search-close-btn').css('display', 'none');
     });
