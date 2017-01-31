@@ -31,5 +31,5 @@
 1. initial grid layout for apps.
 
 # 0.0.0
-1. ¯\_(ツ)_/¯
+0. ¯\_(ツ)_/¯
 
