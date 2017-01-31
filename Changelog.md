@@ -30,4 +30,6 @@
 # 0.0.1 *(alpha-release)*
 1. initial grid layout for apps.
 
+# 0.0.0
+1. ¯\_(ツ)_/¯
 
