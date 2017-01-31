@@ -1,5 +1,4 @@
-# 0.1.0
-*(beta release)*
+# 0.1.0 *(beta release)*
 1. added 10+ new apps.
 
 # 0.0.10
@@ -28,8 +27,8 @@
 3. manifest file.
 4. first batch of apps.
 
-# 0.0.1
-*(alpha release)*
+# 0.0.1 *(alpha release)*
+
 1. initial grid layout for apps.
 
 
