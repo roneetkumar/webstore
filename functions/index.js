@@ -16,45 +16,17 @@ $(function() {
         $("ul#grid-wrapper").sortList();
     });
 
-    //fab-open-function------------------------------------------
-    function fabOpen() {
-        $('.upload-btn').fadeOut(350)
-        $('.fab').addClass('fab-open');
-        $('.overlay').fadeIn(700);
-        $('.fab-header').addClass('fab-header-open');
-        $('h1.fab-title, .close-btn').delay(400).fadeIn();
-        $('.form-wrapper').delay(350).fadeIn(0);
-        $('body, html').css('overflow', 'hidden');
-    }
-
-    //fab-close-function------------------------------------------
-    function fabClose() {
-        $('.upload-btn').fadeIn(350);
-        $('.fab').removeClass('fab-open');
-        $('.overlay').fadeOut(400);
-        $('.fab-header').removeClass('fab-header-open');
-        $('h1.fab-title, .close-btn, .form-wrapper').fadeOut(0);
-        $('.button').removeClass('f-btn-off');
-        $("#form")[0].reset();
-        $('body, html').css('overflow', 'visible');
-        $('svg.send-btn').css('display', 'block');
-        $('svg.done-btn').css('display', 'none');
-        setTimeout(function() {
-            $('.fab-header').removeClass('fab-header-badlo');
-        }, 400);
-    }
-
     //nav-open-function------------------------------------------
     function navOpen() {
         $('.nav-bar-wrapper').toggleClass('nav-khulgya');
-        $('.overlay').fadeIn(225);
+        $('.nav-overlay').fadeIn(225);
         $('body, html').css('overflow', 'hidden');
     }
 
     //nav-close-function------------------------------------------
     function navClose() {
         $('.nav-bar-wrapper').removeClass('nav-khulgya');
-        $('.overlay').fadeOut(225);
+        $('.nav-overlay').fadeOut(225);
         $('body, html').css('overflow', 'visible');
         bugListClose();
     }
@@ -83,15 +55,6 @@ $(function() {
         $('li.apps-item').addClass('menu-item-selected');
     }
 
-    //fab-open--------------------------------------------
-    $('.fab').on('click', function() {
-        fabOpen();
-    });
-
-    //fab-close-------------------------------------------
-    $('.overlay, .close-btn').on('click', function() {
-        fabClose();
-    });
 
     //nav-open----------------------------------------
     $('svg.nav-btn').on('click',function () {
@@ -99,7 +62,7 @@ $(function() {
     });
 
     //nav-close----------------------------------------
-    $('.overlay,li.menu-item').on('click',function () {
+    $('.nav-overlay,li.menu-item').on('click',function () {
         navClose();
     });
 
