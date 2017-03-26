@@ -1,3 +1,6 @@
+# 0.1.2
+1. added 15+ new apps.
+
 # 0.1.0 *(beta-release)*
 1. added 10+ new apps.
 

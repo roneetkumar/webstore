@@ -79,7 +79,6 @@ a
                     border: 1px solid rgba(255, 255, 255, 0.05)
                 li
                     padding: 10px 0
-                    height: 70px
                     &:hover
                         background: $selection-bg-dark
                         h1.item-title
@@ -422,12 +421,7 @@ a
                     background: rgba(255,255,255,0.2)
     .card-hidden
         display: none
-//fab-header-wrapper------------------------------------------------------------
-.fab-header-wrapper
-    overflow: hidden
-    height: 56px
-    position: relative
-    text-align: center
+
 //fab---------------------------------------------------------------------------
 .fab
     width: 56px
@@ -438,156 +432,18 @@ a
     bottom: 24px
     right: 24px
     box-shadow: $box-shadow-6dp
-    transition: all 400ms ease-in-out
+    transition: all 198ms ease-in-out
     cursor: default
     z-index: 0
+    transform: scale(0)
+    overflow: hidden
     &:hover
-        box-shadow: $box-shadow-12dp
-    .fab-header
-        @include centered
-        background: $accents
-        width: 0
-        height: 0
-        border-radius: 50%
-        // opacity: 0
-        transition: all 200ms ease-in-out
-    .fab-header-badlo
-        background: $haribati
-
-    .upload-btn
-        @include centered
-        position: absolute
-        width: 28px
-        height: 28px
-        fill: #fff
-    //fab-form------------------------------------------------------------------
-    .form-wrapper
-        display: none
-        padding: 24px 24px 24px
-        min-height: 250px
-        line-height: 1.25em
-        overflow: hidden
-        .text-input
-            width: 100%
-            margin-top: 8px
-            margin-bottom: 8px
-            padding: .3125em
-            border: none
-            border-radius: 0
-            border-bottom: 1px solid $accents
-            background-color: inherit
-            transition: border-color .3s
-            color: inherit
-            font-size: 1em
-            font-weight: 400
-            display: inline-block
-            vertical-align: top
-            outline: 0
-            box-sizing: border-box
-            color: $accents
-            &:not(:focus)
-                border-bottom-color: rgba(0,0,0,.12)
-
-        textarea
-            resize: none
-            word-wrap: break-word
-            ove
-        //fab-button-------------------------------------------------------------
-        .button-wrapper
-            position: relative
-            width: 100%
-            height: 85px
-            .button
-                @include centered
-                width: 52px
-                height: 52px
-                border-radius: 50%
-                transform: translate(-50%, -50%) scale(1)
-                transition: all 350ms ease-in-out
-                box-shadow: $box-shadow-4dp
-                background-color: $accents
-                cursor: default
-                border: none
-                outline: 0
-                -webkit-tap-highlight-color: transparent
-                .svg-wrapper
-                    width: 100%
-                    height: 100%
-                    border-radius: 50%
-                    transition: background 0.2s ease-in-out
-                    cursor: default
-                    svg.send-btn, svg.done-btn
-                        @include centered
-                        width: 22px
-                        height: 22px
-                        margin-left: 2px
-                        position: absolute
-                        fill: #fff
-                    svg.done-btn
-                        display: none
-                        width: 30px
-                        height: 30px
-                        margin-left: 0
-                &:active .svg-wrapper
-                    background: rgba(0,0,0,0.15)
-            .f-btn-off
-                animation: jaake-aa 0.7s ease-in-out 1
-                animation-fill-mode: forwards
-//fab-opened--------------------------------------------------------------------
-.fab-open
-    width: 350px
-    height: 400px
-    margin: 0
-    border-radius: 2px
-    z-index: 2
-    bottom: 50%
-    right: 50%
-    transform: translate(50%,50%)
-    transition: all 350ms ease-in-out
-    background: #fff
-    cursor: default
-    &:hover
-        box-shadow: $box-shadow-4dp
-    @media only screen and (max-width: 425px)
-        width: 100%
-        height: 100%
-        border-radius: 0
-    .fab-header-open
-        width: 400px
-        height: 400px
-        transform: translate(-50%,-50%) scale(1)
-        transition: all 700ms ease-in-out
-        // transition-delay: 0.2s
-        // opacity: 1
-        position: absolute
-        @media only screen and (max-width: 425px)
-            width: 430px
-            height: 430px
-
-h1.fab-title
-    position: relative
-    color: #fff
-    font-size: 22px
-    font-weight: normal
-    cursor: default
-    line-height: 56px
-    display: none
-
-.close-btn
-    display: none
-    position: fixed
-    top: 8px
-    right: 8px
-    padding: 8px
-    width: 24px
-    height: 24px
-    border-radius: 50%
-    transition: background 200ms ease-in-out
-    &:hover
-        background: rgba(0,0,0,0.1)
-    &:active
-        background: rgba(0,0,0,0.2)
+        box-shadow: $box-shadow-8dp
+        background: #EF5350
     svg
-        @include centered
-        width: 24px
-        height: 24px
+        padding: 10px
+        fill: rgba(0,0,0,0.36)
+
+
+.fab-show
+    transform: scale(1)
