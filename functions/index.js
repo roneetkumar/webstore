@@ -15,6 +15,16 @@ $(function() {
        }
         $("ul#grid-wrapper").sortList();
     });
+    //chip-width-----------------------------------------------
+    function width() {
+        var width = 0;
+        $('.chips').each(function() {
+            width += $(this).outerWidth(true);
+        });
+        console.log(width);
+        $('ul.chips-list').css('width', width);
+    }
+    width();
 
     //nav-open-function------------------------------------------
     function navOpen() {
@@ -170,12 +180,12 @@ $(function() {
     });
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 174) {
+        if ($(window).scrollTop() > 62) {
             $('.fab').addClass('fab-show');
-            $('.header').addClass('header-fixed');
+            // $('.header').addClass('header-fixed');
         } else {
             $('.fab').removeClass('fab-show');
-            $('.header').removeClass('header-fixed');
+            // $('.header').removeClass('header-fixed');
         }
     });
 

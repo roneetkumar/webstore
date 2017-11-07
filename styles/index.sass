@@ -7,7 +7,7 @@ $chips-scroll-width: 600px
 *
     margin: 0
     padding: 0
-    font-family: 'Roboto',monospace,sans-serif
+    font-family: 'Roboto'
     cursor: default
     -webkit-user-select: none
     -moz-user-select: none
@@ -19,20 +19,117 @@ html,body
 
 a
     text-decoration: none
-
-.wrapper,nav.nav-bar-wrapper,header#top,section#chips-wrapper,section#grid-wrapper,section.fab
-    overflow: hidden
-    //overlay---------------------------------------------
-    .nav-overlay,.search-overlay
-        width: 100%
-        height: 100%
-        background: rgba(0,0,0,0.6)
-        position: fixed
+//header---------------------------------------------------
+.header
+    position: sticky
+    top: 0
+    width: 100%
+    height: 64px
+    background: $primary
+    box-shadow: $box-shadow-4dp
+    z-index: 1
+    transition: all 225ms ease-in-out
+    //search-bar------------------------------------------------------
+    .search-bar
+        @include centered-x
+        // position: fixed
+        width: 95%
+        max-width: 344px
+        height: 48px
+        background: #fff
+        border-radius: 2px
+        top: 8px
+        box-shadow: $box-shadow-2dp
+        overflow: hidden
+        transition: height 355ms ease-in-out
         z-index: 2
-        display: none
-    .search-overlay
-        top: 0
-        z-index: 0
+        svg.nav-btn, svg.back-btn, svg.search-btn, svg.search-close-btn
+            position: relative
+            width: 24px
+            height: 24px
+            fill: rgba(0,0,0,0.52)
+            left: 6px
+            border-radius: 50%
+            padding: 6px
+            margin: 6px 0
+            transition: all 225ms ease-in-out
+            &:hover
+                background: rgba(0,0,0,0.1)
+            &:active
+                background: rgba(0,0,0,0.2)
+        svg.back-btn, svg.search-close-btn
+            display: none
+        svg.search-btn, svg.search-close-btn
+            position: absolute
+            right: 6px
+            left: initial
+        hr
+            @include centered-x
+            display: table
+            width: 100%
+            border: 1px solid rgba(0, 0, 0, 0.15)
+        ul.search-trending-list
+            li.search-trending-list-item
+                position: relative
+                svg.trending-icon
+                    @include centered-y
+                    position: absolute
+                    left: 12px
+                    width: 24px
+                    height: 24px
+                    fill: rgba(#000,.54)
+
+                h1
+                    font-size: 12px
+                    font-weight: 500
+                    color: rgba(#000,.54)
+                    padding: 16px 58px
+                    &:hover
+                        background: rgba(0, 0, 0, 0.15)
+
+        //search-text-field---------------------------------------------------------
+        .search-text-field
+            @include centered-x
+            position: absolute
+            width: 250px
+            height: 40px
+            left: 172px
+            margin: 4px 0
+            border: 0
+            border-radius: 0
+            outline: 0
+            box-sizing: border-box
+            font-size: 16px
+            font-weight: 400
+            color: $accents
+            &::-webkit-input-placeholder
+                color: rgba(0,0,0,0.38)
+                transition: color 300ms ease-in-out
+            &:hover
+                &::-webkit-input-placeholder
+                    color: rgba(0,0,0,0.54)
+            &:focus
+                &::-webkit-input-placeholder
+                    color: rgba(0,0,0,0.54)
+    .search-active
+        height: 258px
+
+//overlay---------------------------------------------
+.nav-overlay,.search-overlay
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,0.6)
+    position: fixed
+    z-index: 2
+    display: none
+    top: 0
+.search-overlay
+    z-index: 0
+
+
+.wrapper,nav.nav-bar-wrapper,section#chips-wrapper,section#grid-wrapper,section.fab
+    overflow: hidden
+
     //-----------------------------info-show-wrapper------------------------
     .about-wrapper,.support-wrapper,.faq-wrapper
         @include centered-x
@@ -142,6 +239,7 @@ a
         height: 100%
         background: #212121
         z-index: 2
+        top: 0
         transform: translateX(-312px)
         box-shadow: 4px 0 10px rgba(0,0,0,0.4)
         transition: transform 255ms ease-in-out
@@ -235,127 +333,37 @@ a
 
     .nav-khulgya
             transform: translateX(0)
-    //header---------------------------------------------------
-    .header
-        position: absolute
-        width: 100%
-        height: 238px
-        background: $primary
-        box-shadow: $box-shadow-4dp
-        z-index: 1
-        transition: all 225ms ease-in-out
-        //search-bar------------------------------------------------------
-        .search-bar
-            @include centered-x
-            position: fixed
-            width: 95%
-            max-width: 344px
-            height: 48px
-            background: #fff
-            border-radius: 2px
-            top: 8px
-            box-shadow: $box-shadow-2dp
-            overflow: hidden
-            transition: height 355ms ease-in-out
-            z-index: 2
-            svg.nav-btn, svg.back-btn, svg.search-btn, svg.search-close-btn
-                position: relative
-                width: 24px
-                height: 24px
-                fill: rgba(0,0,0,0.52)
-                left: 6px
-                border-radius: 50%
-                padding: 6px
-                margin: 6px 0
-                transition: all 225ms ease-in-out
-                &:hover
-                    background: rgba(0,0,0,0.1)
-                &:active
-                    background: rgba(0,0,0,0.2)
-            svg.back-btn, svg.search-close-btn
-                display: none
-            svg.search-btn, svg.search-close-btn
-                position: absolute
-                right: 6px
-                left: initial
-            hr
-                @include centered-x
-                display: table
-                width: 100%
-                border: 1px solid rgba(0, 0, 0, 0.15)
-            ul.search-trending-list
-                li.search-trending-list-item
-                    position: relative
-                    svg.trending-icon
-                        @include centered-y
-                        position: absolute
-                        left: 12px
-                        width: 24px
-                        height: 24px
-                        fill: rgba(#000,.54)
 
-                    h1
-                        font-size: 12px
-                        font-weight: 500
-                        color: rgba(#000,.54)
-                        padding: 16px 58px
-                        &:hover
-                            background: rgba(0, 0, 0, 0.15)
-
-            //search-text-field---------------------------------------------------------
-            .search-text-field
-                @include centered-x
-                position: absolute
-                width: 250px
-                height: 40px
-                left: 172px
-                margin: 4px 0
-                border: 0
-                border-radius: 0
-                outline: 0
-                box-sizing: border-box
-                font-size: 16px
-                font-weight: 400
-                color: $accents
-                &::-webkit-input-placeholder
-                    color: rgba(0,0,0,0.38)
-                    transition: color 300ms ease-in-out
-                &:hover
-                    &::-webkit-input-placeholder
-                        color: rgba(0,0,0,0.54)
-                &:focus
-                    &::-webkit-input-placeholder
-                        color: rgba(0,0,0,0.54)
-        .search-active
-            height: 258px
-
-    .header-fixed
-        position: fixed
-        top: -174px
-        box-shadow: $box-shadow-6dp
     //chips-wrapper-------------------------------------------------------------
     #chips-wrapper
         text-align: center
-        margin: 238px 0 -10px 0
+        // margin: 238px 0 -10px 0
         overflow-x: scroll
         &::-webkit-scrollbar
             display: none
         .chips-list
-            width: $chips-scroll-width
+            // width: $chips-scroll-width
             margin: 0 auto
+            padding: 0 10px
+            list-style: none
+            height: 62px
             .chips
                 margin: 15px 6px
+                height: 32px
                 background: $accents
-                display: inline-block
+                float: left
+                // display: inline-block
                 border-radius: 50px
                 box-shadow: $box-shadow-2dp
+                box-sizing: border-box
                 transition: box-shadow 225ms ease-in-out
                 h1
                     text-align: center
                     font-size: 14px
                     color: #fff
-                    margin: 7.5px 12px
+                    padding: 0 12px
                     text-transform: uppercase
+                    line-height: 33px
             .chip-clicked
                 // box-shadow: $box-shadow-8dp
                 background: #fff
@@ -363,8 +371,8 @@ a
                     color: $accents
     //card-grid-wrapper--------------------------------------------------------
     #grid-wrapper
-        width: 1400px
-        margin: 0 auto 20px auto
+        max-width: 1400px
+        margin: -10px auto 20px auto
         text-align: center
     //cards------------------------------------------------------------
     .card
