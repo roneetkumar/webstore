@@ -22,7 +22,7 @@ $(function() {
             width += $(this).outerWidth(true);
         });
         console.log(width);
-        $('ul.chips-list').css('width', width);
+        $('ul.chips-list').css('width', width + 1);
     }
     width();
 
