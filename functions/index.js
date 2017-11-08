@@ -30,14 +30,14 @@ $(function() {
     function navOpen() {
         $('.nav-bar-wrapper').toggleClass('nav-khulgya');
         $('.nav-overlay').fadeIn(225);
-        $('body, html').css('overflow', 'hidden');
+        $('html').css('overflow', 'hidden');
     }
 
     //nav-close-function------------------------------------------
     function navClose() {
         $('.nav-bar-wrapper').removeClass('nav-khulgya');
         $('.nav-overlay').fadeOut(225);
-        $('body, html').css('overflow', 'visible');
+        $('html').css('overflow', 'visible');
         bugListClose();
     }
 
@@ -47,7 +47,7 @@ $(function() {
         $('svg.nav-btn').css('display', 'none');
         $('svg.back-btn').css('display', 'inline-block');
         $('.search-overlay').fadeIn(195);
-        $('body, html').css('overflow', 'hidden');
+        $('html').css('overflow', 'hidden');
     }
 
     //search-close-function------------------------------------------
@@ -56,7 +56,7 @@ $(function() {
         $('.search-overlay').fadeOut(195);
         $('svg.nav-btn').css('display', 'inline-block');
         $('svg.back-btn').css('display', 'none');
-        $('body, html').css('overflow', 'visible');
+        $('html').css('overflow', 'visible');
     }
 
     function bugListClose() {
@@ -180,7 +180,7 @@ $(function() {
     });
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 62) {
+        if ($(window).scrollTop() > 50) {
             $('.fab').addClass('fab-show');
             // $('.header').addClass('header-fixed');
         } else {
