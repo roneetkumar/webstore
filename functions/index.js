@@ -15,16 +15,16 @@ $(function() {
        }
         $("ul#grid-wrapper").sortList();
     });
-    //chip-width-----------------------------------------------
-    function width() {
-        var width = 0;
-        $('.chips').each(function() {
-            width += $(this).outerWidth(true);
-        });
-        console.log(width);
-        $('ul.chips-list').css('width', width + 1);
-    }
-    width();
+    // //chip-width-----------------------------------------------
+    // function width() {
+    //     var width = 0;
+    //     $('.chips').each(function() {
+    //         width += $(this).outerWidth(true);
+    //     });
+    //     console.log(width);
+    //     $('ul.chips-list').css('width', width + 1);
+    // }
+    // width();
 
     //nav-open-function------------------------------------------
     function navOpen() {
