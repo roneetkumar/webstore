@@ -180,7 +180,7 @@ $(function() {
     });
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 340) {
             $('.fab').addClass('fab-show');
             // $('.header').addClass('header-fixed');
         } else {
