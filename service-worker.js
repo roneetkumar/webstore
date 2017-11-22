@@ -28,7 +28,8 @@ const PRECACHE_URLS = [
     'functions/index.js',
     'functions/manifest.json',
     'assets/nav-header.webp',
-    'assets/fav.ico',
+    'assets/favicon.ico',
+    'assets/512x512.png',
     'assets/open.svg'
 
 ];
