@@ -1,5 +1,5 @@
-Your Must Have :
+Your App Should Have :
 *   a SVG / PNG as icon
 *   a service-worker
 *   a PWA manifest file
-*   score of 85+ on lighthouse chrome app
+*   score of 85+ on lighthouse
