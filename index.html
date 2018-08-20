@@ -11,12 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#00BCD4" />
     <link rel="manifest" href="functions/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <script src="functions/jquery.min.js ">
     </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
     <script src="functions/index.js ">
     </script>
+
     <link rel="shortcut icon" href="assets/favicon.ico">
     <link href="assets/favicon.ico" rel="icon" sizes="192x192">
     <link rel="apple-touch-icon" href="assets/favicon.ico">
@@ -341,7 +343,7 @@
         <ul id="grid-wrapper">
             <!-- -------------------------Ali Express------------------------ -->
             <li class="card select-ec select-trend">
-                <div class="app-img-wrapper"><img style="background: #f73f16;" class="app-img" src="https://pwa.rocks/apps/aliexpress.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #f73f16;" class="app-img" data-src="https://pwa.rocks/apps/aliexpress.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Ali Express </a>
                     <a href="https://m.aliexpress.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -349,7 +351,7 @@
             </li>
             <!-- -------------------------Jalantikus------------------------ -->
             <li class="card select-news">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/jalantikus.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://pwa.rocks/apps/jalantikus.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Jalantikus </a>
                     <a href="https://app.jalantikus.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -357,7 +359,7 @@
             </li>
             <!-- -------------------------Telegram------------------------ -->
             <li class="card select-trend">
-                <div class="app-img-wrapper"><img style="background: #c8daea;" class="app-img" src="https://pwa.rocks/apps/telegram.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #c8daea;" class="app-img" data-src="https://pwa.rocks/apps/telegram.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Telegram </a>
                     <a href="https://web.telegram.org/#/login" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -365,7 +367,7 @@
             </li>
             <!-- -------------------------Reacthn------------------------ -->
             <li class="card select-news">
-                <div class="app-img-wrapper"><img style="background: #00d8ff;" class="app-img" src="https://pwa.rocks/apps/reacthn.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #00d8ff;" class="app-img" data-src="https://pwa.rocks/apps/reacthn.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Reacthn </a>
                     <a href="https://react-hn.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -373,7 +375,7 @@
             </li>
             <!-- -------------------------NASA------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" src="https://pwa.rocks/apps/nasa_logo.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" data-src="https://pwa.rocks/apps/nasa_logo.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> NASA </a>
                     <a href="https://code.nasa.gov/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -381,7 +383,7 @@
             </li>
             <!-- -------------------------Voice Memo------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #673AB7;" class="app-img" src="https://pwa.rocks/apps/voice-memos.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #673AB7;" class="app-img" data-src="https://pwa.rocks/apps/voice-memos.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Voice Memo </a>
                     <a href="https://voice-memos.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -389,7 +391,7 @@
             </li>
             <!-- -------------------------Expense Manager------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #2196F3;" class="app-img" src="https://pwa.rocks/apps/expense-manager.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #2196F3;" class="app-img" data-src="https://pwa.rocks/apps/expense-manager.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Expense Manager </a>
                     <a href="https://demo.vaadin.com/expense-manager/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -397,7 +399,7 @@
             </li>
             <!-- -------------------------Pokedex------------------------ -->
             <li class="card select-ec">
-                <div class="app-img-wrapper"><img style="background: #399494; image-rendering: pixelated;image-rendering:-moz-crisp-edges" class="app-img" src="https://pwa.rocks/apps/pokedex.png"></img>
+                <div class="app-img-wrapper"><img style="background: #399494; image-rendering: pixelated;image-rendering:-moz-crisp-edges" class="app-img" data-src="https://pwa.rocks/apps/pokedex.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Pokedex </a>
                     <a href="https://www.pokedex.org/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -405,7 +407,7 @@
             </li>
             <!-- -------------------------Selio------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #D32F2F;" class="app-img" src="https://pwa.rocks/apps/selio.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #D32F2F;" class="app-img" data-src="https://pwa.rocks/apps/selio.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Selio </a>
                     <a href="https://www.selioapp.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -413,7 +415,7 @@
             </li>
             <!-- -------------------------Snapdrop------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/snapdrop.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://pwa.rocks/apps/snapdrop.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Snapdrop </a>
                     <a href="https://snapdrop.net/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -421,7 +423,7 @@
             </li>
             <!-- -------------------------Podle------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #009688;" class="app-img" src="https://pwa.rocks/apps/podle.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #009688;" class="app-img" data-src="https://pwa.rocks/apps/podle.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Podle </a>
                     <a href="https://podle.audio/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -429,7 +431,7 @@
             </li>
             <!-- -------------------------Housing.com------------------------ -->
             <li class="card select-ec">
-                <div class="app-img-wrapper"><img style="background: #fbdd00;" class="app-img" src="https://pwa.rocks/apps/housing.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #fbdd00;" class="app-img" data-src="https://pwa.rocks/apps/housing.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Housing.com </a>
                     <a href="https://housing.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -437,7 +439,7 @@
             </li>
             <!-- -------------------------Piiko------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" src="https://pwa.rocks/apps/piiko.png"></img>
+                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" data-src="https://pwa.rocks/apps/piiko.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Piiko </a>
                     <a href="https://www.piiko.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -445,7 +447,7 @@
             </li>
             <!-- -------------------------Progressive Beer------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #fbdd00;" class="app-img" src="https://pwa.rocks/apps/prog-beer.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #fbdd00;" class="app-img" data-src="https://pwa.rocks/apps/prog-beer.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Progressive Beer </a>
                     <a href="https://deanhume.github.io/beer/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -453,7 +455,7 @@
             </li>
             <!-- -------------------------Google I/O------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #78909c;" class="app-img" src="https://pwa.rocks/apps/google-io.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #78909c;" class="app-img" data-src="https://pwa.rocks/apps/google-io.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Google I/O </a>
                     <a href="https://events.google.com/io2016/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -462,7 +464,7 @@
             <!-- -------------------------Web Flap------------------------ -->
             <li class="card select-games">
                 <div class="app-img-wrapper">
-                    <img style="background: #6cc851;image-rendering: pixelated;image-rendering: -moz-crisp-edges;height: 114px;padding: 34px 15px;" class="app-img" src="https://pwa.rocks/apps/web-flap.png"></img>
+                    <img style="background: #6cc851;image-rendering: pixelated;image-rendering: -moz-crisp-edges;height: 114px;padding: 34px 15px;" class="app-img" data-src="https://pwa.rocks/apps/web-flap.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Web Flap </a>
                     <a href="https://www.progressivewebflap.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -470,7 +472,7 @@
             </li>
             <!-- -------------------------Dev Opera------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/dev-opera.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://pwa.rocks/apps/dev-opera.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Dev Opera </a>
                     <a href="https://dev.opera.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -478,7 +480,7 @@
             </li>
             <!-- -------------------------Meatscope------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #2196F3;" class="app-img" src="https://pwa.rocks/apps/meatscope.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #2196F3;" class="app-img" data-src="https://pwa.rocks/apps/meatscope.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Meatscope </a>
                     <a href="https://meatscope.camera/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -487,7 +489,7 @@
 
             <!-- -------------------------Guitar Tuner------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #b0bec5;" class="app-img" src="https://pwa.rocks/apps/guitar-tuner.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #b0bec5;" class="app-img" data-src="https://pwa.rocks/apps/guitar-tuner.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Guitar Tuner </a>
                     <a href="https://guitar-tuner.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -495,7 +497,7 @@
             </li>
             <!-- -------------------------Sound Slice------------------------ -->
             <li class="card ">
-                <div class="app-img-wrapper"><img style="background: #60506f;" class="app-img" src="https://pwa.rocks/apps/soundslice.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #60506f;" class="app-img" data-src="https://pwa.rocks/apps/soundslice.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Sound Slice </a>
                     <a href="https://www.soundslice.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -503,7 +505,7 @@
             </li>
             <!-- -------------------------Web NFC Shoping Cart------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #b4b672;" class="app-img" src="https://pwa.rocks/apps/webnfc.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #b4b672;" class="app-img" data-src="https://pwa.rocks/apps/webnfc.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title">NFC Shopping Cart </a>
                     <a href="https://webnfc-shoppingcart.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -511,7 +513,7 @@
             </li>
             <!-- -------------------------SVG OMG------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #323faa;" class="app-img" src="https://pwa.rocks/apps/svgomg.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #323faa;" class="app-img" data-src="https://pwa.rocks/apps/svgomg.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> SVG OMG </a>
                     <a href="https://jakearchibald.github.io/svgomg/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -519,7 +521,7 @@
             </li>
             <!-- -------------------------Geo News------------------------ -->
             <li class="card select-news">
-                <div class="app-img-wrapper"><img style="background: #607d8b;" class="app-img" src="https://pwa.rocks/apps/geo-news.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #607d8b;" class="app-img" data-src="https://pwa.rocks/apps/geo-news.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Geo News </a>
                     <a href="https://m.geo.tv/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -527,7 +529,7 @@
             </li>
             <!-- -------------------------Financial Times------------------------ -->
             <li class="card select-trend select-news">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/financial-times.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://pwa.rocks/apps/financial-times.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Financial Times </a>
                     <a href="https://app.ft.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -535,7 +537,7 @@
             </li>
             <!-- -------------------------English Accents Map------------------------ -->
             <li class="card select-trend">
-                <div class="app-img-wrapper"><img style="background: #3F51B5;" class="app-img" src="https://pwa.rocks/apps/english-accents-map.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #3F51B5;" class="app-img" data-src="https://pwa.rocks/apps/english-accents-map.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> English Accents Map </a>
                     <a href="https://www.englishaccentsmap.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -543,7 +545,7 @@
             </li>
             <!-- -------------------------The Session------------------------ -->
             <li class="card select-trend">
-                <div class="app-img-wrapper"><img style="background: #FFC107;" class="app-img" src="https://pwa.rocks/apps/session.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #FFC107;" class="app-img" data-src="https://pwa.rocks/apps/session.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> The Session </a>
                     <a href="https://thesession.org/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -551,7 +553,7 @@
             </li>
             <!-- -------------------------Snapwat------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #987fff;" class="app-img" src="https://pwa.rocks/apps/snapwat.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #987fff;" class="app-img" data-src="https://pwa.rocks/apps/snapwat.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Snapwat </a>
                     <a href="https://snapw.at/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -559,7 +561,7 @@
             </li>
             <!-- -------------------------Inbox Attack------------------------ -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #009688;" class="app-img" src="https://pwa.rocks/apps/inbox-attack.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #009688;" class="app-img" data-src="https://pwa.rocks/apps/inbox-attack.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Inbox Attack </a>
                     <a href="https://andreasbovens.github.io/inbox-attack/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -567,7 +569,7 @@
             </li>
             <!-- -------------------------bubble------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #987fff;" class="app-img" src="https://pwa.rocks/apps/bubble.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #987fff;" class="app-img" data-src="https://pwa.rocks/apps/bubble.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> bubble </a>
                     <a href="https://samsunginternet.github.io/bubble/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -575,7 +577,7 @@
             </li>
             <!-- -------------------------Smaller Pictures------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #f1c40e;" class="app-img" src="https://pwa.rocks/apps/smaller-pictures.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #f1c40e;" class="app-img" data-src="https://pwa.rocks/apps/smaller-pictures.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Smaller Pictures </a>
                     <a href="https://smaller-pictures.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -583,7 +585,7 @@
             </li>
             <!-- -------------------------The Billings Gazette------------------------ -->
             <li class="card select-news">
-                <div class="app-img-wrapper"><img style="background: #231f20;" class="app-img" src="https://pwa.rocks/apps/billings-gazette.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #231f20;" class="app-img" data-src="https://pwa.rocks/apps/billings-gazette.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> The Billings Gazette </a>
                     <a href="https://billingsgazette.leeaws.com/pwa/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -591,7 +593,7 @@
             </li>
             <!-- -------------------------Air Horner------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #1194f6;" class="app-img" src="https://pwa.rocks/apps/air-horner.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #1194f6;" class="app-img" data-src="https://pwa.rocks/apps/air-horner.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Air Horner </a>
                     <a href="https://airhorner.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -599,7 +601,7 @@
             </li>
             <!-- -------------------------Digikala------------------------ -->
             <li class="card select-trend">
-                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" src="https://pwa.rocks/apps/digikala.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" data-src="https://pwa.rocks/apps/digikala.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Digikala </a>
                     <a href="https://www.digikala.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -607,7 +609,7 @@
             </li>
             <!-- -------------------------Paper Planes------------------------ -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #987fff;" class="app-img" src="https://pwa.rocks/apps/paper-planes.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #987fff;" class="app-img" data-src="https://pwa.rocks/apps/paper-planes.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Paper Planes </a>
                     <a href="https://paperplanes.world/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -615,7 +617,7 @@
             </li>
             <!-- -------------------------Firefox Platform Status----------------- -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #01579b;" class="app-img" src="https://pwa.rocks/apps/firefox.png"></img>
+                <div class="app-img-wrapper"><img style="background: #01579b;" class="app-img" data-src="https://pwa.rocks/apps/firefox.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Firefox Status </a>
                     <a href="https://platform-status.mozilla.org/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -623,7 +625,7 @@
             </li>
             <!-- -------------------------Get Kana!------------------------ -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #9e9e9e;" class="app-img" src="https://pwa.rocks/apps/get-kana.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #9e9e9e;" class="app-img" data-src="https://pwa.rocks/apps/get-kana.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Get Kana! </a>
                     <a href="https://getkana.com/app" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -631,7 +633,7 @@
             </li>
             <!-- -------------------------BaBe------------------------ -->
             <li class="card select-news">
-                <div class="app-img-wrapper"><img style="background: #ffc107;" class="app-img" src="https://pwa.rocks/apps/babe.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #ffc107;" class="app-img" data-src="https://pwa.rocks/apps/babe.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> BaBe </a>
                     <a href="https://app.babe.co.id/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -639,7 +641,7 @@
             </li>
             <!-- -------------------------Resilient Web Design------------------------ -->
             <li class="card select-trend">
-                <div class="app-img-wrapper"><img style="background: #5f7995;" class="app-img" src="https://pwa.rocks/apps/resilient-web-design.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #5f7995;" class="app-img" data-src="https://pwa.rocks/apps/resilient-web-design.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Resilient Web Design </a>
                     <a href="https://resilientwebdesign.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -647,7 +649,7 @@
             </li>
             <!-- -------------------------Oumy------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://pwa.rocks/apps/oumy.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://pwa.rocks/apps/oumy.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Oumy </a>
                     <a href="https://www.oumy.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -655,7 +657,7 @@
             </li>
             <!-- -------------------------Emojoy------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #F48FB1;" class="app-img" src="https://pwa.rocks/apps/emojoy.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #F48FB1;" class="app-img" data-src="https://pwa.rocks/apps/emojoy.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Emojoy </a>
                     <a href="https://jakearchibald-gcm.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -663,7 +665,7 @@
             </li>
             <!-- -------------------------2048 Puzzle------------------------ -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #edc500;" class="app-img" src="https://pwa.rocks/apps/puzzle-2048.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #edc500;" class="app-img" data-src="https://pwa.rocks/apps/puzzle-2048.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> 2048 Puzzle </a>
                     <a href="https://2048-opera-pwa.surge.sh/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -671,7 +673,7 @@
             </li>
             <!-- -------------------------Datememe------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #00BCD4;" class="app-img" src="https://pwa.rocks/apps/datememe.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #00BCD4;" class="app-img" data-src="https://pwa.rocks/apps/datememe.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Datememe </a>
                     <a href="https://www.datememe.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -679,7 +681,7 @@
             </li>
             <!-- -------------------------QR Code Scanner------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #5f7d8c;" class="app-img" src="https://pwa.rocks/apps/qrcode.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #5f7d8c;" class="app-img" data-src="https://pwa.rocks/apps/qrcode.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> QR Code Scanner </a>
                     <a href="https://qrcodescan.in/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -687,7 +689,7 @@
             </li>
             <!-- -------------------------PolyMail------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #f44336;" class="app-img" src="https://pwa.rocks/apps/poly-mail.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #f44336;" class="app-img" data-src="https://pwa.rocks/apps/poly-mail.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> PolyMail </a>
                     <a href="https://poly-mail.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -695,7 +697,7 @@
             </li>
             <!-- -------------------------Wave-PD1------------------------ -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" src="https://pwa.rocks/apps/wave-pd1.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" data-src="https://pwa.rocks/apps/wave-pd1.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Wave-PD1 </a>
                     <a href="https://alexgibson.github.io/wavepad/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -703,7 +705,7 @@
             </li>
             <!-- -------------------------RioRun------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #1c92c8;" class="app-img" src="https://pwa.rocks/apps/riorun.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #1c92c8;" class="app-img" data-src="https://pwa.rocks/apps/riorun.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> RioRun </a>
                     <a href="https://riorun.theguardian.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -711,7 +713,7 @@
             </li>
             <!-- -------------------------Konga EZ------------------------ -->
             <li class="card select-trend">
-                <div class="app-img-wrapper"><img style="background: #335c88;" class="app-img" src="https://pwa.rocks/apps/konga.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #335c88;" class="app-img" data-src="https://pwa.rocks/apps/konga.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Konga EZ </a>
                     <a href="https://www.konga.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -719,7 +721,7 @@
             </li>
             <!-- -------------------------Flipkart------------------------ -->
             <li class="card select-ec select-trend">
-                <div class="app-img-wrapper"><img style="background: #0d69b3;" class="app-img" src="https://pwa.rocks/apps/flipkart.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #0d69b3;" class="app-img" data-src="https://pwa.rocks/apps/flipkart.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Flipkart </a>
                     <a href="https://www.flipkart.com" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -727,7 +729,7 @@
             </li>
             <!-- -------------------------Flipboard------------------------ -->
             <li class="card select-ec select-trend select-news">
-                <div class="app-img-wrapper"><img style="background: #cd0000;" class="app-img" src="https://pwa.rocks/apps/flipboard.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #cd0000;" class="app-img" data-src="https://pwa.rocks/apps/flipboard.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Flipboard </a>
                     <a href="https://flipboard.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -735,7 +737,7 @@
             </li>
             <!-- -------------------------Offline Wiki------------------------ -->
             <li class="card select-ec">
-                <div class="app-img-wrapper"><img style="background: #e1e1e1;" class="app-img" src="https://pwa.rocks/apps/wiki-offline.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #e1e1e1;" class="app-img" data-src="https://pwa.rocks/apps/wiki-offline.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Offline Wiki </a>
                     <a href="https://wiki-offline.jakearchibald.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -743,7 +745,7 @@
             </li>
             <!-- -------------------------SV Ginger------------------------ -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #000;" class="app-img" src="https://sv-ginger.appspot.com/images/touch/chrome-splashscreen-icon-384x384.png"></img>
+                <div class="app-img-wrapper"><img style="background: #000;" class="app-img" data-src="https://sv-ginger.appspot.com/images/touch/chrome-splashscreen-icon-384x384.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> SV Ginger </a>
                     <a href="https://sv-ginger.appspot.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -751,7 +753,7 @@
             </li>
             <!-- -------------------------Remember-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #3f51b5;" class="app-img" src="https://paulhoughton.github.io/remember/icons/ic_directions_walk_48pt_4x.png"></img>
+                <div class="app-img-wrapper"><img style="background: #3f51b5;" class="app-img" data-src="https://paulhoughton.github.io/remember/icons/ic_directions_walk_48pt_4x.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Remember </a>
                     <a href="https://paulhoughton.github.io/remember/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -759,7 +761,7 @@
             </li>
             <!-- -------------------------Topple Trump-------------------------- -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" src="https://toppletrump.com/topple-trump/favicons/android-chrome-192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #212121;" class="app-img" data-src="https://toppletrump.com/topple-trump/favicons/android-chrome-192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Topple Trump </a>
                     <a href="https://toppletrump.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -767,7 +769,7 @@
             </li>
             <!-- -------------------------Polymon Project-------------------------- -->
             <li class="card ">
-                <div class="app-img-wrapper"><img style="background: #09537e;" class="app-img" src="https://polymon.polymer-project.org/images/polymon_icon.png"></img>
+                <div class="app-img-wrapper"><img style="background: #09537e;" class="app-img" data-src="https://polymon.polymer-project.org/images/polymon_icon.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Polymon Project </a>
                     <a href="https://polymon.polymer-project.org/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -775,7 +777,7 @@
             </li>
             <!-- -------------------------DevSpace-------------------------- -->
             <li class="card select-ec">
-                <div class="app-img-wrapper"><img style="background: #2196f3;" class="app-img" src="https://app.devspace.io/images/chrome/launcher-icon-4x.png"></img>
+                <div class="app-img-wrapper"><img style="background: #2196f3;" class="app-img" data-src="https://app.devspace.io/images/chrome/launcher-icon-4x.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> DevSpace </a>
                     <a href="https://app.devspace.io/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -783,7 +785,7 @@
             </li>
             <!-- -------------------------Colosseum-------------------------- -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #5991be;" class="app-img" src="https://naramsim.github.io/Colosseum/images/icons/launcher-256.png"></img>
+                <div class="app-img-wrapper"><img style="background: #5991be;" class="app-img" data-src="https://naramsim.github.io/Colosseum/images/icons/launcher-256.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Colosseum </a>
                     <a href="https://naramsim.github.io/Colosseum/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -791,7 +793,7 @@
             </li>
             <!-- -------------------------SplittyPie-------------------------- -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #3F51B5;" class="app-img" src="https://splittypie.com/assets/icons/android/icon-512x512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #3F51B5;" class="app-img" data-src="https://splittypie.com/assets/icons/android/icon-512x512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> SplittyPie </a>
                     <a href="https://splittypie.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -799,7 +801,7 @@
             </li>
             <!-- -------------------------AMP Project-------------------------- -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://www.ampproject.org/static/img/icons/any.svg"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://www.ampproject.org/static/img/icons/any.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> AMP Project </a>
                     <a href="https://www.ampproject.org/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -807,7 +809,7 @@
             </li>
             <!-- -------------------------Notepad-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #9bc0e3;" class="app-img" src="https://notepad.js.org/img/icon-196.png"></img>
+                <div class="app-img-wrapper"><img style="background: #9bc0e3;" class="app-img" data-src="https://notepad.js.org/img/icon-196.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Notepad </a>
                     <a href="https://notepad.js.org" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -815,7 +817,7 @@
             </li>
             <!-- -------------------------OYO Rooms-------------------------- -->
             <li class="card select-trend">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://www.oyorooms.com/logo_192_by_192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://www.oyorooms.com/logo_192_by_192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> OYO Rooms </a>
                     <a href="https://www.oyorooms.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -823,7 +825,7 @@
             </li>
             <!-- -------------------------Github Explorer-------------------------- -->
             <li class="card select-tools select-trend select-ec">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://github-e.com/assets/inspectocat.png"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://github-e.com/assets/inspectocat.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Github Explorer </a>
                     <a href="https://github-e.com" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -831,7 +833,7 @@
             </li>
             <!-- -------------------------Amp Examples-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://ampbyexample.com/favicons/android-chrome-192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://ampbyexample.com/favicons/android-chrome-192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> AMP Examples </a>
                     <a href="https://ampbyexample.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -839,7 +841,7 @@
             </li>
             <!-- -------------------------Lan Lines-------------------------- -->
             <li class="card select-ec">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://lines.chromeexperiments.com/img/webapp/LandLines_WebAppIcon_192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://lines.chromeexperiments.com/img/webapp/LandLines_WebAppIcon_192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Land Lines </a>
                     <a href="https://lines.chromeexperiments.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -847,7 +849,7 @@
             </li>
             <!-- -------------------------The Weather Channel-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #003698;" class="app-img" src="https://s.w-x.co/twc_192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #003698;" class="app-img" data-src="https://s.w-x.co/twc_192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> The Weather Channel </a>
                     <a href="https://weather.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -856,7 +858,7 @@
 
             <!-- -------------------------The Guardian-------------------------- -->
             <li class="card select-news">
-                <div class="app-img-wrapper"><img style="background: #f6f6f6;" class="app-img" src="https://assets.guim.co.uk/images/favicons/187f09d314cbe89243216f83fce16e90/roundel-192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #f6f6f6;" class="app-img" data-src="https://assets.guim.co.uk/images/favicons/187f09d314cbe89243216f83fce16e90/roundel-192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> The Guardian </a>
                     <a href="https://www.theguardian.com" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -865,7 +867,7 @@
 
             <!-- -------------------------5miles-------------------------- -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://www.5milesapp.com/images/favicons//android-chrome-192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://www.5milesapp.com/images/favicons//android-chrome-192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> 5miles</a>
                     <a href="https://www.5milesapp.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -873,7 +875,7 @@
             </li>
             <!-- -------------------------twitter-------------------------- -->
             <li class="card select-trend">
-                <div class="app-img-wrapper"><img style="background: #1da1f2;" class="app-img" src="https://ma-0.twimg.com/twitter-assets/responsive-web/web/ltr/icon-default.882fa4ccf6539401.png"></img>
+                <div class="app-img-wrapper"><img style="background: #1da1f2;" class="app-img" data-src="https://ma-0.twimg.com/twitter-assets/responsive-web/web/ltr/icon-default.882fa4ccf6539401.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title">Twitter</a>
                     <a href="https://www.twitter.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -881,7 +883,7 @@
             </li>
             <!-- -------------------------Notes-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: linear-gradient(to left, #B24592 , #F15F79);" class="app-img" src="https://pwa.rocks/apps/notes.svg"></img>
+                <div class="app-img-wrapper"><img style="background: linear-gradient(to left, #B24592 , #F15F79);" class="app-img" data-src="https://pwa.rocks/apps/notes.svg"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title">Notes</a>
                     <a href="https://sii.im/playground/notes/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -889,7 +891,7 @@
             </li>
             <!-- -------------------------Calculator-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #317bbe;" class="app-img" src="https://calculator.tooo.io/icon.png"></img>
+                <div class="app-img-wrapper"><img style="background: #317bbe;" class="app-img" data-src="https://calculator.tooo.io/icon.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Calculator</a>
                     <a href="https://calculator.tooo.io/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -897,7 +899,7 @@
             </li>
             <!-- -------------------------Gamezop-------------------------- -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://static.gamezop.io/peach/assets/launcher/launcher-512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://static.gamezop.io/peach/assets/launcher/launcher-512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title">Gamezop</a>
                     <a href="https://games.gamezop.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -905,7 +907,7 @@
             </li>
             <!-- -------------------------Santa Tracker-------------------------- -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #39b249;" class="app-img" src="https://santatracker.google.com/images/icon-192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #39b249;" class="app-img" data-src="https://santatracker.google.com/images/icon-192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title">Santa Tracker</a>
                     <a href="https://santatracker.google.com/village.html" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -913,7 +915,7 @@
             </li>
             <!-- -------------------------Truecaller-------------------------- -->
             <li class="card select-tools select-trend">
-                <div class="app-img-wrapper"><img style="background: #607D8B;" class="app-img" src="https://www.truecaller.com/icon-192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #607D8B;" class="app-img" data-src="https://www.truecaller.com/icon-192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Truecaller</a>
                     <a href="https://www.truecaller.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -921,7 +923,7 @@
             </li>
             <!-- -------------------------PolyTimer-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #4a148c;" class="app-img" src="https://polytimer.rocks/images/manifest/icon-192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #4a148c;" class="app-img" data-src="https://polytimer.rocks/images/manifest/icon-192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> PolyTimer</a>
                     <a href="https://polytimer.rocks/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -929,7 +931,7 @@
             </li>
             <!-- -------------------------BatteryStatus-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #4388fd;" class="app-img" src="https://irekrog.github.io/battery-status-progressive-web-app/images/icons/icon-192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background: #4388fd;" class="app-img" data-src="https://irekrog.github.io/battery-status-progressive-web-app/images/icons/icon-192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Battery Status</a>
                     <a href="https://irekrog.github.io/battery-status-progressive-web-app" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -937,7 +939,7 @@
             </li>
             <!-- -------------------------Headline-------------------------- -->
             <li class="card select-news">
-                <div class="app-img-wrapper"><img style="background: #9E9E9E;" class="app-img" src="https://headline.tooo.io/icon.png"></img>
+                <div class="app-img-wrapper"><img style="background: #9E9E9E;" class="app-img" data-src="https://headline.tooo.io/icon.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Headline</a>
                     <a href="https://headline.tooo.io/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -946,7 +948,7 @@
 
             <!-- -------------------------Freelancer-------------------------- -->
             <li class="card select-trend">
-                <div class="app-img-wrapper"><img style="background:#47bff5;" class="app-img" src="https://m.freelancer.com/images/icons/launcher-icons/65008340.launcher-icon-192x192.png"></img>
+                <div class="app-img-wrapper"><img style="background:#47bff5;" class="app-img" data-src="https://m.freelancer.com/images/icons/launcher-icons/65008340.launcher-icon-192x192.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Freelancer</a>
                     <a href="https://m.freelancer.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -954,7 +956,7 @@
             </li>
             <!-- -------------------------Readr-------------------------- -->
             <li class="card select-news">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://readr.klg.bz/readr_android-chrome-512x512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://readr.klg.bz/readr_android-chrome-512x512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Readr</a>
                     <a href="https://readr.klg.bz/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -962,7 +964,7 @@
             </li>
             <!-- -------------------------RngDng-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #ffee58;" class="app-img" src="https://rngdng.de/android-chrome-512x512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #ffee58;" class="app-img" data-src="https://rngdng.de/android-chrome-512x512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> RngDng</a>
                     <a href="https://rngdng.de/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -970,7 +972,7 @@
             </li>
             <!-- -------------------------Speedometer-------------------------- -->
             <li class="card select-tools ">
-                <div class="app-img-wrapper"><img style="background: #8e44ad;" class="app-img" src="https://iamvdo.github.io/speedometer-pwa/img/icon-256x256.png"></img>
+                <div class="app-img-wrapper"><img style="background: #8e44ad;" class="app-img" data-src="https://iamvdo.github.io/speedometer-pwa/img/icon-256x256.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Speedometer</a>
                     <a href="https://iamvdo.github.io/speedometer-pwa/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -978,7 +980,7 @@
             </li>
             <!-- -------------------------Google Plus-------------------------- -->
             <li class="card ">
-                <div class="app-img-wrapper"><img style="background: #efefef;" class="app-img" src="https://ssl.gstatic.com/images/branding/product/1x/google_plus_192dp.png"></img>
+                <div class="app-img-wrapper"><img style="background: #efefef;" class="app-img" data-src="https://ssl.gstatic.com/images/branding/product/1x/google_plus_192dp.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Google Plus</a>
                     <a href="https://plus.google.com/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -986,7 +988,7 @@
             </li>
             <!-- -------------------------grrd-4-in-row-------------------------- -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #efefef;" class="app-img" src="https://grrd01.github.io/4inaRow/Images/icon_512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #efefef;" class="app-img" data-src="https://grrd01.github.io/4inaRow/Images/icon_512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Grrd's 4 in a Row</a>
                     <a href="https://grrd01.github.io/4inaRow/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -994,7 +996,7 @@
             </li>
             <!-- -------------------------Grrd's Dice-------------------------- -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #efefef;" class="app-img" src="https://grrd01.github.io/Dice/images/icon_512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #efefef;" class="app-img" data-src="https://grrd01.github.io/Dice/images/icon_512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Grrd's Dice</a>
                     <a href="https://grrd01.github.io/Dice/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -1002,7 +1004,7 @@
             </li>
             <!-- -------------------------Grrd's Puzzle-------------------------- -->
             <li class="card select-games">
-                <div class="app-img-wrapper"><img style="background: #efefef;" class="app-img" src="https://grrd01.github.io/Puzzle/Images/g_icon_512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #efefef;" class="app-img" data-src="https://grrd01.github.io/Puzzle/Images/g_icon_512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Grrd's Puzzle</a>
                     <a href="https://grrd01.github.io/Puzzle/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -1010,7 +1012,7 @@
             </li>
             <!-- -------------------------Martin Minchev-------------------------- -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" src="https://me.marti.bg/images/logo.png"></img>
+                <div class="app-img-wrapper"><img style="background: #fff;" class="app-img" data-src="https://me.marti.bg/images/logo.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Martin Minchev</a>
                     <a href="https://me.marti.bg/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -1018,7 +1020,7 @@
             </li>
             <!-- -------------------------Chroma : Material Palette-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: linear-gradient(to right, #3F51B5, #673AB7);" class="app-img" src="https://roneetkumar.github.io/chroma/assets/512x512.png"></img>
+                <div class="app-img-wrapper"><img style="background: linear-gradient(to right, #3F51B5, #673AB7);" class="app-img" data-src="https://roneetkumar.github.io/chroma/assets/512x512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Chroma</a>
                     <a href="https://roneetkumar.github.io/chroma/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -1027,7 +1029,7 @@
 
             <!-- -------------------------Roneet Kumar-------------------------- -->
             <li class="card">
-                <div class="app-img-wrapper"><img style="background: #03A9F4;" class="app-img" src="https://roneetkumar.github.io/assets/512x512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #03A9F4;" class="app-img" data-src="https://roneetkumar.github.io/assets/512x512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Roneet Kumar</a>
                     <a href="https://roneetkumar.github.io" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -1036,7 +1038,7 @@
 
             <!-- -------------------------umbrella-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #1976D2;" class="app-img" src="https://roneetkumar.github.io/umbrella/assets/512x512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #1976D2;" class="app-img" data-src="https://roneetkumar.github.io/umbrella/assets/512x512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Umbrella</a>
                     <a href="https://roneetkumar.github.io/umbrella/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -1044,7 +1046,7 @@
             </li>
             <!-- -------------------------code-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #FFEB3B;" class="app-img" src="https://roneetkumar.github.io/code/assets/512x512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #FFEB3B;" class="app-img" data-src="https://roneetkumar.github.io/code/assets/512x512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> Code - QR</a>
                     <a href="https://roneetkumar.github.io/code/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -1052,7 +1054,7 @@
             </li>
             <!-- -------------------------FartDroid's Fart Machine-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #f53d3d;" class="app-img" src="https://fartdroid.com/assets/images/icons/icon-512x512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #f53d3d;" class="app-img" data-src="https://fartdroid.com/assets/images/icons/icon-512x512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title"> FartDroid</a>
                     <a href="https://fartdroid.com" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>
@@ -1060,7 +1062,7 @@
             </li>
             <!-- -------------------------iFart Fart Soundboard-------------------------- -->
             <li class="card select-tools">
-                <div class="app-img-wrapper"><img style="background: #f53d3d;" class="app-img" src="https://ifart.app/assets/images/icons/icon-512x512.png"></img>
+                <div class="app-img-wrapper"><img style="background: #f53d3d;" class="app-img" data-src="https://ifart.app/assets/images/icons/icon-512x512.png"></img>
                 </div>
                 <div class="title-bar"> <a href="#" class="card-title" style="text-transform: initial;"> iFart</a>
                     <a href="https://ifart.app/" target="_blank" rel="noopener"><img class="open-btn" src="assets/open.svg" alt="open-svg" /> </a>

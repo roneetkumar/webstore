@@ -23,12 +23,13 @@ a
     position: sticky
     top: 0
     width: 100%
-    // height: 64px
+    height: 125px
     // padding: 8px 0
     background: $primary
     box-shadow: $box-shadow-4dp
     z-index: 1
     transition: all 225ms ease-in-out
+    overflow: hidden
     //search-bar------------------------------------------------------
     .search-bar
         @include centered-x
@@ -67,7 +68,7 @@ a
         //search-text-field---------------------------------------------------------
         .search-text-field
             @include centered-x
-            font-family: 'Roboto'
+            font-family: 'Roboto', sans-serif
             position: absolute
             width: 250px
             height: 40px
@@ -115,7 +116,7 @@ a
                 transition: box-shadow 225ms ease-in-out
                 h1
                     text-align: center
-                    font-family: 'Roboto'
+                    font-family: 'Roboto', sans-serif
                     font-size: 14px
                     color: #fff
                     padding: 0 12px
@@ -176,7 +177,7 @@ a
                 h1
                     @include centered-y
                     position: absolute
-                    font-family: 'Roboto'
+                    font-family: 'Roboto', sans-serif
                     font-size: 16px
                     color: rgba(#fff,.82)
                     font-weight: 400
@@ -195,13 +196,13 @@ a
                         h1.item-title
                             color: $primary !important
                     h1.item-title
-                        font-family: 'Roboto'
+                        font-family: 'Roboto', sans-serif
                         font-size: 12px
                         padding: 5px 18px
                         color: rgba(#fff,.92)
                         font-weight: 400
                     p.item-sub-title
-                        font-family: 'Roboto'
+                        font-family: 'Roboto', sans-serif
                         font-size: 11px
                         padding: 1px 18px 5px
                         color: rgba(#fff,.5)
@@ -230,7 +231,7 @@ a
                         fill: rgba(#fff,.5)
                     h1.item-title, h1.item-sub-title
                         @include centered-y
-                        font-family: 'Roboto'
+                        font-family: 'Roboto', sans-serif
                         position: absolute
                         font-size: 12px
                         color: rgba(#fff,.92)
@@ -294,7 +295,7 @@ a
                 bottom: 18px
                 left: 18px
                 h1.title,h1.email
-                    font-family: 'Roboto'
+                    font-family: 'Roboto', sans-serif
                     font-size: 13px
                     color: #fff
                     font-weight: 400
@@ -322,7 +323,7 @@ a
                     display: inline-block
                     left: 72px
                     color: rgba(#fff,.54)
-                    font-family: 'Roboto'
+                    font-family: 'Roboto', sans-serif
                     font-size: 13px
                     font-weight: 400
                     line-height: 48px
@@ -395,7 +396,7 @@ a
             background: rgba(0,0,0,0.3)
             .card-title
                 @include centered-y
-                font-family: 'Roboto'
+                font-family: 'Roboto', sans-serif
                 color: #fff
                 font-size: 18px
                 left: 18px
