@@ -1,4 +1,15 @@
 $(function() {
+    //importing data
+    $.ajax({
+        url: "https://gist.githubusercontent.com/roneetkumar/0cbb9daf65e19f658236cd25c0a875bf/raw/2efef4198d153d7b6a866f5a93d35fa7a8c2199b/webstore-apps.json",
+        dataType: "json",
+        success: function(data) {
+            $.each(data.apps, function(i, item) {
+                $('ul#grid-wrapper').append("<li class='card " + data.apps[i].appType + "'> <div class = 'app-img-wrapper'> <img style = 'background:" + data.apps[i].imgcolor + "' class ='app-img' src = '" + data.apps[i].imgsrc + "'> </img> </div> <div class = 'title-bar'> <a href = '#' class = 'card-title'>" + data.apps[i].title + " </a> <a href = '" + data.apps[i].link + "'target = '_blank' rel = 'noopener'> <img class = 'open-btn'src = 'assets/open.svg'alt = 'open-svg'/> </a> </div> </li>");
+
+            });
+        }
+    });
 
     // Function-for-alphabatical-order-------------------------------
     $(function() {
@@ -25,8 +36,6 @@ $(function() {
         });
         $('ul.chips-list').css('width', width);
     });
-
-
 
     //nav-open-function------------------------------------------
     function navOpen() {
@@ -154,31 +163,25 @@ $(function() {
     var card = $('.card');
 
     $('.all-chips, .apps-item').on('click', function() {
-        card.not('.card').addClass('card-hidden');
+        card.not(card).addClass('card-hidden');
         $('.all-chips').addClass('chip-clicked');
         $('.chips').not('.all-chips').removeClass('chip-clicked');
     });
 
-    $('.all-chips, .apps-item, .games-chips, .ec-chips, .news-chips, .trend-chips, .tools-chips').on('click', function() {
+    $('ul.chips-list li, .apps-item').on('click', function() {
         card.removeClass('card-hidden');
     });
 
-    $('.games-chips').on('click', function() {
-        card.not('.select-games').addClass('card-hidden');
-    });
-    $('.ec-chips').on('click', function() {
-        card.not('.select-ec').addClass('card-hidden');
-    });
-    $('.news-chips').on('click', function() {
-        card.not('.select-news').addClass('card-hidden');
-    });
-    $('.trend-chips').on('click', function() {
-        card.not('.select-trend').addClass('card-hidden');
-    });
-    $('.tools-chips').on('click', function() {
-        card.not('.select-tools').addClass('card-hidden');
+    var chips = ['.games-chips', '.ec-chips', '.news-chips', '.trend-chips', '.tools-chips'];
+    var select = ['.select-games', '.select-ec', '.select-news', '.select-trend', '.select-tools'];
+
+    $.each(chips, function(i, item) {
+        $(chips[i]).on('click', function() {
+            card.not(select[i]).addClass('card-hidden');
+        });
     });
 
+    // fab scroll top function
     $(window).scroll(function() {
         if ($(window).scrollTop() > 340) {
             $('.fab').addClass('fab-show');
