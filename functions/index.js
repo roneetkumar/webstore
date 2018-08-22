@@ -1,6 +1,6 @@
 //importing data
 $.ajax({
-    url: "apps.json",
+    url: "functions/apps.json",
     dataType: "json",
     success: function(data) {
         $.each(data.apps, function(i, item) {
