@@ -1,0 +1,556 @@
+{
+    "apps": [
+        {
+            "title" : "Ali Express",
+            "imgsrc" : "https://pwa.rocks/apps/aliexpress.svg",
+            "imgcolor" : "#f73f16",
+            "link" : "https://m.aliexpress.com/",
+            "appType" : "select-ec select-trend"
+        },
+        {
+            "title" : "Jalantikus",
+            "imgsrc" : "https://pwa.rocks/apps/jalantikus.svg",
+            "imgcolor" : "#fff",
+            "link" : "https://app.jalantikus.com/",
+            "appType" : "select-news"
+        },
+        {
+            "title" : "Telegram",
+            "imgsrc" : "https://pwa.rocks/apps/telegram.svg",
+            "imgcolor" : "#fff",
+            "link" : "https://web.telegram.org/#/login",
+            "appType" : "select-trend"
+        },
+        {
+            "title" : "Reacthn",
+            "imgsrc" : "https://pwa.rocks/apps/reacthn.svg",
+            "imgcolor" : "#00d8ff",
+            "link" : "https://react-hn.appspot.com/",
+            "appType" : "select-news"
+        },
+        {
+            "title" : "NASA",
+            "imgsrc" : "https://pwa.rocks/apps/nasa_logo.svg",
+            "imgcolor" : "#212121",
+            "link" : "https://code.nasa.gov/",
+            "appType" : ""
+        },
+        {
+            "title" : "Voice Memo",
+            "imgsrc" : "https://pwa.rocks/apps/voice-memos.svg",
+            "imgcolor" : "#673AB7",
+            "link" : "https://voice-memos.appspot.com/",
+            "appType" : "select-tools"
+        },
+        {
+            "title" : "Expense Manager",
+            "imgsrc" : "https://pwa.rocks/apps/expense-manager.svg",
+            "imgcolor" : "#2196F3",
+            "link" : "https://demo.vaadin.com/expense-manager/",
+            "appType" : "select-tools"
+        },
+        {
+            "title" : "Pokedex",
+            "imgsrc" : "https://pwa.rocks/apps/pokedex.png",
+            "imgcolor" : "#399494; image-rendering: pixelated; display: block; ",
+            "link" : "https://www.pokedex.org/",
+            "appType" : "select-ec"
+        },
+        {
+            "title" : "Selio",
+            "imgsrc" : "https://pwa.rocks/apps/selio.svg",
+            "imgcolor" : "#D32F2F",
+            "link" : "https://www.selioapp.com/",
+            "appType" : ""
+        },
+        {
+            "title" : "Snapdrop",
+            "imgsrc" : "https://pwa.rocks/apps/snapdrop.svg",
+            "imgcolor" : "#fff",
+            "link" : "https://snapdrop.net/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Podle",
+            "imgsrc" : "https://pwa.rocks/apps/podle.svg",
+            "imgcolor" : "#009688",
+            "link" : "https://podle.audio/",
+            "appType" : ""
+        },{
+            "title" : "Housing.com",
+            "imgsrc" : "https://pwa.rocks/apps/housing.svg",
+            "imgcolor" : "#fbdd00",
+            "link" : "https://housing.com/",
+            "appType" : "select-ec"
+        },{
+            "title" : "Piiko",
+            "imgsrc" : "https://pwa.rocks/apps/piiko.png",
+            "imgcolor" : "#212121",
+            "link" : "https://www.piiko.com/",
+            "appType" : ""
+        },{
+            "title" : "Progressive Beer",
+            "imgsrc" : "https://pwa.rocks/apps/prog-beer.svg",
+            "imgcolor" : "#fbdd00",
+            "link" : "https://deanhume.github.io/beer/",
+            "appType" : ""
+        },{
+            "title" : "Google I/O",
+            "imgsrc" : "https://pwa.rocks/apps/google-io.svg",
+            "imgcolor" : "#78909c",
+            "link" : "https://events.google.com/io2016/",
+            "appType" : ""
+        },{
+            "title" : "Web Flap",
+            "imgsrc" : "https://pwa.rocks/apps/web-flap.png",
+            "imgcolor" : "#6cc851; image-rendering: pixelated; height: 114px; padding: 34px 15px; display: block;",
+            "link" : "https://www.progressivewebflap.com/",
+            "appType" : "select-games"
+        },{
+            "title" : "Dev Opera",
+            "imgsrc" : "https://pwa.rocks/apps/dev-opera.svg",
+            "imgcolor" : "#fff",
+            "link" : "https://dev.opera.com/",
+            "appType" : ""
+        },{
+            "title" : "Meatscope",
+            "imgsrc" : "https://pwa.rocks/apps/meatscope.svg",
+            "imgcolor" : "#2196F3",
+            "link" : "https://meatscope.camera/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Guitar Tuner",
+            "imgsrc" : "https://pwa.rocks/apps/guitar-tuner.svg",
+            "imgcolor" : "#b0bec5",
+            "link" : "https://guitar-tuner.appspot.com/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Sound Slice",
+            "imgsrc" : "https://pwa.rocks/apps/soundslice.svg",
+            "imgcolor" : "#60506f",
+            "link" : "https://www.soundslice.com/",
+            "appType" : ""
+        },{
+            "title" : "NFC Shopping Cart",
+            "imgsrc" : "https://pwa.rocks/apps/webnfc.svg",
+            "imgcolor" : "#b4b672",
+            "link" : "https://webnfc-shoppingcart.appspot.com/",
+            "appType" : "select-tools"
+        },{
+            "title" : "SVG OMG",
+            "imgsrc" : "https://pwa.rocks/apps/svgomg.svg",
+            "imgcolor" : "#323faa",
+            "link" : "https://jakearchibald.github.io/svgomg/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Geo News",
+            "imgsrc" : "https://pwa.rocks/apps/geo-news.svg",
+            "imgcolor" : "#607d8b",
+            "link" : "https://m.geo.tv/",
+            "appType" : "select-news"
+        },{
+            "title" : "Financial Times",
+            "imgsrc" : "https://pwa.rocks/apps/financial-times.svg",
+            "imgcolor" : "#fff",
+            "link" : "https://app.ft.com/",
+            "appType" : "select-trend select-news"
+        },{
+            "title" : "English Accents Map",
+            "imgsrc" : "https://pwa.rocks/apps/english-accents-map.svg",
+            "imgcolor" : "#3F51B5",
+            "link" : "https://www.englishaccentsmap.com/",
+            "appType" : "select-trend"
+        },{
+            "title" : "The Session",
+            "imgsrc" : "https://pwa.rocks/apps/session.svg",
+            "imgcolor" : "#FFC107",
+            "link" : "https://thesession.org/",
+            "appType" : "select-trend"
+        },{
+            "title" : "Snapwat",
+            "imgsrc" : "https://pwa.rocks/apps/snapwat.svg",
+            "imgcolor" : "#987fff",
+            "link" : "https://snapw.at/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Inbox Attack",
+            "imgsrc" : "https://pwa.rocks/apps/inbox-attack.svg",
+            "imgcolor" : "#009688",
+            "link" : "https://andreasbovens.github.io/inbox-attack/",
+            "appType" : "select-games"
+        },{
+            "title" : "bubble",
+            "imgsrc" : "https://pwa.rocks/apps/bubble.svg",
+            "imgcolor" : "#987fff",
+            "link" : "https://samsunginternet.github.io/bubble/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Smaller Pictures",
+            "imgsrc" : "https://pwa.rocks/apps/smaller-pictures.svg",
+            "imgcolor" : "#f1c40e",
+            "link" : "https://smaller-pictures.appspot.com/",
+            "appType" : "select-tools"
+        },{
+            "title" : "The Billings Gazette",
+            "imgsrc" : "https://pwa.rocks/apps/billings-gazette.svg",
+            "imgcolor" : "#231f20",
+            "link" : "https://billingsgazette.leeaws.com/pwa/",
+            "appType" : "select-news"
+        },{
+            "title" : "Air Horner",
+            "imgsrc" : "https://pwa.rocks/apps/air-horner.svg",
+            "imgcolor" : "#1194f6",
+            "link" : "https://airhorner.com/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Digikala",
+            "imgsrc" : "https://pwa.rocks/apps/digikala.svg",
+            "imgcolor" : "#212121",
+            "link" : "https://www.digikala.com/",
+            "appType" : "select-trend"
+        },{
+            "title" : "Paper Planes",
+            "imgsrc" : "https://pwa.rocks/apps/paper-planes.svg",
+            "imgcolor" : "#987fff",
+            "link" : "https://paperplanes.world/",
+            "appType" : "select-games"
+        },{
+            "title" : "Firefox Status",
+            "imgsrc" : "https://pwa.rocks/apps/firefox.png",
+            "imgcolor" : "#01579b",
+            "link" : "https://platform-status.mozilla.org/",
+            "appType" : ""
+        },{
+            "title" : "Get Kana!",
+            "imgsrc" : "https://pwa.rocks/apps/get-kana.svg",
+            "imgcolor" : "#9e9e9e",
+            "link" : "https://getkana.com/app",
+            "appType" : "select-games"
+        },{
+            "title" : "BaBe",
+            "imgsrc" : "https://pwa.rocks/apps/babe.svg",
+            "imgcolor" : "#ffc107",
+            "link" : "https://app.babe.co.id/",
+            "appType" : "select-news"
+        },{
+            "title" : "Resilient Web Design",
+            "imgsrc" : "https://pwa.rocks/apps/resilient-web-design.svg",
+            "imgcolor" : "#5f7995",
+            "link" : "https://resilientwebdesign.com/",
+            "appType" : "select-trend"
+        },{
+            "title" : "Oumy",
+            "imgsrc" : "https://pwa.rocks/apps/oumy.svg",
+            "imgcolor" : "#fff",
+            "link" : "https://www.oumy.com/",
+            "appType" : ""
+        },{
+            "title" : "Emojoy",
+            "imgsrc" : "https://pwa.rocks/apps/emojoy.svg",
+            "imgcolor" : "#F48FB1",
+            "link" : "https://jakearchibald-gcm.appspot.com/",
+            "appType" : ""
+        },{
+            "title" : "2048 Puzzle",
+            "imgsrc" : "https://pwa.rocks/apps/puzzle-2048.svg",
+            "imgcolor" : "#edc500",
+            "link" : "https://2048-opera-pwa.surge.sh/",
+            "appType" : "select-games"
+        },{
+            "title" : "Datememe",
+            "imgsrc" : "https://pwa.rocks/apps/datememe.svg",
+            "imgcolor" : "#00BCD4",
+            "link" : "https://www.datememe.com/",
+            "appType" : ""
+        },{
+            "title" : "QR Code Scanner",
+            "imgsrc" : "https://pwa.rocks/apps/qrcode.svg",
+            "imgcolor" : "#5f7d8c",
+            "link" : "https://qrcodescan.in/",
+            "appType" : "select-tools"
+        },{
+            "title" : "PolyMail",
+            "imgsrc" : "https://pwa.rocks/apps/poly-mail.svg",
+            "imgcolor" : "#f44336",
+            "link" : "https://poly-mail.appspot.com/",
+            "appType" : ""
+        },{
+            "title" : "Wave-PD1",
+            "imgsrc" : "https://pwa.rocks/apps/wave-pd1.svg",
+            "imgcolor" : "#212121",
+            "link" : "https://alexgibson.github.io/wavepad/",
+            "appType" : "select-tools"
+        },{
+            "title" : "RioRun",
+            "imgsrc" : "https://pwa.rocks/apps/riorun.svg",
+            "imgcolor" : "#1c92c8",
+            "link" : "https://riorun.theguardian.com/",
+            "appType" : ""
+        },{
+            "title" : "Konga EZ",
+            "imgsrc" : "https://pwa.rocks/apps/konga.svg",
+            "imgcolor" : "#335c88",
+            "link" : "https://www.konga.com/",
+            "appType" : "select-trend"
+        },{
+            "title" : "Flipkart",
+            "imgsrc" : "https://pwa.rocks/apps/flipkart.svg",
+            "imgcolor" : "#0d69b3",
+            "link" : "https://www.flipkart.com",
+            "appType" : "select-ec select-trend"
+        }
+        ,{
+            "title" : "Flipboard",
+            "imgsrc" : "https://pwa.rocks/apps/flipboard.svg",
+            "imgcolor" : "#cd0000",
+            "link" : "https://flipboard.com/",
+            "appType" : "select-ec select-trend select-news"
+        },{
+            "title" : "Offline Wiki",
+            "imgsrc" : "https://pwa.rocks/apps/wiki-offline.svg",
+            "imgcolor" : "#e1e1e1",
+            "link" : "https://wiki-offline.jakearchibald.com/",
+            "appType" : "select-ec"
+        },{
+            "title" : "SV Ginger",
+            "imgsrc" : "https://sv-ginger.appspot.com/images/touch/chrome-splashscreen-icon-384x384.png",
+            "imgcolor" : "#000",
+            "link" : "https://sv-ginger.appspot.com/",
+            "appType" : ""
+        },{
+            "title" : "Remember",
+            "imgsrc" : "https://paulhoughton.github.io/remember/icons/ic_directions_walk_48pt_4x.png",
+            "imgcolor" : "#3f51b5",
+            "link" : "https://paulhoughton.github.io/remember/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Topple Trump",
+            "imgsrc" : "https://toppletrump.com/topple-trump/favicons/android-chrome-192x192.png",
+            "imgcolor" : "#212121",
+            "link" : "https://toppletrump.com/",
+            "appType" : "select-games"
+        },{
+            "title" : "Polymon Project",
+            "imgsrc" : "https://polymon.polymer-project.org/images/polymon_icon.png",
+            "imgcolor" : "#09537e",
+            "link" : "https://polymon.polymer-project.org/",
+            "appType" : ""
+        },{
+            "title" : "DevSpace",
+            "imgsrc" : "https://app.devspace.io/images/chrome/launcher-icon-4x.png",
+            "imgcolor" : "#2196f3",
+            "link" : "https://app.devspace.io/",
+            "appType" : "select-ec"
+        },{
+            "title" : "Colosseum",
+            "imgsrc" : "https://naramsim.github.io/Colosseum/images/icons/launcher-256.png",
+            "imgcolor" : "#5991be",
+            "link" : "https://naramsim.github.io/Colosseum/",
+            "appType" : ""
+        },{
+            "title" : "SplittyPie",
+            "imgsrc" : "https://splittypie.com/assets/icons/android/icon-512x512.png",
+            "imgcolor" : "#3F51B5",
+            "link" : "https://splittypie.com/",
+            "appType" : ""
+        },{
+            "title" : "AMP Project",
+            "imgsrc" : "https://www.ampproject.org/static/img/icons/any.svg",
+            "imgcolor" : "#fff",
+            "link" : "https://www.ampproject.org/",
+            "appType" : ""
+        },{
+            "title" : "Notepad",
+            "imgsrc" : "https://notepad.js.org/img/icon-196.png",
+            "imgcolor" : "#9bc0e3",
+            "link" : "https://notepad.js.org",
+            "appType" : "select-tools"
+        },{
+            "title" : "OYO Rooms",
+            "imgsrc" : "https://www.oyorooms.com/logo_192_by_192.png",
+            "imgcolor" : "#fff",
+            "link" : "https://www.oyorooms.com/",
+            "appType" : ""
+        },{
+            "title" : "Github Explorer",
+            "imgsrc" : "https://github-e.com/assets/inspectocat.png",
+            "imgcolor" : "#fff",
+            "link" : "https://github-e.com",
+            "appType" : "select-tools select-trend select-ec"
+        },{
+            "title" : "AMP Examples",
+            "imgsrc" : "https://ampbyexample.com/favicons/android-chrome-192x192.png",
+            "imgcolor" : "#fff",
+            "link" : "https://ampbyexample.com/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Land Lines",
+            "imgsrc" : "https://lines.chromeexperiments.com/img/webapp/LandLines_WebAppIcon_192x192.png",
+            "imgcolor" : "#fff",
+            "link" : "https://lines.chromeexperiments.com/",
+            "appType" : ""
+        },{
+            "title" : "The Weather Channel",
+            "imgsrc" : "https://s.w-x.co/twc_192x192.png",
+            "imgcolor" : "#003698",
+            "link" : "https://weather.com/",
+            "appType" : "select-tools"
+        }
+        ,{
+            "title" : "The Guardian",
+            "imgsrc" : "https://assets.guim.co.uk/images/favicons/187f09d314cbe89243216f83fce16e90/roundel-192x192.png",
+            "imgcolor" : "#f6f6f6",
+            "link" : "https://www.theguardian.com",
+            "appType" : "select-news"
+        },{
+            "title" : "5miles",
+            "imgsrc" : "https://www.5milesapp.com/images/favicons//android-chrome-192x192.png",
+            "imgcolor" : "#fff",
+            "link" : "https://www.5milesapp.com/",
+            "appType" : ""
+        },{
+            "title" : "Twitter",
+            "imgsrc" : "https://ma-0.twimg.com/twitter-assets/responsive-web/web/ltr/icon-default.882fa4ccf6539401.png",
+            "imgcolor" : "#1da1f2",
+            "link" : "https://www.twitter.com/",
+            "appType" : "select-trend"
+        },{
+            "title" : "Notes",
+            "imgsrc" : "https://pwa.rocks/apps/notes.svg",
+            "imgcolor" : "linear-gradient(to left, #B24592 , #F15F79)",
+            "link" : "https://sii.im/playground/notes/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Calculator",
+            "imgsrc" : "https://calculator.tooo.io/icon.png",
+            "imgcolor" : "#317bbe",
+            "link" : "https://calculator.tooo.io/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Gamezop",
+            "imgsrc" : "https://static.gamezop.io/peach/assets/launcher/launcher-512.png",
+            "imgcolor" : "#fff",
+            "link" : "https://games.gamezop.com/",
+            "appType" : "select-games"
+        },{
+            "title" : "Santa Tracker",
+            "imgsrc" : "https://santatracker.google.com/images/icon-192.png",
+            "imgcolor" : "#39b249",
+            "link" : "https://santatracker.google.com/village.html",
+            "appType" : "select-games"
+        },{
+            "title" : "Truecaller",
+            "imgsrc" : "https://www.truecaller.com/icon-192x192.png",
+            "imgcolor" : "#607D8B",
+            "link" : "https://www.truecaller.com/",
+            "appType" : "select-tools select-trend"
+        },{
+            "title" : "PolyTimer",
+            "imgsrc" : "https://polytimer.rocks/images/manifest/icon-192x192.png",
+            "imgcolor" : "#4a148c",
+            "link" : "https://polytimer.rocks/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Battery Status",
+            "imgsrc" : "https://irekrog.github.io/battery-status-progressive-web-app/images/icons/icon-192x192.png",
+            "imgcolor" : "#4388fd",
+            "link" : "https://irekrog.github.io/battery-status-progressive-web-app",
+            "appType" : "select-tools"
+        },{
+            "title" : "Headline",
+            "imgsrc" : "https://headline.tooo.io/icon.png",
+            "imgcolor" : "#9E9E9E",
+            "link" : "https://headline.tooo.io/",
+            "appType" : "select-news"
+        },{
+            "title" : "Freelancer",
+            "imgsrc" : "https://m.freelancer.com/images/icons/launcher-icons/65008340.launcher-icon-192x192.png",
+            "imgcolor" : "#47bff5",
+            "link" : "https://m.freelancer.com/",
+            "appType" : "select-trend"
+        },{
+            "title" : "Readr",
+            "imgsrc" : "https://readr.klg.bz/readr_android-chrome-512x512.png",
+            "imgcolor" : "#fff",
+            "link" : "https://readr.klg.bz/",
+            "appType" : "select-news"
+        },{
+            "title" : "RngDng",
+            "imgsrc" : "https://rngdng.de/android-chrome-512x512.png",
+            "imgcolor" : "#ffee58",
+            "link" : "https://rngdng.de/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Speedometer",
+            "imgsrc" : "https://iamvdo.github.io/speedometer-pwa/img/icon-256x256.png",
+            "imgcolor" : "#8e44ad",
+            "link" : "https://iamvdo.github.io/speedometer-pwa/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Google Plus",
+            "imgsrc" : "https://ssl.gstatic.com/images/branding/product/1x/google_plus_192dp.png",
+            "imgcolor" : "#efefef",
+            "link" : "https://plus.google.com/",
+            "appType" : ""
+        },{
+            "title" : "Grrd's 4 in a Row",
+            "imgsrc" : "https://grrd01.github.io/4inaRow/Images/icon_512.png",
+            "imgcolor" : "#efefef",
+            "link" : "https://grrd01.github.io/4inaRow/",
+            "appType" : "select-games"
+        },{
+            "title" : "Grrd's Dice",
+            "imgsrc" : "https://grrd01.github.io/Dice/images/icon_512.png",
+            "imgcolor" : "#efefef",
+            "link" : "https://grrd01.github.io/Dice/",
+            "appType" : "select-games"
+        },{
+            "title" : "Grrd's Puzzle",
+            "imgsrc" : "https://grrd01.github.io/Puzzle/Images/g_icon_512.png",
+            "imgcolor" : "#efefef",
+            "link" : "https://grrd01.github.io/Puzzle/",
+            "appType" : "select-games"
+        },{
+            "title" : "Martin Minchev",
+            "imgsrc" : "https://me.marti.bg/images/logo.png",
+            "imgcolor" : "#fff",
+            "link" : "https://me.marti.bg/",
+            "appType" : ""
+        },{
+            "title" : "Chroma",
+            "imgsrc" : "https://roneetkumar.github.io/chroma/assets/512x512.png",
+            "imgcolor" : "linear-gradient(to right, #3F51B5, #673AB7)",
+            "link" : "https://roneetkumar.github.io/chroma/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Roneet Kumar",
+            "imgsrc" : "https://roneetkumar.github.io/assets/512x512.png",
+            "imgcolor" : "#03A9F4",
+            "link" : "https://roneetkumar.github.io",
+            "appType" : ""
+        },{
+            "title" : "Umbrella",
+            "imgsrc" : "https://roneetkumar.github.io/umbrella/assets/512x512.png",
+            "imgcolor" : "#1976D2",
+            "link" : "https://roneetkumar.github.io/umbrella/",
+            "appType" : "select-tools"
+        },{
+            "title" : "Code - QR",
+            "imgsrc" : "https://roneetkumar.github.io/code/assets/512x512.png",
+            "imgcolor" : "#FFEB3B",
+            "link" : "https://roneetkumar.github.io/code/",
+            "appType" : "select-tools"
+        },{
+            "title" : "FartDroid",
+            "imgsrc" : "https://fartdroid.com/assets/images/icons/icon-512x512.png",
+            "imgcolor" : "#f53d3d",
+            "link" : "https://fartdroid.com",
+            "appType" : "select-tools"
+        },{
+            "title" : "iFart",
+            "imgsrc" : "https://ifart.app/assets/images/icons/icon-512x512.png",
+            "imgcolor" : "#f53d3d",
+            "link" : "https://ifart.app/",
+            "appType" : "select-tools"
+        }]
+
+}
