@@ -1,6 +1,15 @@
 $(function() {
-    //importing data
-    importData();
+
+    $.ajax({
+        url: "https://roneetkumar.github.io/webstore/functions/apps.json",
+        dataType: "json",
+        async: false,
+        success: function(data) {
+            $.each(data.apps, function(i, item) {
+                $('ul#grid-wrapper').append("<li class='card " + data.apps[i].appType + "'> <div class = 'app-img-wrapper'> <img style = 'background:" + data.apps[i].imgcolor + "' class ='app-img' src = '" + data.apps[i].imgsrc + "'> </img> </div> <div class = 'title-bar'> <a href = '#' class = 'card-title'>" + data.apps[i].title + " </a> <a href = '" + data.apps[i].link + "'target = '_blank' rel = 'noopener'> <img class = 'open-btn'src = 'assets/open.svg'alt = 'open-svg'/> </a> </div> </li>");
+            });
+        }
+    });
 
     // Function-for-alphabatical-order-------------------------------
     $(function() {
@@ -205,7 +214,8 @@ $(function() {
         }
     });
 
-    $('.app-img').Lazy();
+    $('.app-img').lazy();
+
 });
 
 //search--------------------------------------
@@ -225,20 +235,6 @@ function searchFunction() {
             li[i].style.display = "none";
         }
     }
-}
-
-//importing data
-function importData() {
-    $.ajax({
-        url: "https://roneetkumar.github.io/webstore/functions/apps.json",
-        dataType: "json",
-        async: false,
-        success: function(data) {
-            $.each(data.apps, function(i, item) {
-                $('ul#grid-wrapper').append("<li class='card " + data.apps[i].appType + "'> <div class = 'app-img-wrapper'> <img style = 'background:" + data.apps[i].imgcolor + "' class ='app-img' src = '" + data.apps[i].imgsrc + "'> </img> </div> <div class = 'title-bar'> <a href = '#' class = 'card-title'>" + data.apps[i].title + " </a> <a href = '" + data.apps[i].link + "'target = '_blank' rel = 'noopener'> <img class = 'open-btn'src = 'assets/open.svg'alt = 'open-svg'/> </a> </div> </li>");
-            });
-        }
-    });
 }
 
 
