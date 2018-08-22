@@ -1,6 +1,6 @@
 //importing data
 $.ajax({
-    url: "https://gist.githubusercontent.com/roneetkumar/0cbb9daf65e19f658236cd25c0a875bf/raw/2efef4198d153d7b6a866f5a93d35fa7a8c2199b/webstore-apps.json",
+    url: "apps.json",
     dataType: "json",
     success: function(data) {
         $.each(data.apps, function(i, item) {
