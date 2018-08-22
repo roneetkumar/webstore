@@ -1,15 +1,7 @@
-//importing data
-$.ajax({
-    url: "https://roneetkumar.github.io/webstore/functions/apps.json",
-    dataType: "json",
-    success: function(data) {
-        $.each(data.apps, function(i, item) {
-            $('ul#grid-wrapper').append("<li class='card " + data.apps[i].appType + "'> <div class = 'app-img-wrapper'> <img style = 'background:" + data.apps[i].imgcolor + "' class ='app-img' src = '" + data.apps[i].imgsrc + "'> </img> </div> <div class = 'title-bar'> <a href = '#' class = 'card-title'>" + data.apps[i].title + " </a> <a href = '" + data.apps[i].link + "'target = '_blank' rel = 'noopener'> <img class = 'open-btn'src = 'assets/open.svg'alt = 'open-svg'/> </a> </div> </li>");
-        });
-    }
-});
-
 $(function() {
+    //importing data
+    importData();
+
     // Function-for-alphabatical-order-------------------------------
     $(function() {
         $.fn.sortList = function() {
@@ -34,6 +26,8 @@ $(function() {
             width += $(this).outerWidth(true);
         });
         $('ul.chips-list').css('width', width);
+
+
     });
 
     //nav-open-function------------------------------------------
@@ -177,6 +171,7 @@ $(function() {
     $.each(chips, function(i, item) {
         $(chips[i]).on('click', function() {
             card.not(select[i]).addClass('card-hidden');
+            // console.log(chips[i]);
         });
     });
 
@@ -211,7 +206,6 @@ $(function() {
     });
 
     $('.app-img').Lazy();
-
 });
 
 //search--------------------------------------
@@ -231,6 +225,20 @@ function searchFunction() {
             li[i].style.display = "none";
         }
     }
+}
+
+//importing data
+function importData() {
+    $.ajax({
+        url: "https://roneetkumar.github.io/webstore/functions/apps.json",
+        dataType: "json",
+        async: false,
+        success: function(data) {
+            $.each(data.apps, function(i, item) {
+                $('ul#grid-wrapper').append("<li class='card " + data.apps[i].appType + "'> <div class = 'app-img-wrapper'> <img style = 'background:" + data.apps[i].imgcolor + "' class ='app-img' src = '" + data.apps[i].imgsrc + "'> </img> </div> <div class = 'title-bar'> <a href = '#' class = 'card-title'>" + data.apps[i].title + " </a> <a href = '" + data.apps[i].link + "'target = '_blank' rel = 'noopener'> <img class = 'open-btn'src = 'assets/open.svg'alt = 'open-svg'/> </a> </div> </li>");
+            });
+        }
+    });
 }
 
 
