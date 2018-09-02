@@ -143,24 +143,24 @@ $(function() {
         }
     });
 
-    //nav-list-selection--------------------------------------------------
+    //nav-list-selection------------------------------
     $('li.apps-item, li.bug-list').on('click', function() {
-        $('li.apps-item, li.bug-list').addClass('menu-item-selected');
+        $(this).addClass('menu-item-selected');
         $('li.bug-list, li.apps-item').not(this).removeClass('menu-item-selected');
     });
 
-    //nav-bug-list-----------------------------------------------
+    //nav-bug-list------------------------------------
     $('li.bug-list').on('click', function() {
         $('li.bug-list-opt').toggle();
     });
 
-    //chips-selection-----------------------------------------
+    //chips-selection----------------------------------
     $('.chips').on('click', function() {
         $(this).addClass('chip-clicked');
         $('.chips').not(this).removeClass('chip-clicked');
     });
 
-    //chip-filter---------------------------------------
+    //chip-filter------------------------------------
     var card = $('.card');
 
     $('.all-chips, .apps-item').on('click', function() {
@@ -173,13 +173,13 @@ $(function() {
         card.removeClass('card-hidden');
     });
 
-    var chips = ['.games-chips', '.ec-chips', '.news-chips', '.trend-chips', '.tools-chips'];
-    var select = ['.select-games', '.select-ec', '.select-news', '.select-trend', '.select-tools'];
+    var chipsClasses = ['.games-chips', '.ec-chips', '.news-chips', '.trend-chips', '.tools-chips'];
+    var selectClasses = ['.select-games', '.select-ec', '.select-news', '.select-trend', '.select-tools'];
 
-    $.each(chips, function(i, item) {
-        $(chips[i]).on('click', function() {
-            card.not(select[i]).addClass('card-hidden');
-            // console.log(chips[i]);
+    $.each(chipsClasses, function(i, item) {
+        $(chipsClasses[i]).on('click', function() {
+            card.not(selectClasses[i]).addClass('card-hidden');
+            // console.log(chipsClasses[i]);
         });
     });
 
@@ -214,6 +214,7 @@ $(function() {
     });
 
     $('img.app-img').Lazy();
+
 });
 
 //search--------------------------------------
@@ -245,11 +246,12 @@ function searchFunction() {
 //     $('').css('color', primaryColors);
 // });
 //
+
 // var accentColorsValues = ['#FF9100', '#F44336', '#FF5722', '#e91e63'];
 // var accentColors = accentColorsValues[Math.floor(Math.random() * accentColorsValues.length)];
 //
 // $('.wrapper').each(function() {
-//     $('').css('background-color',accentColors);
-//     $('').css('fill',accentColors);
+//     $('').css('background-color', accentColors);
+//     $('').css('fill', accentColors);
 //     $('').css('color', accentColors);
 // });
