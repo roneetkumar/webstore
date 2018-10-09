@@ -34,8 +34,6 @@ $(function() {
             width += $(this).outerWidth(true);
         });
         $('ul.chips-list').css('width', width);
-
-
     });
 
     //nav-open-function------------------------------------------
@@ -179,7 +177,6 @@ $(function() {
     $.each(chipsClasses, function(i, item) {
         $(chipsClasses[i]).on('click', function() {
             card.not(selectClasses[i]).addClass('card-hidden');
-            // console.log(chipsClasses[i]);
         });
     });
 
