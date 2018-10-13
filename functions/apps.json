@@ -518,7 +518,7 @@
         },{
             "title" : "Chroma",
             "imgsrc" : "https://roneetkumar.github.io/chroma/assets/512x512.png",
-            "imgcolor" : "linear-gradient(to right, #3F51B5, #673AB7)",
+            "imgcolor" : "#B0BEC5",
             "link" : "https://roneetkumar.github.io/chroma/",
             "appType" : "select-tools"
         },{
