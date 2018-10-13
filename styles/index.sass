@@ -1,16 +1,4 @@
-// -------------imports--------------------
-@import 'center-mixins'
-
-//variables----------
-$chips-scroll-width: 560px
-
-//color-------------
-$theme-color: #fff
-$accents: #2948ff
-$selection-bg-dark: rgba(#000,.05)
-
-//shadows-----------
-$shadows: 0 0 12px rgba(#000,.2)
+@import "Variables And Mixins.sass"
 
 *
     margin: 0
@@ -26,19 +14,19 @@ html,body
 
 a
     text-decoration: none
-//header---------------------------------------------------
+    
+//header
 .header
     position: sticky
     top: 0
     width: 100%
     height: 125px
-    // padding: 8px 0
     background: $theme-color
     box-shadow: $shadows
     z-index: 1
     transition: all 225ms ease-in-out
     overflow: hidden
-    //search-bar------------------------------------------------------
+    //search bar
     .search-bar
         @include centered-x
         display: inline-flex
@@ -73,7 +61,7 @@ a
             right: 6px
             left: initial
 
-        //search-text-field---------------------------------------------------------
+        //search text field
         .search-text-field
             @include centered-x
             font-family: 'Roboto', sans-serif
@@ -99,25 +87,22 @@ a
                 &::-webkit-input-placeholder
                     color: rgba(0,0,0,0.54)
 
-    //chips-wrapper-------------------------------------------------------------
+    // chips wrapper
     #chips-wrapper
         text-align: center
-        // margin: 238px 0 -10px 0
         overflow-x: scroll
         &::-webkit-scrollbar
             display: none
         .chips-list
-            width: $chips-scroll-width
-            margin: 0 auto
             padding: 0 6px
             list-style: none
             height: 62px
+            display: inline-block
             .chips
                 margin: 15px 6px
                 height: 32px
                 background: linear-gradient(to right, #396afc, #2948ff)
                 float: left
-                // display: inline-block
                 border-radius: 50px
                 box-shadow: $shadows
                 box-sizing: border-box
@@ -131,11 +116,10 @@ a
                     text-transform: uppercase
                     line-height: 33px
             .chip-clicked
-                // box-shadow: $box-shadow-8dp
                 background: #fff
                 h1
                     color: $accents
-//overlay---------------------------------------------
+//overlay
 .nav-overlay,.search-overlay
     width: 100%
     height: 100%
@@ -151,7 +135,7 @@ a
 .wrapper,nav.nav-bar-wrapper,section#chips-wrapper,section#grid-wrapper,section.fab
     overflow: hidden
 
-    //-----------------------------info-show-wrapper------------------------
+    //info show wrapper
     .about-wrapper,.support-wrapper,.faq-wrapper
         @include centered-x
         transform: translate(-50%,100%)
@@ -189,7 +173,7 @@ a
                     font-size: 16px
                     color: rgba(#000,.82)
                     font-weight: 400
-            //------------------------------faq-contents-start------------------------
+            //faq contents start
             ul.faq-content-list
                 list-style: none
                 hr
@@ -217,7 +201,7 @@ a
                         font-weight: 400
                     a
                         color: $accents
-            //------------------------------faq-contents-end------------------------
+            //faq contents end
             ul.about-content-list,ul.support-content-list
                 position: relative
                 list-style: none
@@ -257,7 +241,7 @@ a
             @include centered
     .info-show
         transform: translate(-50%, 0)
-    //nav-bar---------------------------------------------
+    //nav bar
     .nav-bar-wrapper
         position: fixed
         width: 84.89%
@@ -277,7 +261,7 @@ a
             position: relative
             width: 100%
             height: 172px
-            background: url('../assets/4.webp')
+            background: url('../assets/nav-header.webp')
                 size: 302px
                 color: $theme-color
             box-shadow: $shadows
@@ -289,9 +273,7 @@ a
                 display: inline-block
                 margin: 20px 18px
                 z-index: 1
-                // border: 2px solid rgba(#000,.1)
                 box-shadow: $shadows
-                // overflow: hidden
                 background: $theme-color
                 img.product-logo
                     @include centered
@@ -363,12 +345,12 @@ a
             transform: translateX(0)
 
 
-    //card-grid-wrapper--------------------------------------------------------
+    //card grid wrapper
     #grid-wrapper
         max-width: 1400px
         margin: 20px auto
         text-align: center
-    //cards------------------------------------------------------------
+    //cards
     .card
         position: relative
         width: 250px
@@ -426,7 +408,7 @@ a
     .card-hidden
         display: none
 
-//fab---------------------------------------------------------------------------
+//fab
 .fab
     width: 56px
     height: 56px
@@ -447,7 +429,6 @@ a
     svg
         padding: 10px
         fill: $theme-color
-
 
 .fab-show
     transform: scale(1)
