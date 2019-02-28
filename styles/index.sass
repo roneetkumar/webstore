@@ -7,7 +7,7 @@
     -webkit-user-select: none
     -moz-user-select: none
     -ms-user-select: none
-    user-select: none 
+    user-select: none
 
 html,body
     background-color: $theme-color
@@ -16,9 +16,23 @@ a
     text-decoration: none
 
 //header
+header
+    width: 100%
+    height: 60px
+    background: #ffffff
+    position: fixed
+    z-index: 1
+    text-align: center
+    line-height: 60px
+    font-size: 24px
+    font-family: 'Google Sans'
+    letter-spacing: 1px
+    color: #2d51fe
+    box-shadow: $shadows
+
 .header
-    position: sticky
-    top: 0
+    position: fixed
+    bottom: 0
     width: 100%
     height: 125px
     background: $theme-color
@@ -33,7 +47,7 @@ a
         width: 95%
         max-width: 344px
         height: 48px
-        margin-top: 15px
+        margin-top: -4px
         background: #fff
         border-radius: 8px
         box-shadow: $shadows
@@ -348,7 +362,8 @@ a
     //card grid wrapper
     #grid-wrapper
         max-width: 1400px
-        margin: 20px auto
+        margin: 80px auto
+        margin-bottom: 134px
         text-align: center
     //cards
     .card
@@ -415,20 +430,20 @@ a
     border-radius: 50%
     background: linear-gradient(to right, #396afc, #2948ff)
     position: fixed
-    bottom: 24px
-    right: 24px
+    bottom: 150px
+    left: 50%
     box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 3px 3px rgba(0,0,0,0.24), 0 0 6px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.24)
     transition: all 198ms ease-in-out
     cursor: default
     z-index: 0
-    transform: scale(0)
+    transform: translateX(-50%) scale(0)
     overflow: hidden
     &:hover
         box-shadow: 0 0 6px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.24), 0 0 12px rgba(0,0,0,0.12), 0 12px 12px rgba(0,0,0,0.24)
-        transform: scale(1.05)
+        transform: translateX(-50%) scale(1.05)
     svg
         padding: 10px
         fill: $theme-color
 
 .fab-show
-    transform: scale(1)
+    transform: translateX(-50%) scale(1)

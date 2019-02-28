@@ -25,55 +25,8 @@
 
 <body>
     <!-- header -->
-    <header id="top"></header>
-    <section class="header">
-        <!-- search bar -->
-        <div class="search-overlay"></div>
-        <div class="search-bar">
-            <svg class="nav-btn" xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                <path d="M0 0h48v48H0z" fill="none" />
-                <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z" />
-            </svg>
-            <svg class="back-btn" xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                <path d="M0 0h48v48H0z" fill="none" />
-                <path d="M40 22H15.66l11.17-11.17L24 8 8 24l16 16 2.83-2.83L15.66 26H40v-4z" />
-            </svg>
-            <input autocomplete="off" id="myinput" onkeyup="searchFunction()" class="search-text-field" type="text" name="search" value="" placeholder="Search">
+    <header id="top">webstore</header>
 
-            <svg class="search-btn" xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                <path d="M31 28h-1.59l-.55-.55C30.82 25.18 32 22.23 32 19c0-7.18-5.82-13-13-13S6 11.82 6 19s5.82 13 13 13c3.23 0 6.18-1.18 8.45-3.13l.55.55V31l10 9.98L40.98 38 31 28zm-12 0c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9z" />
-                <path d="M0 0h48v48H0z" fill="none" />
-            </svg>
-
-            <svg class="search-close-btn" xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                <path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z" />
-                <path d="M0 0h48v48H0z" fill="none" />
-            </svg>
-        </div>
-        <!-- chips wrapper -->
-        <section id="chips-wrapper">
-            <ul class="chips-list">
-                <li class="chips chip-clicked all-chips">
-                    <h1>All</h1>
-                </li>
-                <li class="chips games-chips">
-                    <h1>Games</h1>
-                </li>
-                <li class="chips ec-chips">
-                    <h1>Editors' Choice</h1>
-                </li>
-                <li class="chips tools-chips">
-                    <h1>Tools</h1>
-                </li>
-                <li class="chips news-chips">
-                    <h1>News</h1>
-                </li>
-                <li class="chips trend-chips">
-                    <h1>Trendings</h1>
-                </li>
-            </ul>
-        </section>
-    </section>
     <!-- main content -->
     <div class="wrapper">
         <!-- about section in sidebar -->
@@ -341,6 +294,57 @@
 
         <!-- card grid wrapper -->
         <ul id="grid-wrapper"></ul>
+
+        <section class="header">
+            <!-- chips wrapper -->
+            <section id="chips-wrapper">
+                <ul class="chips-list">
+                    <li class="chips chip-clicked all-chips">
+                        <h1>All</h1>
+                    </li>
+                    <li class="chips games-chips">
+                        <h1>Games</h1>
+                    </li>
+                    <li class="chips ec-chips">
+                        <h1>Editors' Choice</h1>
+                    </li>
+                    <li class="chips tools-chips">
+                        <h1>Tools</h1>
+                    </li>
+                    <li class="chips news-chips">
+                        <h1>News</h1>
+                    </li>
+                    <li class="chips trend-chips">
+                        <h1>Trendings</h1>
+                    </li>
+                </ul>
+            </section>
+            <!-- search bar -->
+            <div class="search-overlay"></div>
+            <div class="search-bar">
+                <svg class="nav-btn" xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z" />
+                </svg>
+                <svg class="back-btn" xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path d="M40 22H15.66l11.17-11.17L24 8 8 24l16 16 2.83-2.83L15.66 26H40v-4z" />
+                </svg>
+                <input autocomplete="off" id="myinput" onkeyup="searchFunction()" class="search-text-field" type="text" name="search" value="" placeholder="Search">
+
+                <svg class="search-btn" xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M31 28h-1.59l-.55-.55C30.82 25.18 32 22.23 32 19c0-7.18-5.82-13-13-13S6 11.82 6 19s5.82 13 13 13c3.23 0 6.18-1.18 8.45-3.13l.55.55V31l10 9.98L40.98 38 31 28zm-12 0c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9z" />
+                    <path d="M0 0h48v48H0z" fill="none" />
+                </svg>
+
+                <svg class="search-close-btn" xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z" />
+                    <path d="M0 0h48v48H0z" fill="none" />
+                </svg>
+            </div>
+
+        </section>
+
         <!-- fab button -->
         <a href="#top">
             <div class="fab">
