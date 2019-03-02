@@ -1,3 +1,12 @@
+# 0.1.4
+1. Changes in UX/UI
+2. Updated the UI for Large Phones.
+
+
+# 0.1.3
+1. introduced new theme.
+2. complextion reduction 
+
 # 0.1.2
 1. added 15+ new apps.
 
