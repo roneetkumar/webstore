@@ -335,12 +335,6 @@
             "link" : "https://polymon.polymer-project.org/",
             "appType" : ""
         },{
-            "title" : "DevSpace",
-            "imgsrc" : "https://app.devspace.io/images/chrome/launcher-icon-4x.png",
-            "imgcolor" : "#2196f3",
-            "link" : "https://app.devspace.io/",
-            "appType" : "select-ec"
-        },{
             "title" : "Colosseum",
             "imgsrc" : "https://naramsim.github.io/Colosseum/images/icons/launcher-256.png",
             "imgcolor" : "#5991be",
@@ -353,10 +347,10 @@
             "link" : "https://splittypie.com/",
             "appType" : ""
         },{
-            "title" : "AMP Project",
-            "imgsrc" : "https://www.ampproject.org/static/img/icons/any.svg",
+            "title" : "AMP",
+            "imgsrc" : "https://amp.dev/static/img/icons/icon-512x512.png",
             "imgcolor" : "#fff",
-            "link" : "https://www.ampproject.org/",
+            "link" : "https://amp.dev/",
             "appType" : ""
         },{
             "title" : "Notepad",
@@ -376,12 +370,6 @@
             "imgcolor" : "#fff",
             "link" : "https://github-e.com",
             "appType" : "select-tools select-trend select-ec"
-        },{
-            "title" : "AMP Examples",
-            "imgsrc" : "https://ampbyexample.com/favicons/android-chrome-192x192.png",
-            "imgcolor" : "#fff",
-            "link" : "https://ampbyexample.com/",
-            "appType" : "select-tools"
         },{
             "title" : "Land Lines",
             "imgsrc" : "https://lines.chromeexperiments.com/img/webapp/LandLines_WebAppIcon_192x192.png",
@@ -552,5 +540,4 @@
             "link" : "https://ifart.app/",
             "appType" : "select-tools"
         }]
-
 }
