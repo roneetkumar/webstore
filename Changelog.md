@@ -5,7 +5,7 @@
 
 # 0.1.3
 1. introduced new theme.
-2. complextion reduction 
+2. complexion reduction
 
 # 0.1.2
 1. added 15+ new apps.
@@ -15,7 +15,7 @@
 
 # 0.0.10
 1. search bar.
-2. organised in alphabatical order.
+2. organized in alphabetical order.
 3. added 30+ new apps.
 
 # 0.0.9
@@ -35,7 +35,7 @@
 
 # 0.0.3
 1. filter buttons.
-2. nav drawer.
+2. navigation drawer.
 3. manifest file.
 4. first batch of apps.
 
