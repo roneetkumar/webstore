@@ -1,7 +1,7 @@
 //import data
 $.ajax({
-    // url: "/functions/apps.json",
-    url: "https://roneetkumar.github.io/webstore/functions/apps.json",
+    url: "functions/apps.json",
+    // url: "https://roneetkumar.github.io/webstore/functions/apps.json",
     dataType: "json",
     async: false,
     success: function(data) {
@@ -36,7 +36,7 @@ $(function() {
             width += $(this).outerWidth(true);
         });
         $('ul.chips-list').css('width', Math.ceil(width));
-        console.log(Math.ceil(width));
+        // console.log(Math.ceil(width));
     });
 
     //nav open function
@@ -235,3 +235,11 @@ function searchFunction() {
 //     $('').css('fill', accentColors);
 //     $('').css('color', accentColors);
 // });
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('../service-worker.js')
+        .then(function() {
+            // console.log("Service Worker Registered");
+        });
+}
