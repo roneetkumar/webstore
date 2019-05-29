@@ -1,7 +1,7 @@
 //import data
 $.ajax({
-    url: "functions/apps.json",
-    // url: "https://roneetkumar.github.io/webstore/functions/apps.json",
+    url: "https://roneetkumar.github.io/webstore/functions/apps.json",
+    // url: "functions/apps.json",
     dataType: "json",
     async: false,
     success: function(data) {
