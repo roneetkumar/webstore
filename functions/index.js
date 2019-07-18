@@ -4,35 +4,35 @@ $.ajax({
     // url: "functions/apps.json",
     dataType: "json",
     async: false,
-    success: function(data) {
-        $.each(data.apps, function(i, item) {
+    success: function (data) {
+        $.each(data.apps, function (i, item) {
             $('ul#grid-wrapper').append("<li class='card " + data.apps[i].appType + "'> <div class = 'app-img-wrapper'> <img style = 'background:" + data.apps[i].imgcolor + "' class ='app-img' data-src = '" + data.apps[i].imgsrc + "'> </img> </div> <div class = 'title-bar'> <a href = '#' class = 'card-title'>" + data.apps[i].title + " </a> <a href = '" + data.apps[i].link + "'target = '_blank' rel = 'noopener'> <img class = 'open-btn'src = 'assets/open.svg'alt = 'open-svg'/> </a> </div> </li>");
         });
     }
 });
 
-$(function() {
+$(function () {
     // Function for alphabatical order
-    $(function() {
-        $.fn.sortList = function() {
+    $(function () {
+        $.fn.sortList = function () {
             var list = $(this);
             var items = $("li", list).get();
-            items.sort(function(a, b) {
+            items.sort(function (a, b) {
                 var listItem1 = $(a).text().toUpperCase();
                 var listItem2 = $(b).text().toUpperCase();
                 return (listItem1 < listItem2) ? -1 : 1;
             });
-            $.each(items, function(i, itm) {
+            $.each(items, function (i, itm) {
                 list.append(itm);
             });
         }
         $("ul#grid-wrapper").sortList();
     });
 
-    $(window).on("load", function() {
+    $(window).on("load", function () {
         //chipwidth
         var width = 0;
-        $('.chips').each(function() {
+        $('.chips').each(function () {
             width += $(this).outerWidth(true);
         });
         $('ul.chips-list').css('width', Math.ceil(width));
@@ -80,36 +80,36 @@ $(function() {
 
 
     //nav open
-    $('svg.nav-btn').on('click', function() {
+    $('svg.nav-btn').on('click', function () {
         navOpen();
     });
 
     //nav close
-    $('.nav-overlay,li.menu-item').on('click', function() {
+    $('.nav-overlay,li.menu-item').on('click', function () {
         navClose();
     });
 
     //about open
-    $('.about,.support,.faq').on('click', function() {
+    $('.about,.support,.faq').on('click', function () {
         $('.nav-bar-wrapper').removeClass('nav-khulgya');
         bugListClose();
         $('.' + $(this).attr('class') + '-wrapper').addClass('info-show');
     });
 
     //about close
-    $('.info-wrapper').on('click', function() {
+    $('.info-wrapper').on('click', function () {
         $('.info-wrapper').removeClass('info-show');
         navClose();
     });
 
     //search trending list input fill
-    $('.search-trending-list-item').on('click', function() {
+    $('.search-trending-list-item').on('click', function () {
         var listInput = $(this).find('h1').html();
         $('#myinput').val(listInput);
     });
 
     //search input value reset
-    $('svg.search-close-btn').on('click', function() {
+    $('svg.search-close-btn').on('click', function () {
         $('input.search-text-field').val('');
         card.removeAttr('style');
         $('svg.search-btn').css('display', 'inline-block');
@@ -117,7 +117,7 @@ $(function() {
     });
 
     //search bar open and close
-    $('.search-text-field, svg.search-btn,.search-overlay, svg.back-btn').on('click', function() {
+    $('.search-text-field, svg.search-btn,.search-overlay, svg.back-btn').on('click', function () {
         if ($('.search-bar').hasClass('search-active') && $('#myinput').val() != '') {
             searchClose();
             searchFunction();
@@ -133,18 +133,18 @@ $(function() {
     });
 
     //nav list selection
-    $('li.apps-item, li.bug-list').on('click', function() {
+    $('li.apps-item, li.bug-list').on('click', function () {
         $(this).addClass('menu-item-selected');
         $('li.bug-list, li.apps-item').not(this).removeClass('menu-item-selected');
     });
 
     //nav bug list
-    $('li.bug-list').on('click', function() {
+    $('li.bug-list').on('click', function () {
         $('li.bug-list-opt').toggle();
     });
 
     //chips selection
-    $('.chips').on('click', function() {
+    $('.chips').on('click', function () {
         $(this).addClass('chip-clicked');
         $('.chips').not(this).removeClass('chip-clicked');
     });
@@ -152,27 +152,27 @@ $(function() {
     //chip filter
     var card = $('.card');
 
-    $('.all-chips, .apps-item').on('click', function() {
+    $('.all-chips, .apps-item').on('click', function () {
         card.not(card).addClass('card-hidden');
         $('.all-chips').addClass('chip-clicked');
         $('.chips').not('.all-chips').removeClass('chip-clicked');
     });
 
-    $('ul.chips-list li, .apps-item').on('click', function() {
+    $('ul.chips-list li, .apps-item').on('click', function () {
         card.removeClass('card-hidden');
     });
 
     var chipsClasses = ['.games-chips', '.ec-chips', '.news-chips', '.trend-chips', '.tools-chips'];
     var selectClasses = ['.select-games', '.select-ec', '.select-news', '.select-trend', '.select-tools'];
 
-    $.each(chipsClasses, function(i, item) {
-        $(chipsClasses[i]).on('click', function() {
+    $.each(chipsClasses, function (i, item) {
+        $(chipsClasses[i]).on('click', function () {
             card.not(selectClasses[i]).addClass('card-hidden');
         });
     });
 
     //fab scroll top function
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(window).scrollTop() > 340) {
             $('.fab').addClass('fab-show');
         } else {
@@ -181,7 +181,7 @@ $(function() {
     });
 
     //smooth scrolling
-    $('.fab').on('click', function() {
+    $('.fab').on('click', function () {
         $('html,body').animate({
             scrollTop: 0
         }, "slow");
@@ -189,7 +189,7 @@ $(function() {
     });
 
     //event.stopPropagation
-    $(".info-wrapper").children().on('click', function(event) {
+    $(".info-wrapper").children().on('click', function (event) {
         event.stopPropagation();
     });
 
@@ -239,7 +239,7 @@ function searchFunction() {
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
         .register('../service-worker.js')
-        .then(function() {
+        .then(function () {
             // console.log("Service Worker Registered");
         });
 }
